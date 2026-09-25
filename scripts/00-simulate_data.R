@@ -1,12 +1,10 @@
 #### Preamble ####
-# Purpose: Simulates a dataset of Australian electoral divisions, including the 
-  #state and party that won each division.
-# Author: Rohan Alexander
-# Date: 26 September 2024
-# Contact: rohan.alexander@utoronto.ca
+# Purpose: Simulates a dataset of TTC subway delay times
+# Author: Jingxuan Feng
+# Date: 25 September 2026
+# Contact: jingxuan.feng@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: The `tidyverse` package must be installed
-# Any other information needed? Make sure you are in the `starter_folder` rproj
+# Pre-requisites: The 'tidyverse' package must be installed
 
 
 #### Workspace setup ####
@@ -15,38 +13,51 @@ set.seed(853)
 
 
 #### Simulate data ####
-# State names
-states <- c(
-  "New South Wales",
-  "Victoria",
-  "Queensland",
-  "South Australia",
-  "Western Australia",
-  "Tasmania",
-  "Northern Territory",
-  "Australian Capital Territory"
+# TTC line names
+TTC_lines <- c(
+  "YU",
+  "BD",
+  "SHP"
 )
 
-# Political parties
-parties <- c("Labor", "Liberal", "Greens", "National", "Other")
 
-# Create a dataset by randomly assigning states and parties to divisions
+#then simulate time ranging from 00:00:00 to 24:00:00 (with seconds fixed at 00), keeping the same format as analysis_data
+n <- 2000
+minute <- sample(0:1439, size = n, replace = TRUE)
+
+simulated_time <- sprintf("%d:%02d:00", minute %/% 60, minute %% 60)
+
+#then simulate days
+days <- c(
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+)
+
+
+# Create a dataset by randomly assigning TTC lines and simulated time to id number
 analysis_data <- tibble(
-  division = paste("Division", 1:151),  # Add "Division" to make it a character
-  state = sample(
-    states,
-    size = 151,
+  id = seq_len(n),
+  time = simulated_time,
+  day = sample(
+    days,
+    size = n,
     replace = TRUE,
-    prob = c(0.25, 0.25, 0.15, 0.1, 0.1, 0.1, 0.025, 0.025) # Rough state population distribution
+    prob = c(0.16, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14)
   ),
-  party = sample(
-    parties,
-    size = 151,
+  TTC_line = sample(
+    TTC_lines,
+    size = n,
     replace = TRUE,
-    prob = c(0.40, 0.40, 0.05, 0.1, 0.05) # Rough party distribution
+    prob = c(0.50, 0.40, 0.1) # Rough TTC line distribution
   )
 )
 
 
 #### Save data ####
-write_csv(analysis_data, "data/00-simulated_data/simulated_data.csv")
+write_csv(analysis_data, "data/00-simulated_data/simulated_TTC_subway_delays_data.csv")
+
