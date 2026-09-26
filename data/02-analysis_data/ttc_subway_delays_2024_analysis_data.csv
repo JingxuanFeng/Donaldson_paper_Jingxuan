@@ -25,7 +25,7 @@ time,day,min_delay,line
 09:06:00,Monday,0,YU
 09:09:00,Monday,7,YU
 09:17:00,Monday,6,YU
-09:45:00,Monday,10,YUS
+09:45:00,Monday,10,YU
 10:08:00,Monday,6,YU
 11:18:00,Monday,0,YU
 11:39:00,Monday,3,BD
@@ -45,7 +45,6 @@ time,day,min_delay,line
 19:54:00,Monday,0,BD
 20:52:00,Monday,7,YU
 21:07:00,Monday,6,BD
-22:00:00,Monday,0,YU/BD
 22:10:00,Monday,0,BD
 22:13:00,Monday,0,YU
 00:01:00,Monday,0,BD
@@ -107,7 +106,6 @@ time,day,min_delay,line
 21:05:00,Tuesday,0,BD
 21:05:00,Tuesday,0,YU
 21:09:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:08:00,Tuesday,0,BD
 22:52:00,Tuesday,0,BD
 23:33:00,Tuesday,4,BD
@@ -170,7 +168,6 @@ time,day,min_delay,line
 21:02:00,Wednesday,6,YU
 21:05:00,Wednesday,0,BD
 21:32:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 23:01:00,Wednesday,0,BD
 23:06:00,Wednesday,0,YU
 23:08:00,Wednesday,0,BD
@@ -263,7 +260,6 @@ time,day,min_delay,line
 20:57:00,Thursday,0,YU
 20:57:00,Thursday,0,BD
 21:40:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:02:00,Thursday,0,BD
 22:30:00,Thursday,0,YU
 22:38:00,Thursday,0,BD
@@ -337,7 +333,6 @@ time,day,min_delay,line
 21:37:00,Friday,3,YU
 21:40:00,Friday,15,YU
 21:50:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:13:00,Friday,14,YU
 00:52:00,Friday,0,BD
 01:04:00,Friday,0,BD
@@ -398,7 +393,6 @@ time,day,min_delay,line
 20:30:00,Saturday,4,YU
 20:42:00,Saturday,0,BD
 20:43:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:33:00,Saturday,6,YU
 22:45:00,Saturday,6,BD
 22:54:00,Saturday,0,BD
@@ -445,7 +439,6 @@ time,day,min_delay,line
 19:43:00,Sunday,14,YU
 20:19:00,Sunday,6,YU
 20:49:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:02:00,Sunday,0,YU
 22:08:00,Sunday,6,BD
 22:12:00,Sunday,0,BD
@@ -497,7 +490,6 @@ time,day,min_delay,line
 20:28:00,Monday,13,YU
 20:50:00,Monday,0,BD
 21:27:00,Monday,5,YU
-22:00:00,Monday,0,YU/BD
 22:00:00,Monday,0,YU
 22:14:00,Monday,0,BD
 22:29:00,Monday,0,YU
@@ -583,7 +575,6 @@ time,day,min_delay,line
 21:39:00,Tuesday,0,YU
 21:44:00,Tuesday,9,YU
 21:59:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:05:00,Tuesday,0,YU
 22:06:00,Tuesday,0,BD
 22:17:00,Tuesday,6,YU
@@ -651,7 +642,6 @@ time,day,min_delay,line
 20:56:00,Wednesday,0,YU
 21:48:00,Wednesday,20,BD
 21:58:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:51:00,Wednesday,0,YU
 23:24:00,Wednesday,0,YU
 23:36:00,Wednesday,0,YU
@@ -710,7 +700,6 @@ time,day,min_delay,line
 19:47:00,Thursday,0,BD
 20:08:00,Thursday,0,BD
 21:32:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:08:00,Thursday,0,YU
 23:54:00,Thursday,14,YU
 01:13:00,Thursday,0,YU
@@ -775,7 +764,6 @@ time,day,min_delay,line
 21:16:00,Friday,12,BD
 21:20:00,Friday,13,BD
 21:30:00,Friday,5,YU
-22:00:00,Friday,0,YU/BD
 22:21:00,Friday,0,YU
 23:02:00,Friday,4,YU
 23:04:00,Friday,11,BD
@@ -844,7 +832,6 @@ time,day,min_delay,line
 20:22:00,Saturday,0,YU
 20:32:00,Saturday,0,BD
 21:30:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:06:00,Saturday,0,BD
 22:16:00,Saturday,0,BD
 22:46:00,Saturday,7,YU
@@ -900,7 +887,6 @@ time,day,min_delay,line
 21:49:00,Sunday,15,YU
 21:51:00,Sunday,0,BD
 21:54:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:15:00,Sunday,0,YU
 22:32:00,Sunday,6,YU
 22:34:00,Sunday,0,BD
@@ -972,7 +958,6 @@ time,day,min_delay,line
 20:43:00,Monday,0,BD
 21:01:00,Monday,3,BD
 21:28:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:12:00,Monday,0,YU
 22:22:00,Monday,0,BD
 22:24:00,Monday,0,YU
@@ -993,7 +978,6 @@ time,day,min_delay,line
 02:05:00,Tuesday,0,BD
 02:27:00,Tuesday,0,YU
 04:33:00,Tuesday,0,YU
-06:00:00,Tuesday,0,YU/BD
 06:13:00,Tuesday,4,YU
 06:25:00,Tuesday,0,YU
 06:47:00,Tuesday,3,BD
@@ -1053,7 +1037,6 @@ time,day,min_delay,line
 21:33:00,Tuesday,0,YU
 21:36:00,Tuesday,6,BD
 21:59:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:08:00,Tuesday,0,YU
 22:41:00,Tuesday,0,BD
 23:00:00,Tuesday,0,YU
@@ -1151,7 +1134,6 @@ time,day,min_delay,line
 21:19:00,Wednesday,0,YU
 21:32:00,Wednesday,0,BD
 21:51:00,Wednesday,5,YU
-22:00:00,Wednesday,0,YU/BD
 22:00:00,Wednesday,0,YU
 22:35:00,Wednesday,0,BD
 22:49:00,Wednesday,0,YU
@@ -1226,7 +1208,6 @@ time,day,min_delay,line
 21:26:00,Thursday,0,BD
 21:33:00,Thursday,0,YU
 21:38:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:24:00,Thursday,5,BD
 23:00:00,Thursday,0,YU
 23:07:00,Thursday,0,BD
@@ -1287,7 +1268,6 @@ time,day,min_delay,line
 15:39:00,Friday,5,BD
 15:44:00,Friday,0,BD
 15:48:00,Friday,4,YU
-15:52:00,Friday,0,YU/BD
 16:19:00,Friday,0,BD
 16:21:00,Friday,3,BD
 16:28:00,Friday,3,BD
@@ -1322,7 +1302,6 @@ time,day,min_delay,line
 21:50:00,Friday,6,YU
 21:54:00,Friday,0,BD
 21:57:00,Friday,13,BD
-22:00:00,Friday,0,YU/BD
 23:00:00,Friday,0,BD
 23:07:00,Friday,0,YU
 23:41:00,Friday,0,BD
@@ -1382,7 +1361,6 @@ time,day,min_delay,line
 20:55:00,Saturday,7,YU
 21:43:00,Saturday,0,BD
 21:49:00,Saturday,6,BD
-22:00:00,Saturday,0,YU/BD
 22:00:00,Saturday,5,YU
 22:07:00,Saturday,13,YU
 22:18:00,Saturday,8,YU
@@ -1449,7 +1427,6 @@ time,day,min_delay,line
 21:37:00,Sunday,0,YU
 21:38:00,Sunday,0,YU
 21:42:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:01:00,Sunday,6,BD
 22:29:00,Sunday,0,YU
 22:41:00,Sunday,8,YU
@@ -1531,7 +1508,6 @@ time,day,min_delay,line
 21:21:00,Monday,0,BD
 21:35:00,Monday,0,YU
 21:49:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:23:00,Monday,7,YU
 23:00:00,Monday,0,YU
 23:01:00,Monday,9,BD
@@ -1619,7 +1595,6 @@ time,day,min_delay,line
 21:30:00,Tuesday,0,YU
 21:32:00,Tuesday,3,BD
 21:50:00,Tuesday,3,BD
-22:00:00,Tuesday,0,YU/BD
 22:01:00,Tuesday,0,YU
 22:21:00,Tuesday,0,BD
 22:41:00,Tuesday,0,YU
@@ -1706,7 +1681,6 @@ time,day,min_delay,line
 20:45:00,Wednesday,0,YU
 21:12:00,Wednesday,5,BD
 21:41:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:06:00,Wednesday,0,YU
 22:15:00,Wednesday,19,BD
 22:46:00,Wednesday,0,BD
@@ -1775,7 +1749,6 @@ time,day,min_delay,line
 21:36:00,Thursday,27,YU
 21:48:00,Thursday,0,BD
 21:48:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:59:00,Thursday,4,YU
 23:11:00,Thursday,0,YU
 23:11:00,Thursday,0,YU
@@ -1875,7 +1848,6 @@ time,day,min_delay,line
 21:02:00,Friday,6,BD
 21:16:00,Friday,0,YU
 21:16:00,Friday,11,BD
-22:00:00,Friday,0,YU/BD
 22:02:00,Friday,0,BD
 22:07:00,Friday,0,YU
 22:16:00,Friday,5,YU
@@ -1948,7 +1920,6 @@ time,day,min_delay,line
 21:02:00,Saturday,5,YU
 21:07:00,Saturday,0,BD
 21:42:00,Saturday,5,BD
-22:00:00,Saturday,0,YU/BD
 22:01:00,Saturday,0,BD
 22:08:00,Saturday,10,YU
 22:24:00,Saturday,0,YU
@@ -2003,7 +1974,6 @@ time,day,min_delay,line
 21:38:00,Sunday,0,BD
 21:38:00,Sunday,0,YU
 21:56:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:12:00,Sunday,0,BD
 22:29:00,Sunday,0,YU
 22:31:00,Sunday,0,BD
@@ -2078,7 +2048,6 @@ time,day,min_delay,line
 21:38:00,Monday,5,BD
 21:47:00,Monday,0,BD
 21:59:00,Monday,4,YU
-22:00:00,Monday,0,YU/BD
 22:07:00,Monday,25,YU
 23:00:00,Monday,0,YU
 23:01:00,Monday,0,BD
@@ -2150,7 +2119,6 @@ time,day,min_delay,line
 19:30:00,Tuesday,3,YU
 20:02:00,Tuesday,0,YU
 21:37:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:33:00,Tuesday,0,YU
 22:38:00,Tuesday,0,YU
 22:42:00,Tuesday,11,YU
@@ -2240,7 +2208,6 @@ time,day,min_delay,line
 21:02:00,Wednesday,4,YU
 21:27:00,Wednesday,0,YU
 21:29:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:13:00,Wednesday,5,BD
 22:14:00,Wednesday,3,BD
 22:36:00,Wednesday,0,BD
@@ -2311,7 +2278,6 @@ time,day,min_delay,line
 20:14:00,Thursday,0,BD
 21:39:00,Thursday,29,YU
 21:42:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:18:00,Thursday,0,BD
 22:21:00,Thursday,0,YU
 23:44:00,Thursday,12,BD
@@ -2366,7 +2332,6 @@ time,day,min_delay,line
 20:44:00,Friday,0,BD
 21:15:00,Friday,0,BD
 21:27:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:14:00,Friday,17,YU
 23:31:00,Friday,0,YU
 23:35:00,Friday,17,BD
@@ -2424,13 +2389,11 @@ time,day,min_delay,line
 20:31:00,Saturday,0,YU
 20:54:00,Saturday,0,BD
 21:38:00,Saturday,17,YU
-22:00:00,Saturday,0,YU/BD
 22:08:00,Saturday,5,YU
 22:11:00,Saturday,0,YU
 22:24:00,Saturday,14,YU
 22:33:00,Saturday,5,YU
 22:39:00,Saturday,0,YU
-22:50:00,Saturday,0,BLOOR DANFORTH
 23:19:00,Saturday,4,BD
 23:44:00,Saturday,5,YU
 23:46:00,Saturday,0,YU
@@ -2490,7 +2453,6 @@ time,day,min_delay,line
 19:00:00,Sunday,0,BD
 19:18:00,Sunday,0,BD
 21:56:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:51:00,Sunday,0,BD
 23:33:00,Sunday,16,YU
 23:40:00,Sunday,6,YU
@@ -2558,7 +2520,6 @@ time,day,min_delay,line
 21:35:00,Monday,0,YU
 21:45:00,Monday,0,YU
 21:54:00,Monday,18,BD
-22:00:00,Monday,0,YU/BD
 22:05:00,Monday,9,YU
 22:25:00,Monday,0,BD
 22:26:00,Monday,0,YU
@@ -2646,7 +2607,6 @@ time,day,min_delay,line
 20:32:00,Tuesday,25,BD
 20:37:00,Tuesday,9,YU
 21:11:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:28:00,Tuesday,0,YU
 22:49:00,Tuesday,12,BD
 23:00:00,Tuesday,0,YU
@@ -2721,7 +2681,6 @@ time,day,min_delay,line
 21:32:00,Wednesday,0,YU
 21:45:00,Wednesday,0,YU
 21:53:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:45:00,Wednesday,0,BD
 23:00:00,Wednesday,0,YU
 23:01:00,Wednesday,0,BD
@@ -2796,7 +2755,6 @@ time,day,min_delay,line
 21:17:00,Thursday,6,BD
 21:30:00,Thursday,0,YU
 21:59:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:12:00,Thursday,0,YU
 22:14:00,Thursday,0,BD
 22:19:00,Thursday,5,BD
@@ -2860,7 +2818,6 @@ time,day,min_delay,line
 21:05:00,Friday,0,BD
 21:18:00,Friday,3,YU
 21:40:00,Friday,8,YU
-22:00:00,Friday,0,YU/BD
 22:09:00,Friday,12,YU
 22:48:00,Friday,0,YU
 22:59:00,Friday,0,YU
@@ -2923,7 +2880,6 @@ time,day,min_delay,line
 21:05:00,Saturday,0,YU
 21:19:00,Saturday,0,YU
 21:34:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:05:00,Saturday,3,YU
 22:25:00,Saturday,0,YU
 22:33:00,Saturday,0,BD
@@ -2997,7 +2953,6 @@ time,day,min_delay,line
 20:54:00,Sunday,0,BD
 20:57:00,Sunday,6,YU
 21:22:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:06:00,Sunday,6,BD
 22:11:00,Sunday,0,YU
 22:37:00,Sunday,0,YU
@@ -3065,7 +3020,6 @@ time,day,min_delay,line
 21:36:00,Monday,9,YU
 21:44:00,Monday,0,YU
 21:53:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:15:00,Monday,0,YU
 22:52:00,Monday,4,YU
 23:00:00,Monday,0,YU
@@ -3166,7 +3120,6 @@ time,day,min_delay,line
 21:09:00,Tuesday,15,BD
 21:18:00,Tuesday,0,BD
 21:57:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:03:00,Tuesday,8,YU
 22:33:00,Tuesday,0,YU
 23:00:00,Tuesday,0,YU
@@ -3252,7 +3205,6 @@ time,day,min_delay,line
 21:43:00,Wednesday,0,YU
 21:44:00,Wednesday,5,YU
 21:53:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:09:00,Wednesday,0,BD
 22:32:00,Wednesday,5,BD
 22:38:00,Wednesday,0,YU
@@ -3335,7 +3287,6 @@ time,day,min_delay,line
 21:28:00,Thursday,6,YU
 21:37:00,Thursday,0,BD
 21:57:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:06:00,Thursday,0,BD
 22:49:00,Thursday,3,BD
 22:55:00,Thursday,0,BD
@@ -3409,7 +3360,6 @@ time,day,min_delay,line
 20:55:00,Friday,5,BD
 21:24:00,Friday,0,BD
 21:48:00,Friday,0,BD
-22:00:00,Friday,0,YU/BD
 22:28:00,Friday,0,BD
 22:44:00,Friday,12,YU
 22:57:00,Friday,4,BD
@@ -3486,7 +3436,6 @@ time,day,min_delay,line
 20:27:00,Saturday,5,BD
 20:37:00,Saturday,0,YU
 20:47:00,Saturday,5,YU
-22:00:00,Saturday,0,YU / BD
 22:00:00,Saturday,5,YU
 22:02:00,Saturday,0,YU
 22:53:00,Saturday,0,BD
@@ -3558,7 +3507,6 @@ time,day,min_delay,line
 21:03:00,Sunday,0,BD
 21:05:00,Sunday,0,YU
 21:08:00,Sunday,3,BD
-22:00:00,Sunday,0,YU/BD
 22:33:00,Sunday,0,BD
 22:33:00,Sunday,3,YU
 23:28:00,Sunday,32,YU
@@ -3608,7 +3556,6 @@ time,day,min_delay,line
 21:11:00,Monday,0,YU
 21:22:00,Monday,0,YU
 21:56:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:28:00,Monday,0,BD
 22:47:00,Monday,3,BD
 22:50:00,Monday,6,BD
@@ -3681,7 +3628,6 @@ time,day,min_delay,line
 21:47:00,Tuesday,0,YU
 21:51:00,Tuesday,0,BD
 21:55:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:03:00,Tuesday,0,BD
 22:15:00,Tuesday,0,YU
 22:35:00,Tuesday,7,YU
@@ -3764,7 +3710,6 @@ time,day,min_delay,line
 21:36:00,Wednesday,4,BD
 21:57:00,Wednesday,0,YU
 21:58:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:20:00,Wednesday,0,YU
 22:20:00,Wednesday,0,BD
 22:22:00,Wednesday,0,BD
@@ -3837,7 +3782,6 @@ time,day,min_delay,line
 21:20:00,Thursday,0,YU
 21:31:00,Thursday,6,BD
 21:51:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:16:00,Thursday,6,YU
 23:00:00,Thursday,0,YU
 23:07:00,Thursday,7,YU
@@ -3893,7 +3837,6 @@ time,day,min_delay,line
 21:15:00,Friday,0,BD
 21:22:00,Friday,0,YU
 21:36:00,Friday,7,BD
-22:00:00,Friday,0,YU/BD
 22:14:00,Friday,0,YU
 22:46:00,Friday,0,YU
 22:56:00,Friday,6,BD
@@ -3969,7 +3912,6 @@ time,day,min_delay,line
 21:44:00,Saturday,4,BD
 21:44:00,Saturday,7,YU
 21:54:00,Saturday,4,BD
-22:00:00,Saturday,0,YU/BD
 23:07:00,Saturday,7,BD
 23:21:00,Saturday,5,YU
 00:00:00,Saturday,0,YU
@@ -4017,7 +3959,6 @@ time,day,min_delay,line
 19:41:00,Sunday,0,YU
 20:20:00,Sunday,4,BD
 20:23:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:43:00,Sunday,15,YU
 23:33:00,Sunday,0,YU
 23:44:00,Sunday,0,YU
@@ -4082,7 +4023,6 @@ time,day,min_delay,line
 20:18:00,Monday,0,BD
 20:40:00,Monday,0,BD
 21:21:00,Monday,0,BD
-22:00:00,Monday,0,YU / BD
 22:07:00,Monday,0,BD
 22:32:00,Monday,0,BD
 22:57:00,Monday,0,BD
@@ -4152,7 +4092,6 @@ time,day,min_delay,line
 21:12:00,Tuesday,0,BD
 21:35:00,Tuesday,0,YU
 21:47:00,Tuesday,5,BD
-22:00:00,Tuesday,0,YU / BD
 22:11:00,Tuesday,4,YU
 22:17:00,Tuesday,0,BD
 22:24:00,Tuesday,5,YU
@@ -4238,7 +4177,6 @@ time,day,min_delay,line
 21:20:00,Wednesday,3,YU
 21:52:00,Wednesday,0,YU
 21:59:00,Wednesday,5,BD
-22:00:00,Wednesday,0,YU/BD
 22:05:00,Wednesday,0,YU
 22:13:00,Wednesday,28,BD
 22:18:00,Wednesday,0,BD
@@ -4265,7 +4203,6 @@ time,day,min_delay,line
 05:02:00,Thursday,0,YU
 05:50:00,Thursday,0,BD
 05:53:00,Thursday,0,YU
-06:00:00,Thursday,0,YU/BD
 06:17:00,Thursday,3,YU
 06:55:00,Thursday,3,BD
 07:16:00,Thursday,4,YU
@@ -4334,7 +4271,6 @@ time,day,min_delay,line
 21:28:00,Thursday,0,BD
 21:45:00,Thursday,0,BD
 21:47:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/ BD
 22:20:00,Thursday,0,BD
 22:29:00,Thursday,4,YU
 22:37:00,Thursday,0,BD
@@ -4428,7 +4364,6 @@ time,day,min_delay,line
 21:14:00,Friday,0,BD
 21:33:00,Friday,0,BD
 21:36:00,Friday,4,YU
-22:00:00,Friday,0,YU/BD
 22:02:00,Friday,3,YU
 22:20:00,Friday,5,YU
 22:55:00,Friday,0,YU
@@ -4480,7 +4415,6 @@ time,day,min_delay,line
 20:14:00,Saturday,4,BD
 21:36:00,Saturday,4,BD
 21:58:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:16:00,Saturday,0,YU
 22:19:00,Saturday,4,BD
 23:57:00,Saturday,0,YU
@@ -4527,7 +4461,6 @@ time,day,min_delay,line
 20:44:00,Sunday,3,YU
 21:40:00,Sunday,32,YU
 21:44:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:09:00,Sunday,13,YU
 22:14:00,Sunday,6,BD
 23:00:00,Sunday,0,BD
@@ -4592,7 +4525,6 @@ time,day,min_delay,line
 20:56:00,Monday,0,BD
 21:10:00,Monday,0,BD
 21:38:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:18:00,Monday,7,BD
 22:26:00,Monday,0,BD
 22:37:00,Monday,0,BD
@@ -4669,7 +4601,6 @@ time,day,min_delay,line
 21:20:00,Tuesday,0,YU
 21:31:00,Tuesday,9,YU
 21:50:00,Tuesday,7,YU
-22:00:00,Tuesday,0,YU/BD
 22:23:00,Tuesday,3,BD
 22:33:00,Tuesday,5,BD
 22:45:00,Tuesday,0,YU
@@ -4744,7 +4675,6 @@ time,day,min_delay,line
 21:32:00,Wednesday,0,BD
 21:43:00,Wednesday,11,YU
 21:47:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:02:00,Wednesday,0,YU
 22:20:00,Wednesday,3,BD
 22:31:00,Wednesday,10,YU
@@ -4811,7 +4741,6 @@ time,day,min_delay,line
 20:18:00,Thursday,0,BD
 20:28:00,Thursday,22,BD
 20:31:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 23:00:00,Thursday,0,YU
 23:08:00,Thursday,3,YU
 00:12:00,Thursday,0,YU
@@ -4872,7 +4801,6 @@ time,day,min_delay,line
 20:37:00,Friday,0,BD
 21:11:00,Friday,0,BD
 21:40:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:44:00,Friday,4,YU
 22:49:00,Friday,16,YU
 23:00:00,Friday,0,YU
@@ -4943,7 +4871,6 @@ time,day,min_delay,line
 21:12:00,Saturday,6,YU
 21:36:00,Saturday,0,YU
 21:43:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:08:00,Saturday,0,BD
 22:14:00,Saturday,0,BD
 22:17:00,Saturday,0,YU
@@ -4995,7 +4922,6 @@ time,day,min_delay,line
 19:48:00,Sunday,0,BD
 20:20:00,Sunday,3,BD
 21:38:00,Sunday,6,YU
-22:00:00,Sunday,0,YU/BD
 22:08:00,Sunday,0,YU
 22:11:00,Sunday,0,YU
 22:13:00,Sunday,0,BD
@@ -5068,7 +4994,6 @@ time,day,min_delay,line
 19:49:00,Monday,0,BD
 19:52:00,Monday,7,YU
 21:34:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:30:00,Monday,0,BD
 22:34:00,Monday,13,YU
 22:51:00,Monday,0,BD
@@ -5143,7 +5068,6 @@ time,day,min_delay,line
 21:08:00,Tuesday,5,YU
 21:44:00,Tuesday,5,BD
 21:52:00,Tuesday,17,BD
-22:00:00,Tuesday,0,YU/BD
 22:23:00,Tuesday,0,YU
 22:25:00,Tuesday,0,YU
 22:39:00,Tuesday,5,BD
@@ -5201,7 +5125,6 @@ time,day,min_delay,line
 20:39:00,Wednesday,0,BD
 21:08:00,Wednesday,0,YU
 21:22:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:14:00,Wednesday,4,YU
 22:19:00,Wednesday,0,YU
 22:43:00,Wednesday,0,BD
@@ -5277,7 +5200,6 @@ time,day,min_delay,line
 21:10:00,Thursday,0,BD
 21:46:00,Thursday,4,YU
 21:52:00,Thursday,4,YU
-22:00:00,Thursday,0,YU/BD
 22:25:00,Thursday,0,YU
 23:00:00,Thursday,0,YU
 23:17:00,Thursday,0,YU
@@ -5339,7 +5261,6 @@ time,day,min_delay,line
 19:43:00,Friday,0,YU
 20:18:00,Friday,0,YU
 21:27:00,Friday,3,YU
-22:00:00,Friday,0,YU/BD
 22:03:00,Friday,0,YU
 22:11:00,Friday,3,BD
 23:12:00,Friday,4,BD
@@ -5425,7 +5346,6 @@ time,day,min_delay,line
 20:47:00,Saturday,0,BD
 20:48:00,Saturday,0,YU
 21:08:00,Saturday,12,YU
-22:00:00,Saturday,0,YU/BD
 22:13:00,Saturday,0,YU
 22:21:00,Saturday,0,BD
 22:23:00,Saturday,0,YU
@@ -5491,7 +5411,6 @@ time,day,min_delay,line
 21:31:00,Sunday,0,YU
 21:37:00,Sunday,0,YU
 21:54:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:01:00,Sunday,0,YU
 23:00:00,Sunday,0,YU
 23:02:00,Sunday,17,YU
@@ -5575,7 +5494,6 @@ time,day,min_delay,line
 21:47:00,Monday,0,BD
 21:48:00,Monday,0,YU
 21:57:00,Monday,6,YU
-22:00:00,Monday,0,YU/BD
 23:00:00,Monday,5,YU
 23:00:00,Monday,0,BD
 23:04:00,Monday,0,BD
@@ -5637,7 +5555,6 @@ time,day,min_delay,line
 20:49:00,Tuesday,0,YU
 20:56:00,Tuesday,0,BD
 21:31:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:15:00,Tuesday,4,YU
 22:28:00,Tuesday,11,YU
 22:29:00,Tuesday,0,YU
@@ -5715,7 +5632,6 @@ time,day,min_delay,line
 21:42:00,Wednesday,0,BD
 21:57:00,Wednesday,0,BD
 21:57:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:19:00,Wednesday,5,BD
 22:34:00,Wednesday,0,BD
 22:50:00,Wednesday,22,YU
@@ -5818,7 +5734,6 @@ time,day,min_delay,line
 21:33:00,Thursday,5,BD
 21:48:00,Thursday,0,BD
 21:54:00,Thursday,11,BD
-22:00:00,Thursday,0,YU/BD
 22:04:00,Thursday,0,BD
 22:30:00,Thursday,0,YU
 22:31:00,Thursday,3,YU
@@ -5921,7 +5836,6 @@ time,day,min_delay,line
 21:41:00,Friday,31,YU
 21:50:00,Friday,3,YU
 21:56:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:20:00,Friday,0,BD
 22:21:00,Friday,18,YU
 23:00:00,Friday,0,BD
@@ -6000,7 +5914,6 @@ time,day,min_delay,line
 20:35:00,Saturday,0,YU
 21:54:00,Saturday,0,YU
 22:00:00,Saturday,9,BD
-22:00:00,Saturday,0,YU/BD
 22:00:00,Saturday,6,YU
 22:24:00,Saturday,5,BD
 22:50:00,Saturday,0,BD
@@ -6068,7 +5981,6 @@ time,day,min_delay,line
 21:46:00,Sunday,0,BD
 21:55:00,Sunday,0,BD
 21:59:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:03:00,Sunday,0,YU
 22:24:00,Sunday,0,BD
 23:00:00,Sunday,0,YU
@@ -6138,7 +6050,6 @@ time,day,min_delay,line
 20:27:00,Monday,6,YU
 21:01:00,Monday,0,YU
 21:57:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:02:00,Monday,0,YU
 22:17:00,Monday,3,YU
 22:39:00,Monday,6,YU
@@ -6214,7 +6125,6 @@ time,day,min_delay,line
 20:37:00,Tuesday,0,BD
 21:37:00,Tuesday,3,BD
 21:47:00,Tuesday,8,BD
-22:00:00,Tuesday,0,YU/BD
 22:13:00,Tuesday,12,BD
 22:15:00,Tuesday,7,BD
 22:27:00,Tuesday,0,YU
@@ -6294,7 +6204,6 @@ time,day,min_delay,line
 21:19:00,Wednesday,0,BD
 21:39:00,Wednesday,0,BD
 21:46:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:32:00,Wednesday,0,BD
 22:41:00,Wednesday,0,YU
 22:43:00,Wednesday,0,YU
@@ -6385,7 +6294,6 @@ time,day,min_delay,line
 21:35:00,Thursday,0,BD
 21:37:00,Thursday,0,BD
 21:45:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:17:00,Thursday,0,BD
 22:26:00,Thursday,0,BD
 22:49:00,Thursday,7,YU
@@ -6450,7 +6358,6 @@ time,day,min_delay,line
 20:41:00,Friday,0,BD
 21:15:00,Friday,4,BD
 21:41:00,Friday,0,BD
-22:00:00,Friday,0,YU/BD
 22:09:00,Friday,0,YU
 23:00:00,Friday,0,YU
 23:00:00,Friday,0,BD
@@ -6514,7 +6421,6 @@ time,day,min_delay,line
 21:30:00,Saturday,0,YU
 21:40:00,Saturday,0,YU
 22:00:00,Saturday,7,BD
-22:00:00,Saturday,0,YU/BD
 22:14:00,Saturday,9,YU
 22:32:00,Saturday,0,YU
 22:32:00,Saturday,0,YU
@@ -6565,7 +6471,6 @@ time,day,min_delay,line
 21:38:00,Sunday,0,YU
 21:42:00,Sunday,3,YU
 21:50:00,Sunday,5,BD
-22:00:00,Sunday,0,YU/BD
 22:01:00,Sunday,0,BD
 23:24:00,Sunday,4,BD
 23:30:00,Sunday,0,YU
@@ -6622,7 +6527,6 @@ time,day,min_delay,line
 19:52:00,Monday,0,YU
 20:02:00,Monday,0,YU
 20:50:00,Monday,24,YU
-22:00:00,Monday,0,YU/BD
 22:41:00,Monday,22,YU
 22:47:00,Monday,0,YU
 22:54:00,Monday,0,YU
@@ -6697,7 +6601,6 @@ time,day,min_delay,line
 20:27:00,Tuesday,0,BD
 21:30:00,Tuesday,0,YU
 21:50:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:19:00,Tuesday,0,YU
 22:29:00,Tuesday,5,BD
 22:41:00,Tuesday,0,BD
@@ -6782,7 +6685,6 @@ time,day,min_delay,line
 20:44:00,Wednesday,29,YU
 20:49:00,Wednesday,0,YU
 21:03:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:01:00,Wednesday,0,YU
 22:07:00,Wednesday,0,YU
 22:33:00,Wednesday,0,YU
@@ -6877,7 +6779,6 @@ time,day,min_delay,line
 21:14:00,Thursday,0,YU
 21:53:00,Thursday,5,YU
 21:58:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:24:00,Thursday,0,BD
 22:42:00,Thursday,16,BD
 22:51:00,Thursday,0,BD
@@ -6909,7 +6810,6 @@ time,day,min_delay,line
 05:20:00,Friday,0,YU
 05:53:00,Friday,5,YU
 05:56:00,Friday,6,YU
-06:00:00,Friday,0,YU/BD
 06:11:00,Friday,3,BD
 06:13:00,Friday,35,YU
 06:36:00,Friday,0,YU
@@ -6966,7 +6866,6 @@ time,day,min_delay,line
 19:54:00,Friday,0,BD
 19:56:00,Friday,0,BD
 20:05:00,Friday,4,BD
-22:00:00,Friday,0,YU/BD
 22:23:00,Friday,17,BD
 22:59:00,Friday,0,YU
 23:02:00,Friday,0,YU
@@ -7025,7 +6924,6 @@ time,day,min_delay,line
 20:12:00,Saturday,3,YU
 20:33:00,Saturday,0,YU
 21:52:00,Saturday,0,YU
-22:00:00,Saturday,0,YU / BD
 22:07:00,Saturday,3,YU
 22:10:00,Saturday,0,YU
 23:26:00,Saturday,6,YU
@@ -7079,7 +6977,6 @@ time,day,min_delay,line
 20:58:00,Sunday,0,BD
 21:06:00,Sunday,0,BD
 21:44:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:13:00,Sunday,5,BD
 22:25:00,Sunday,0,YU
 22:26:00,Sunday,0,YU
@@ -7151,7 +7048,6 @@ time,day,min_delay,line
 21:24:00,Monday,0,YU
 21:36:00,Monday,0,YU
 21:53:00,Monday,4,YU
-22:00:00,Monday,0,YU/BD
 22:41:00,Monday,3,YU
 22:56:00,Monday,0,YU
 23:00:00,Monday,0,BD
@@ -7246,7 +7142,6 @@ time,day,min_delay,line
 20:53:00,Tuesday,0,BD
 21:29:00,Tuesday,0,BD
 21:35:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:12:00,Tuesday,0,BD
 22:24:00,Tuesday,5,YU
 22:37:00,Tuesday,0,YU
@@ -7341,7 +7236,6 @@ time,day,min_delay,line
 20:53:00,Wednesday,3,YU
 21:37:00,Wednesday,0,YU
 21:42:00,Wednesday,4,YU
-22:00:00,Wednesday,0,YU/BD
 22:19:00,Wednesday,0,YU
 22:38:00,Wednesday,4,BD
 22:43:00,Wednesday,0,BD
@@ -7418,7 +7312,6 @@ time,day,min_delay,line
 21:19:00,Thursday,6,YU
 21:24:00,Thursday,0,YU
 21:48:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:06:00,Thursday,9,BD
 22:12:00,Thursday,0,YU
 22:16:00,Thursday,0,YU
@@ -7505,7 +7398,6 @@ time,day,min_delay,line
 21:23:00,Friday,0,YU
 21:34:00,Friday,8,BD
 21:35:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:04:00,Friday,0,YU
 22:47:00,Friday,0,BD
 22:56:00,Friday,0,BD
@@ -7579,7 +7471,6 @@ time,day,min_delay,line
 21:11:00,Saturday,5,BD
 21:41:00,Saturday,0,BD
 21:47:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:26:00,Saturday,3,BD
 22:52:00,Saturday,0,YU
 23:01:00,Saturday,4,BD
@@ -7631,7 +7522,6 @@ time,day,min_delay,line
 21:30:00,Sunday,5,YU
 21:37:00,Sunday,5,BD
 21:39:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:08:00,Sunday,0,BD
 22:10:00,Sunday,0,YU
 23:17:00,Sunday,0,BD
@@ -7693,7 +7583,6 @@ time,day,min_delay,line
 20:35:00,Monday,0,YU
 20:56:00,Monday,8,BD
 21:18:00,Monday,30,BD
-22:00:00,Monday,0,YU/BD
 22:14:00,Monday,0,YU
 22:26:00,Monday,0,YU
 22:55:00,Monday,0,YU
@@ -7727,7 +7616,6 @@ time,day,min_delay,line
 10:31:00,Tuesday,4,YU
 10:35:00,Tuesday,0,YU
 10:47:00,Tuesday,0,YU
-11:01:00,Tuesday,0,SRT
 11:18:00,Tuesday,5,YU
 11:48:00,Tuesday,4,YU
 12:18:00,Tuesday,3,BD
@@ -7773,7 +7661,6 @@ time,day,min_delay,line
 21:36:00,Tuesday,0,YU
 21:41:00,Tuesday,3,YU
 21:46:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:19:00,Tuesday,0,YU
 22:25:00,Tuesday,0,BD
 22:29:00,Tuesday,0,YU
@@ -7855,10 +7742,9 @@ time,day,min_delay,line
 20:16:00,Wednesday,8,YU
 20:41:00,Wednesday,0,YU
 21:43:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:07:00,Wednesday,0,BD
 22:33:00,Wednesday,0,YU
-22:46:00,Wednesday,5,YUS
+22:46:00,Wednesday,5,YU
 23:00:00,Wednesday,0,BD
 23:08:00,Wednesday,7,YU
 23:14:00,Wednesday,0,BD
@@ -7954,11 +7840,9 @@ time,day,min_delay,line
 19:15:00,Thursday,0,BD
 20:48:00,Thursday,0,BD
 21:54:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:05:00,Thursday,0,BD
 22:26:00,Thursday,0,BD
 22:26:00,Thursday,0,YU
-23:00:00,Thursday,0,YUS/BD
 23:09:00,Thursday,0,YU
 23:22:00,Thursday,0,YU
 23:23:00,Thursday,0,YU
@@ -8023,7 +7907,6 @@ time,day,min_delay,line
 21:11:00,Friday,0,YU
 21:34:00,Friday,0,YU
 21:39:00,Friday,28,BD
-22:00:00,Friday,0,YU/BD
 22:13:00,Friday,0,YU
 22:24:00,Friday,7,YU
 22:38:00,Friday,0,BD
@@ -8106,7 +7989,6 @@ time,day,min_delay,line
 21:44:00,Saturday,0,YU
 21:48:00,Saturday,0,YU
 21:55:00,Saturday,3,YU
-22:00:00,Saturday,0,YU/ BD
 22:09:00,Saturday,7,YU
 22:52:00,Saturday,0,BD
 23:33:00,Saturday,0,YU
@@ -8142,7 +8024,6 @@ time,day,min_delay,line
 11:11:00,Sunday,0,BD
 11:11:00,Sunday,14,YU
 11:25:00,Sunday,0,YU
-11:37:00,Sunday,0,SHEP
 11:45:00,Sunday,0,BD
 11:47:00,Sunday,0,YU
 12:04:00,Sunday,0,BD
@@ -8170,7 +8051,6 @@ time,day,min_delay,line
 20:08:00,Sunday,0,YU
 21:19:00,Sunday,0,BD
 21:26:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/ BD
 22:48:00,Sunday,0,BD
 22:50:00,Sunday,20,BD
 23:41:00,Sunday,9,YU
@@ -8223,8 +8103,6 @@ time,day,min_delay,line
 21:05:00,Monday,0,BD
 21:19:00,Monday,9,YU
 21:26:00,Monday,62,BD
-22:00:00,Monday,0,YU/BD
-22:00:00,Monday,0,YU/ BD
 22:09:00,Monday,0,YU
 22:27:00,Monday,0,BD
 22:28:00,Monday,0,YU
@@ -8299,7 +8177,6 @@ time,day,min_delay,line
 21:39:00,Tuesday,3,BD
 21:51:00,Tuesday,36,BD
 21:54:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:39:00,Tuesday,0,BD
 23:02:00,Tuesday,0,YU
 23:13:00,Tuesday,0,YU
@@ -8322,7 +8199,6 @@ time,day,min_delay,line
 05:49:00,Wednesday,0,BD
 05:56:00,Wednesday,5,BD
 05:57:00,Wednesday,4,YU
-06:00:00,Wednesday,0,YUS/BD
 06:13:00,Wednesday,0,BD
 06:20:00,Wednesday,12,BD
 07:33:00,Wednesday,3,BD
@@ -8387,7 +8263,6 @@ time,day,min_delay,line
 21:12:00,Wednesday,4,YU
 21:25:00,Wednesday,4,YU
 21:28:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/ BD
 22:01:00,Wednesday,4,YU
 22:13:00,Wednesday,0,BD
 22:13:00,Wednesday,0,YU
@@ -8460,7 +8335,6 @@ time,day,min_delay,line
 21:18:00,Thursday,5,YU
 21:19:00,Thursday,0,BD
 21:49:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:21:00,Thursday,0,YU
 22:27:00,Thursday,0,BD
 22:45:00,Thursday,22,YU
@@ -8536,7 +8410,6 @@ time,day,min_delay,line
 20:43:00,Friday,0,YU
 20:50:00,Friday,5,BD
 21:25:00,Friday,0,BD
-22:00:00,Friday,0,YU/BD
 22:18:00,Friday,5,YU
 23:46:00,Friday,0,YU
 00:17:00,Friday,0,YU
@@ -8587,7 +8460,6 @@ time,day,min_delay,line
 21:31:00,Saturday,4,YU
 21:37:00,Saturday,0,YU
 21:48:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/ BD
 23:09:00,Saturday,0,YU
 23:27:00,Saturday,0,YU
 23:29:00,Saturday,0,YU
@@ -8627,7 +8499,6 @@ time,day,min_delay,line
 19:40:00,Sunday,0,YU
 19:56:00,Sunday,18,YU
 21:09:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:07:00,Sunday,0,YU
 22:17:00,Sunday,0,BD
 22:48:00,Sunday,0,BD
@@ -8708,7 +8579,6 @@ time,day,min_delay,line
 21:08:00,Monday,0,BD
 21:43:00,Monday,0,YU
 21:50:00,Monday,5,BD
-22:00:00,Monday,0,YU / BD
 22:11:00,Monday,0,BD
 22:47:00,Monday,8,YU
 23:00:00,Monday,0,YU
@@ -8800,7 +8670,6 @@ time,day,min_delay,line
 21:44:00,Tuesday,0,BD
 21:48:00,Tuesday,5,BD
 21:51:00,Tuesday,11,BD
-22:00:00,Tuesday,0,YU/BD
 23:00:00,Tuesday,0,YU
 23:00:00,Tuesday,0,YU
 00:12:00,Tuesday,0,BD
@@ -8885,7 +8754,6 @@ time,day,min_delay,line
 21:16:00,Wednesday,0,YU
 21:29:00,Wednesday,0,BD
 21:48:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:16:00,Wednesday,0,BD
 22:22:00,Wednesday,0,BD
 22:57:00,Wednesday,0,YU
@@ -8971,7 +8839,6 @@ time,day,min_delay,line
 21:37:00,Thursday,0,BD
 21:41:00,Thursday,0,BD
 21:48:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:11:00,Thursday,29,BD
 22:14:00,Thursday,0,BD
 22:17:00,Thursday,0,BD
@@ -9074,7 +8941,6 @@ time,day,min_delay,line
 21:20:00,Friday,0,BD
 21:31:00,Friday,0,BD
 21:40:00,Friday,0,BD
-22:00:00,Friday,0,YU/BD
 22:22:00,Friday,0,YU
 22:45:00,Friday,0,BD
 23:04:00,Friday,4,YU
@@ -9154,7 +9020,6 @@ time,day,min_delay,line
 21:08:00,Saturday,4,YU
 21:25:00,Saturday,4,YU
 21:47:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/ BD
 22:07:00,Saturday,0,YU
 22:10:00,Saturday,0,YU
 22:14:00,Saturday,0,YU
@@ -9221,7 +9086,6 @@ time,day,min_delay,line
 19:35:00,Sunday,0,YU
 20:03:00,Sunday,5,BD
 21:50:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:13:00,Sunday,0,YU
 22:32:00,Sunday,0,BD
 22:42:00,Sunday,0,BD
@@ -9313,7 +9177,6 @@ time,day,min_delay,line
 21:09:00,Monday,0,BD
 21:44:00,Monday,0,YU
 21:57:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:10:00,Monday,5,YU
 22:18:00,Monday,0,BD
 22:47:00,Monday,0,YU
@@ -9390,11 +9253,9 @@ time,day,min_delay,line
 21:32:00,Tuesday,0,YU
 21:55:00,Tuesday,0,YU
 22:00:00,Tuesday,7,YU
-22:00:00,Tuesday,0,YU/BD
 22:09:00,Tuesday,10,BD
 22:28:00,Tuesday,0,BD
 22:54:00,Tuesday,7,YU
-23:00:00,Tuesday,0,LINE 1
 23:15:00,Tuesday,0,YU
 23:48:00,Tuesday,0,BD
 23:50:00,Tuesday,0,YU
@@ -9478,7 +9339,6 @@ time,day,min_delay,line
 20:26:00,Wednesday,0,YU
 20:44:00,Wednesday,0,YU
 21:50:00,Wednesday,4,YU
-22:00:00,Wednesday,0,YU/BD
 22:00:00,Wednesday,0,BD
 22:12:00,Wednesday,0,YU
 22:18:00,Wednesday,5,BD
@@ -9571,7 +9431,6 @@ time,day,min_delay,line
 19:24:00,Thursday,0,YU
 21:02:00,Thursday,7,YU
 21:15:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 23:00:00,Thursday,0,YU
 23:15:00,Thursday,0,BD
 00:22:00,Thursday,0,YU
@@ -9638,7 +9497,6 @@ time,day,min_delay,line
 21:06:00,Friday,0,YU
 21:46:00,Friday,0,BD
 21:55:00,Friday,0,BD
-22:00:00,Friday,0,YU/ BD
 22:03:00,Friday,6,YU
 22:15:00,Friday,0,YU
 22:49:00,Friday,7,YU
@@ -9717,7 +9575,6 @@ time,day,min_delay,line
 21:45:00,Saturday,0,YU
 21:54:00,Saturday,0,BD
 21:56:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:06:00,Saturday,0,YU
 22:14:00,Saturday,3,BD
 22:22:00,Saturday,3,YU
@@ -9780,7 +9637,6 @@ time,day,min_delay,line
 20:58:00,Sunday,0,BD
 21:48:00,Sunday,3,BD
 21:51:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:03:00,Sunday,0,YU
 22:06:00,Sunday,10,BD
 22:14:00,Sunday,6,YU
@@ -9886,7 +9742,6 @@ time,day,min_delay,line
 20:37:00,Monday,10,BD
 21:42:00,Monday,0,BD
 21:48:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:52:00,Monday,0,BD
 22:57:00,Monday,0,YU
 23:00:00,Monday,0,YU
@@ -9955,7 +9810,6 @@ time,day,min_delay,line
 20:30:00,Tuesday,0,YU
 21:15:00,Tuesday,0,YU
 21:52:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:04:00,Tuesday,0,BD
 22:24:00,Tuesday,0,BD
 22:26:00,Tuesday,0,BD
@@ -10066,7 +9920,6 @@ time,day,min_delay,line
 20:17:00,Wednesday,6,BD
 20:28:00,Wednesday,5,BD
 21:13:00,Wednesday,6,BD
-22:00:00,Wednesday,0,YU/BD
 22:08:00,Wednesday,10,YU
 22:37:00,Wednesday,8,YU
 23:00:00,Wednesday,0,YU
@@ -10139,7 +9992,6 @@ time,day,min_delay,line
 20:15:00,Thursday,0,YU
 21:21:00,Thursday,0,BD
 21:38:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:07:00,Thursday,0,BD
 22:09:00,Thursday,0,BD
 22:43:00,Thursday,6,BD
@@ -10153,7 +10005,6 @@ time,day,min_delay,line
 22:55:00,Thursday,3,SHP
 02:18:00,Friday,0,BD
 03:43:00,Friday,0,BD
-06:00:00,Friday,0,YU/BD
 06:20:00,Friday,3,BD
 06:25:00,Friday,0,YU
 06:31:00,Friday,0,BD
@@ -10203,7 +10054,6 @@ time,day,min_delay,line
 21:15:00,Friday,0,BD
 21:21:00,Friday,0,BD
 21:42:00,Friday,5,YU
-22:00:00,Friday,0,YU/BD
 22:30:00,Friday,32,BD
 22:46:00,Friday,0,YU
 22:50:00,Friday,0,YU
@@ -10281,7 +10131,6 @@ time,day,min_delay,line
 21:25:00,Saturday,3,BD
 21:35:00,Saturday,0,BD
 21:49:00,Saturday,17,YU
-22:00:00,Saturday,0,YU/ BD
 22:06:00,Saturday,0,YU
 22:15:00,Saturday,0,YU
 22:44:00,Saturday,18,BD
@@ -10327,7 +10176,6 @@ time,day,min_delay,line
 20:52:00,Sunday,7,YU
 20:58:00,Sunday,0,YU
 21:14:00,Sunday,0,YU
-22:00:00,Sunday,0,YUS/BD
 22:43:00,Sunday,0,BD
 22:43:00,Sunday,17,YU
 22:46:00,Sunday,10,BD
@@ -10382,7 +10230,6 @@ time,day,min_delay,line
 21:07:00,Monday,0,BD
 21:19:00,Monday,0,YU
 21:57:00,Monday,9,BD
-22:00:00,Monday,0,YU/BD
 22:26:00,Monday,0,BD
 22:29:00,Monday,0,BD
 22:38:00,Monday,0,BD
@@ -10445,7 +10292,6 @@ time,day,min_delay,line
 20:22:00,Tuesday,3,BD
 21:29:00,Tuesday,0,YU
 21:37:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:34:00,Tuesday,0,BD
 23:39:00,Tuesday,10,YU
 00:01:00,Tuesday,0,YU
@@ -10505,7 +10351,6 @@ time,day,min_delay,line
 20:36:00,Wednesday,0,BD
 21:07:00,Wednesday,0,YU
 21:23:00,Wednesday,18,BD
-22:00:00,Wednesday,0,YU/BD
 22:16:00,Wednesday,6,YU
 22:58:00,Wednesday,0,BD
 23:26:00,Wednesday,0,BD
@@ -10575,7 +10420,6 @@ time,day,min_delay,line
 21:30:00,Thursday,0,YU
 21:41:00,Thursday,0,YU
 21:57:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:16:00,Thursday,0,YU
 22:28:00,Thursday,5,BD
 22:29:00,Thursday,0,BD
@@ -10660,7 +10504,6 @@ time,day,min_delay,line
 20:18:00,Friday,0,YU
 20:35:00,Friday,26,BD
 21:40:00,Friday,22,BD
-22:00:00,Friday,0,YU/BD
 22:04:00,Friday,0,YU
 22:24:00,Friday,0,YU
 22:37:00,Friday,4,YU
@@ -10742,7 +10585,6 @@ time,day,min_delay,line
 21:16:00,Saturday,4,YU
 21:40:00,Saturday,4,YU
 21:44:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:10:00,Saturday,0,BD
 22:20:00,Saturday,10,BD
 22:26:00,Saturday,0,BD
@@ -10800,7 +10642,6 @@ time,day,min_delay,line
 21:01:00,Sunday,11,BD
 21:36:00,Sunday,5,YU
 21:54:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:15:00,Sunday,5,YU
 23:09:00,Sunday,0,YU
 23:37:00,Sunday,0,YU
@@ -10875,7 +10716,6 @@ time,day,min_delay,line
 21:07:00,Monday,0,BD
 21:11:00,Monday,0,BD
 21:29:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:46:00,Monday,0,YU
 23:00:00,Monday,0,YU
 23:22:00,Monday,0,YU
@@ -10959,7 +10799,6 @@ time,day,min_delay,line
 21:00:00,Tuesday,0,BD
 21:18:00,Tuesday,0,BD
 21:28:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:04:00,Tuesday,0,YU
 22:13:00,Tuesday,0,YU
 22:18:00,Tuesday,0,BD
@@ -11025,7 +10864,6 @@ time,day,min_delay,line
 20:59:00,Wednesday,0,YU
 21:49:00,Wednesday,5,YU
 21:55:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/ BD
 22:12:00,Wednesday,0,YU
 22:17:00,Wednesday,0,YU
 22:30:00,Wednesday,0,YU
@@ -11103,7 +10941,6 @@ time,day,min_delay,line
 21:20:00,Thursday,0,YU
 21:32:00,Thursday,0,YU
 21:48:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:26:00,Thursday,0,YU
 23:01:00,Thursday,0,YU
 23:16:00,Thursday,0,YU
@@ -11181,7 +11018,6 @@ time,day,min_delay,line
 21:05:00,Friday,8,YU
 21:38:00,Friday,5,YU
 21:55:00,Friday,0,YU
-22:00:00,Friday,0,YU/ BD
 22:11:00,Friday,4,YU
 22:13:00,Friday,0,BD
 22:32:00,Friday,12,BD
@@ -11239,7 +11075,6 @@ time,day,min_delay,line
 21:02:00,Saturday,3,YU
 21:05:00,Saturday,0,YU
 21:33:00,Saturday,6,BD
-22:00:00,Saturday,0,YU/BD
 22:48:00,Saturday,0,BD
 23:19:00,Saturday,0,YU
 23:46:00,Saturday,6,YU
@@ -11304,7 +11139,6 @@ time,day,min_delay,line
 21:24:00,Sunday,0,YU
 21:26:00,Sunday,0,BD
 21:30:00,Sunday,8,BD
-22:00:00,Sunday,0,YU/BD
 22:00:00,Sunday,0,BD
 22:22:00,Sunday,0,YU
 22:34:00,Sunday,0,YU
@@ -11378,7 +11212,6 @@ time,day,min_delay,line
 20:24:00,Monday,0,BD
 20:58:00,Monday,0,BD
 21:05:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:06:00,Monday,0,BD
 22:26:00,Monday,3,YU
 22:43:00,Monday,0,BD
@@ -11455,7 +11288,6 @@ time,day,min_delay,line
 19:34:00,Tuesday,8,BD
 19:41:00,Tuesday,0,YU
 19:59:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:11:00,Tuesday,14,YU
 23:00:00,Tuesday,0,YU
 23:45:00,Tuesday,0,BD
@@ -11517,7 +11349,6 @@ time,day,min_delay,line
 21:35:00,Wednesday,0,YU
 21:35:00,Wednesday,0,YU
 21:53:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/ BD
 22:13:00,Wednesday,4,YU
 22:34:00,Wednesday,0,YU
 23:00:00,Wednesday,0,YU
@@ -11587,7 +11418,6 @@ time,day,min_delay,line
 21:46:00,Thursday,0,YU
 21:55:00,Thursday,0,BD
 21:56:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:13:00,Thursday,5,BD
 22:19:00,Thursday,0,YU
 22:21:00,Thursday,3,YU
@@ -11660,7 +11490,6 @@ time,day,min_delay,line
 20:23:00,Friday,3,YU
 21:04:00,Friday,4,BD
 21:20:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:11:00,Friday,0,YU
 22:20:00,Friday,6,BD
 22:28:00,Friday,3,YU
@@ -11724,7 +11553,6 @@ time,day,min_delay,line
 21:11:00,Saturday,0,YU
 21:25:00,Saturday,3,YU
 21:43:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:24:00,Saturday,0,BD
 22:31:00,Saturday,0,YU
 22:41:00,Saturday,5,BD
@@ -11787,7 +11615,6 @@ time,day,min_delay,line
 21:40:00,Sunday,6,BD
 21:41:00,Sunday,0,YU
 21:47:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:10:00,Sunday,0,YU
 22:33:00,Sunday,5,BD
 22:52:00,Sunday,6,YU
@@ -11852,7 +11679,6 @@ time,day,min_delay,line
 20:45:00,Monday,7,BD
 21:05:00,Monday,0,YU
 21:58:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:35:00,Monday,0,YU
 22:42:00,Monday,0,YU
 22:49:00,Monday,0,YU
@@ -11909,7 +11735,6 @@ time,day,min_delay,line
 20:10:00,Tuesday,15,YU
 20:23:00,Tuesday,0,YU
 20:57:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:22:00,Tuesday,0,YU
 22:50:00,Tuesday,0,YU
 23:00:00,Tuesday,0,YU
@@ -11970,7 +11795,6 @@ time,day,min_delay,line
 20:03:00,Wednesday,0,YU
 21:30:00,Wednesday,5,YU
 21:49:00,Wednesday,6,BD
-22:00:00,Wednesday,0,YU/BD
 22:41:00,Wednesday,0,YU
 22:57:00,Wednesday,0,YU
 23:18:00,Wednesday,5,BD
@@ -12023,7 +11847,6 @@ time,day,min_delay,line
 19:38:00,Thursday,0,BD
 19:48:00,Thursday,0,YU
 20:20:00,Thursday,3,BD
-22:00:00,Thursday,0,YU/BD
 22:12:00,Thursday,0,YU
 22:38:00,Thursday,4,YU
 22:42:00,Thursday,3,BD
@@ -12078,7 +11901,6 @@ time,day,min_delay,line
 21:40:00,Friday,0,YU
 21:44:00,Friday,3,YU
 21:52:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:04:00,Friday,0,BD
 22:11:00,Friday,0,YU
 22:21:00,Friday,0,BD
@@ -12142,7 +11964,6 @@ time,day,min_delay,line
 20:07:00,Saturday,0,YU
 21:33:00,Saturday,0,BD
 21:59:00,Saturday,8,YU
-22:00:00,Saturday,0,YU/BD
 22:04:00,Saturday,5,YU
 22:07:00,Saturday,0,BD
 22:12:00,Saturday,0,YU
@@ -12188,7 +12009,6 @@ time,day,min_delay,line
 21:36:00,Sunday,4,YU
 21:48:00,Sunday,0,YU
 21:56:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:30:00,Sunday,0,YU
 23:07:00,Sunday,0,BD
 23:53:00,Sunday,0,YU
@@ -12234,7 +12054,6 @@ time,day,min_delay,line
 20:39:00,Monday,0,BD
 21:13:00,Monday,14,YU
 21:59:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:10:00,Monday,0,YU
 22:13:00,Monday,32,BD
 23:00:00,Monday,0,YU
@@ -12297,7 +12116,6 @@ time,day,min_delay,line
 21:05:00,Tuesday,0,YU
 21:24:00,Tuesday,6,YU
 21:33:00,Tuesday,18,YU
-22:00:00,Tuesday,0,YU/BD
 23:22:00,Tuesday,0,YU
 23:27:00,Tuesday,0,BD
 23:46:00,Tuesday,0,YU
@@ -12379,7 +12197,6 @@ time,day,min_delay,line
 21:31:00,Wednesday,0,YU
 21:39:00,Wednesday,0,YU
 21:58:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 23:00:00,Wednesday,0,YU
 23:00:00,Wednesday,0,YU
 23:39:00,Wednesday,0,BD
@@ -12459,7 +12276,6 @@ time,day,min_delay,line
 20:28:00,Thursday,0,YU
 20:33:00,Thursday,0,BD
 21:27:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:01:00,Thursday,0,BD
 22:16:00,Thursday,5,YU
 22:28:00,Thursday,0,YU
@@ -12523,7 +12339,6 @@ time,day,min_delay,line
 20:39:00,Friday,3,YU
 21:09:00,Friday,0,BD
 21:54:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:19:00,Friday,0,YU
 22:34:00,Friday,0,YU
 23:00:00,Friday,0,YU
@@ -12576,7 +12391,6 @@ time,day,min_delay,line
 20:05:00,Saturday,5,BD
 20:13:00,Saturday,0,YU
 21:16:00,Saturday,6,BD
-22:00:00,Saturday,0,YU/BD
 22:07:00,Saturday,0,BD
 22:21:00,Saturday,0,YU
 22:43:00,Saturday,0,YU
@@ -12633,7 +12447,6 @@ time,day,min_delay,line
 21:03:00,Sunday,0,BD
 21:18:00,Sunday,0,BD
 21:58:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:21:00,Sunday,0,BD
 00:46:00,Sunday,0,YU
 01:09:00,Sunday,10,YU
@@ -12706,7 +12519,6 @@ time,day,min_delay,line
 20:17:00,Monday,0,BD
 20:19:00,Monday,5,BD
 21:27:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:05:00,Monday,0,YU
 22:24:00,Monday,0,YU
 22:27:00,Monday,0,BD
@@ -12784,7 +12596,6 @@ time,day,min_delay,line
 21:44:00,Tuesday,0,BD
 21:48:00,Tuesday,0,YU
 21:56:00,Tuesday,10,BD
-22:00:00,Tuesday,0,YU/BD
 22:16:00,Tuesday,0,YU
 22:29:00,Tuesday,0,BD
 23:00:00,Tuesday,0,YU
@@ -12826,7 +12637,7 @@ time,day,min_delay,line
 13:11:00,Wednesday,0,BD
 13:13:00,Wednesday,0,YU
 13:21:00,Wednesday,0,BD
-13:38:00,Wednesday,0,YUS
+13:38:00,Wednesday,0,YU
 14:20:00,Wednesday,9,YU
 14:21:00,Wednesday,0,YU
 14:36:00,Wednesday,3,YU
@@ -12857,7 +12668,6 @@ time,day,min_delay,line
 20:11:00,Wednesday,0,BD
 20:58:00,Wednesday,0,BD
 21:41:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:17:00,Wednesday,0,YU
 22:20:00,Wednesday,11,YU
 22:26:00,Wednesday,0,YU
@@ -12932,7 +12742,6 @@ time,day,min_delay,line
 20:27:00,Thursday,0,YU
 20:42:00,Thursday,5,YU
 21:57:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:07:00,Thursday,8,YU
 22:33:00,Thursday,0,YU
 22:52:00,Thursday,8,YU
@@ -12987,7 +12796,6 @@ time,day,min_delay,line
 19:23:00,Friday,0,BD
 19:57:00,Friday,3,YU
 20:23:00,Friday,0,BD
-22:00:00,Friday,0,YU/BD
 22:22:00,Friday,0,YU
 22:53:00,Friday,3,YU
 23:02:00,Friday,7,YU
@@ -13048,7 +12856,6 @@ time,day,min_delay,line
 20:44:00,Saturday,0,YU
 20:58:00,Saturday,0,YU
 21:40:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:02:00,Saturday,0,YU
 22:28:00,Saturday,4,YU
 22:48:00,Saturday,3,YU
@@ -13112,7 +12919,6 @@ time,day,min_delay,line
 20:27:00,Sunday,0,YU
 20:35:00,Sunday,0,BD
 20:44:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:01:00,Sunday,10,BD
 22:11:00,Sunday,0,BD
 22:12:00,Sunday,0,YU
@@ -13171,7 +12977,6 @@ time,day,min_delay,line
 21:22:00,Monday,5,YU
 21:30:00,Monday,0,BD
 21:41:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:27:00,Monday,0,BD
 23:16:00,Monday,5,YU
 23:56:00,Monday,0,YU
@@ -13225,7 +13030,6 @@ time,day,min_delay,line
 21:05:00,Tuesday,3,YU
 21:46:00,Tuesday,0,BD
 21:56:00,Tuesday,29,YU
-22:00:00,Tuesday,0,YU/BD
 22:10:00,Tuesday,4,YU
 22:17:00,Tuesday,10,YU
 22:29:00,Tuesday,0,YU
@@ -13291,7 +13095,6 @@ time,day,min_delay,line
 21:22:00,Wednesday,5,BD
 21:32:00,Wednesday,3,YU
 21:49:00,Wednesday,5,YU
-22:00:00,Wednesday,0,YU/BD
 22:17:00,Wednesday,0,YU
 22:33:00,Wednesday,7,YU
 23:07:00,Wednesday,0,BD
@@ -13349,8 +13152,6 @@ time,day,min_delay,line
 21:15:00,Thursday,7,YU
 21:29:00,Thursday,4,YU
 21:52:00,Thursday,4,YU
-22:00:00,Thursday,0,YU/BD
-22:00:00,Thursday,0,TRACK LEVEL ACTIVITY
 22:34:00,Thursday,0,YU
 23:44:00,Thursday,0,YU
 01:03:00,Thursday,5,BD
@@ -13405,7 +13206,6 @@ time,day,min_delay,line
 20:58:00,Friday,3,BD
 21:29:00,Friday,0,BD
 21:38:00,Friday,7,YU
-22:00:00,Friday,0,YU/BD
 23:03:00,Friday,3,BD
 23:27:00,Friday,0,YU
 23:34:00,Friday,3,BD
@@ -13465,7 +13265,6 @@ time,day,min_delay,line
 21:22:00,Saturday,0,BD
 21:31:00,Saturday,0,YU
 21:42:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 00:11:00,Saturday,6,YU
 19:36:00,Saturday,0,SHP
 02:07:00,Sunday,0,BD
@@ -13517,7 +13316,6 @@ time,day,min_delay,line
 21:00:00,Sunday,0,YU
 21:34:00,Sunday,0,BD
 21:46:00,Sunday,0,YU
-22:00:00,Sunday,0,YU & BD
 22:12:00,Sunday,0,BD
 22:15:00,Sunday,0,BD
 22:37:00,Sunday,0,BD
@@ -13575,7 +13373,6 @@ time,day,min_delay,line
 21:13:00,Monday,7,YU
 21:16:00,Monday,24,YU
 21:31:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 23:13:00,Monday,0,BD
 23:29:00,Monday,0,BD
 23:38:00,Monday,0,BD
@@ -13651,7 +13448,6 @@ time,day,min_delay,line
 19:18:00,Tuesday,3,YU
 19:59:00,Tuesday,9,YU
 20:39:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:04:00,Tuesday,0,BD
 22:13:00,Tuesday,0,BD
 22:21:00,Tuesday,6,YU
@@ -13728,7 +13524,6 @@ time,day,min_delay,line
 21:21:00,Wednesday,0,BD
 21:32:00,Wednesday,0,YU
 21:51:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU & BD
 22:26:00,Wednesday,0,YU
 22:41:00,Wednesday,4,YU
 22:42:00,Wednesday,0,BD
@@ -13800,7 +13595,6 @@ time,day,min_delay,line
 20:37:00,Thursday,0,YU
 20:40:00,Thursday,0,BD
 20:55:00,Thursday,6,YU
-22:00:00,Thursday,0,YUS/BD
 22:18:00,Thursday,7,BD
 22:21:00,Thursday,4,YU
 22:30:00,Thursday,0,BD
@@ -13867,9 +13661,7 @@ time,day,min_delay,line
 20:10:00,Friday,0,YU
 20:13:00,Friday,3,YU
 20:15:00,Friday,3,BD
-20:20:00,Friday,25,109 RANEE
 20:40:00,Friday,0,YU
-22:00:00,Friday,0,ONGE-UNIVERSITY AND BL
 22:22:00,Friday,0,BD
 22:40:00,Friday,15,BD
 23:18:00,Friday,0,YU
@@ -13928,7 +13720,6 @@ time,day,min_delay,line
 20:15:00,Saturday,0,BD
 20:27:00,Saturday,0,YU
 21:43:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:15:00,Saturday,0,BD
 22:35:00,Saturday,0,YU
 22:39:00,Saturday,0,BD
@@ -13990,7 +13781,6 @@ time,day,min_delay,line
 21:27:00,Sunday,0,YU
 21:29:00,Sunday,0,YU
 21:58:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:01:00,Sunday,0,YU
 22:05:00,Sunday,0,YU
 22:27:00,Sunday,0,YU
@@ -14079,7 +13869,6 @@ time,day,min_delay,line
 20:56:00,Monday,0,YU
 20:58:00,Monday,4,YU
 21:33:00,Monday,6,BD
-22:00:00,Monday,0,YU/ BD
 22:00:00,Monday,10,BD
 22:03:00,Monday,7,YU
 23:13:00,Monday,0,YU
@@ -14161,7 +13950,6 @@ time,day,min_delay,line
 21:26:00,Tuesday,0,YU
 21:29:00,Tuesday,3,YU
 21:38:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:11:00,Tuesday,0,BD
 22:30:00,Tuesday,0,BD
 22:33:00,Tuesday,0,YU
@@ -14221,7 +14009,6 @@ time,day,min_delay,line
 20:44:00,Wednesday,4,BD
 21:15:00,Wednesday,0,BD
 21:42:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:10:00,Wednesday,0,YU
 22:16:00,Wednesday,5,BD
 22:31:00,Wednesday,0,YU
@@ -14292,7 +14079,6 @@ time,day,min_delay,line
 20:41:00,Thursday,5,BD
 21:03:00,Thursday,0,YU
 21:08:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:22:00,Thursday,0,YU
 22:28:00,Thursday,0,YU
 22:36:00,Thursday,0,BD
@@ -14344,7 +14130,6 @@ time,day,min_delay,line
 20:38:00,Friday,16,YU
 20:39:00,Friday,0,BD
 21:09:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:13:00,Friday,0,YU
 22:19:00,Friday,15,BD
 22:22:00,Friday,0,BD
@@ -14395,7 +14180,6 @@ time,day,min_delay,line
 20:43:00,Saturday,0,BD
 21:23:00,Saturday,0,YU
 21:45:00,Saturday,5,BD
-22:00:00,Saturday,0,YU/BD
 22:13:00,Saturday,10,YU
 22:18:00,Saturday,5,YU
 23:14:00,Saturday,0,BD
@@ -14453,7 +14237,6 @@ time,day,min_delay,line
 21:35:00,Sunday,7,YU
 21:42:00,Sunday,0,YU
 21:48:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:10:00,Sunday,0,YU
 22:41:00,Sunday,3,BD
 23:09:00,Sunday,0,YU
@@ -14523,8 +14306,6 @@ time,day,min_delay,line
 21:26:00,Monday,0,BD
 21:29:00,Monday,0,YU
 21:55:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
-22:00:00,Monday,0,YU/BD
 22:18:00,Monday,0,BD
 22:32:00,Monday,0,YU
 22:56:00,Monday,0,YU
@@ -14604,7 +14385,6 @@ time,day,min_delay,line
 21:25:00,Tuesday,0,BD
 21:35:00,Tuesday,0,BD
 21:48:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:03:00,Tuesday,0,YU
 22:12:00,Tuesday,5,BD
 22:30:00,Tuesday,0,BD
@@ -14689,7 +14469,6 @@ time,day,min_delay,line
 19:07:00,Wednesday,5,YU
 20:22:00,Wednesday,4,BD
 22:00:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:34:00,Wednesday,3,YU
 23:18:00,Wednesday,3,BD
 23:49:00,Wednesday,5,YU
@@ -14759,7 +14538,6 @@ time,day,min_delay,line
 21:26:00,Thursday,3,BD
 21:42:00,Thursday,0,BD
 21:56:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:03:00,Thursday,0,YU
 22:26:00,Thursday,0,BD
 22:46:00,Thursday,0,BD
@@ -14826,7 +14604,6 @@ time,day,min_delay,line
 19:43:00,Friday,0,BD
 19:54:00,Friday,0,BD
 21:39:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:12:00,Friday,0,YU
 22:29:00,Friday,22,YU
 22:37:00,Friday,8,YU
@@ -14896,7 +14673,6 @@ time,day,min_delay,line
 21:04:00,Saturday,0,YU
 21:13:00,Saturday,0,YU
 21:45:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:28:00,Saturday,0,YU
 23:02:00,Saturday,0,YU
 23:28:00,Saturday,0,BD
@@ -14943,7 +14719,6 @@ time,day,min_delay,line
 20:30:00,Sunday,0,YU
 21:28:00,Sunday,6,YU
 21:41:00,Sunday,5,YU
-22:00:00,Sunday,0,YU & BD
 22:44:00,Sunday,0,YU
 22:56:00,Sunday,0,YU
 23:44:00,Sunday,0,BD
@@ -15008,7 +14783,6 @@ time,day,min_delay,line
 21:03:00,Monday,0,BD
 21:07:00,Monday,0,BD
 21:56:00,Monday,0,YU
-22:00:00,Monday,0,YU & BD
 22:20:00,Monday,0,BD
 22:34:00,Monday,3,BD
 22:37:00,Monday,0,BD
@@ -15082,7 +14856,6 @@ time,day,min_delay,line
 20:56:00,Tuesday,0,YU
 21:23:00,Tuesday,0,YU
 21:42:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:02:00,Tuesday,0,BD
 22:22:00,Tuesday,14,BD
 23:00:00,Tuesday,0,YU
@@ -15158,7 +14931,6 @@ time,day,min_delay,line
 20:55:00,Wednesday,0,BD
 21:28:00,Wednesday,3,YU
 21:33:00,Wednesday,9,YU
-22:00:00,Wednesday,0,YU/BD
 22:04:00,Wednesday,13,YU
 22:37:00,Wednesday,10,YU
 22:41:00,Wednesday,6,BD
@@ -15231,7 +15003,6 @@ time,day,min_delay,line
 20:36:00,Thursday,0,BD
 20:36:00,Thursday,14,YU
 21:07:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:31:00,Thursday,0,YU
 22:31:00,Thursday,0,BD
 23:00:00,Thursday,0,YU
@@ -15321,7 +15092,6 @@ time,day,min_delay,line
 21:16:00,Friday,5,YU
 21:42:00,Friday,0,YU
 21:52:00,Friday,0,BD
-22:00:00,Friday,0,YU/BD
 22:03:00,Friday,0,YU
 22:25:00,Friday,0,BD
 22:57:00,Friday,5,YU
@@ -15391,7 +15161,6 @@ time,day,min_delay,line
 21:18:00,Saturday,0,BD
 21:42:00,Saturday,6,BD
 21:51:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:02:00,Saturday,18,YU
 22:07:00,Saturday,17,YU
 22:12:00,Saturday,5,YU
@@ -15608,7 +15377,6 @@ time,day,min_delay,line
 20:48:00,Tuesday,0,BD
 21:06:00,Tuesday,0,BD
 21:40:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:17:00,Tuesday,0,BD
 22:18:00,Tuesday,0,BD
 22:27:00,Tuesday,0,BD
@@ -15635,7 +15403,6 @@ time,day,min_delay,line
 05:30:00,Wednesday,0,YU
 05:49:00,Wednesday,0,YU
 05:49:00,Wednesday,7,BD
-06:00:00,Wednesday,0,YU/BD
 06:12:00,Wednesday,0,BD
 06:23:00,Wednesday,13,YU
 06:36:00,Wednesday,0,YU
@@ -15693,7 +15460,6 @@ time,day,min_delay,line
 21:07:00,Wednesday,0,YU
 21:42:00,Wednesday,0,BD
 21:58:00,Wednesday,4,BD
-22:00:00,Wednesday,0,YU/BD
 22:34:00,Wednesday,9,YU
 22:59:00,Wednesday,0,YU
 23:00:00,Wednesday,0,YU
@@ -15772,7 +15538,6 @@ time,day,min_delay,line
 21:04:00,Thursday,0,BD
 21:24:00,Thursday,0,BD
 21:37:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:41:00,Thursday,4,YU
 22:43:00,Thursday,0,BD
 23:00:00,Thursday,0,YU
@@ -15870,7 +15635,6 @@ time,day,min_delay,line
 21:27:00,Friday,6,YU
 21:54:00,Friday,0,BD
 21:55:00,Friday,0,BD
-22:00:00,Friday,0,YU/BD
 22:13:00,Friday,0,YU
 22:36:00,Friday,14,YU
 22:43:00,Friday,4,YU
@@ -15938,7 +15702,6 @@ time,day,min_delay,line
 21:38:00,Saturday,0,BD
 21:50:00,Saturday,0,YU
 21:50:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:13:00,Saturday,0,YU
 22:32:00,Saturday,0,YU
 22:56:00,Saturday,0,BD
@@ -15977,7 +15740,6 @@ time,day,min_delay,line
 19:43:00,Sunday,6,YU
 20:26:00,Sunday,0,YU
 21:11:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:06:00,Sunday,4,BD
 22:08:00,Sunday,11,YU
 22:28:00,Sunday,6,BD
@@ -16051,7 +15813,6 @@ time,day,min_delay,line
 20:37:00,Monday,13,YU
 20:46:00,Monday,0,YU
 21:52:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:29:00,Monday,0,YU
 22:30:00,Monday,0,BD
 23:49:00,Monday,30,YU
@@ -16133,7 +15894,6 @@ time,day,min_delay,line
 20:49:00,Tuesday,0,BD
 20:52:00,Tuesday,0,BD
 21:59:00,Tuesday,0,YU
-22:03:00,Tuesday,0,YU/BD
 22:05:00,Tuesday,0,BD
 22:18:00,Tuesday,4,YU
 22:27:00,Tuesday,5,BD
@@ -16234,7 +15994,6 @@ time,day,min_delay,line
 21:40:00,Wednesday,0,YU
 21:52:00,Wednesday,0,BD
 21:52:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:26:00,Wednesday,0,YU
 22:29:00,Wednesday,12,YU
 23:00:00,Wednesday,0,YU
@@ -16306,7 +16065,6 @@ time,day,min_delay,line
 21:20:00,Thursday,0,YU
 21:44:00,Thursday,0,YU
 21:53:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:30:00,Thursday,0,YU
 22:47:00,Thursday,0,BD
 23:28:00,Thursday,10,BD
@@ -16448,13 +16206,12 @@ time,day,min_delay,line
 21:15:00,Saturday,0,BD
 21:26:00,Saturday,0,YU
 21:32:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:05:00,Saturday,25,YU
 22:45:00,Saturday,9,YU
 00:49:00,Saturday,0,BD
 01:33:00,Saturday,0,YU
 01:43:00,Saturday,7,BD
-01:47:00,Saturday,0,YUS
+01:47:00,Saturday,0,YU
 22:23:00,Saturday,0,SHP
 02:02:00,Sunday,0,BD
 02:03:00,Sunday,3,YU
@@ -16491,7 +16248,6 @@ time,day,min_delay,line
 19:14:00,Sunday,0,BD
 19:17:00,Sunday,0,BD
 20:45:00,Sunday,23,YU
-22:00:00,Sunday,0,YU/BD
 23:51:00,Sunday,0,BD
 00:05:00,Sunday,0,YU
 00:53:00,Sunday,0,BD
@@ -16569,7 +16325,6 @@ time,day,min_delay,line
 21:21:00,Monday,0,YU
 21:36:00,Monday,11,BD
 21:55:00,Monday,24,YU
-22:00:00,Monday,0,YU/BD
 22:00:00,Monday,0,BD
 22:11:00,Monday,0,BD
 22:15:00,Monday,0,BD
@@ -16646,7 +16401,6 @@ time,day,min_delay,line
 21:06:00,Tuesday,0,BD
 21:30:00,Tuesday,6,YU
 21:32:00,Tuesday,5,YU
-22:00:00,Tuesday,0,YU/BD
 23:06:00,Tuesday,0,YU
 23:52:00,Tuesday,0,YU
 23:59:00,Tuesday,0,YU
@@ -16725,7 +16479,6 @@ time,day,min_delay,line
 21:13:00,Wednesday,0,BD
 21:27:00,Wednesday,0,BD
 21:58:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:38:00,Wednesday,0,BD
 22:52:00,Wednesday,0,BD
 22:53:00,Wednesday,0,BD
@@ -16797,7 +16550,6 @@ time,day,min_delay,line
 21:35:00,Thursday,0,YU
 21:56:00,Thursday,0,YU
 21:59:00,Thursday,5,YU
-22:00:00,Thursday,0,YU/BD
 22:11:00,Thursday,4,BD
 22:47:00,Thursday,6,BD
 22:52:00,Thursday,0,YU
@@ -16890,7 +16642,6 @@ time,day,min_delay,line
 20:01:00,Friday,42,BD
 20:15:00,Friday,4,BD
 21:38:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:04:00,Friday,0,BD
 22:07:00,Friday,5,BD
 22:07:00,Friday,0,YU
@@ -16952,7 +16703,6 @@ time,day,min_delay,line
 20:16:00,Saturday,0,BD
 21:37:00,Saturday,0,YU
 21:40:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 23:21:00,Saturday,7,YU
 23:48:00,Saturday,0,BD
 23:55:00,Saturday,0,BD
@@ -17017,7 +16767,6 @@ time,day,min_delay,line
 19:56:00,Sunday,0,BD
 20:12:00,Sunday,6,YU
 21:53:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:28:00,Sunday,4,YU
 22:46:00,Sunday,0,BD
 22:50:00,Sunday,3,YU
@@ -17085,7 +16834,6 @@ time,day,min_delay,line
 20:31:00,Monday,14,BD
 20:45:00,Monday,0,YU
 21:47:00,Monday,28,YU
-22:00:00,Monday,0,YU/BD
 22:16:00,Monday,5,YU
 23:00:00,Monday,4,YU
 23:02:00,Monday,3,BD
@@ -17093,7 +16841,7 @@ time,day,min_delay,line
 23:27:00,Monday,0,BD
 23:40:00,Monday,0,BD
 23:47:00,Monday,0,YU
-23:59:00,Monday,0,YUS
+23:59:00,Monday,0,YU
 00:14:00,Monday,0,BD
 00:17:00,Monday,0,BD
 00:35:00,Monday,0,BD
@@ -17171,7 +16919,6 @@ time,day,min_delay,line
 19:38:00,Tuesday,5,YU
 20:41:00,Tuesday,0,BD
 21:07:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:12:00,Tuesday,0,YU
 23:01:00,Tuesday,0,YU
 23:12:00,Tuesday,0,BD
@@ -17243,7 +16990,6 @@ time,day,min_delay,line
 21:07:00,Wednesday,17,BD
 21:31:00,Wednesday,0,YU
 21:40:00,Wednesday,6,YU
-22:00:00,Wednesday,0,YU/BD
 23:13:00,Wednesday,0,BD
 23:21:00,Wednesday,0,BD
 23:34:00,Wednesday,33,BD
@@ -17271,7 +17017,6 @@ time,day,min_delay,line
 11:43:00,Thursday,11,YU
 11:49:00,Thursday,0,YU
 12:04:00,Thursday,4,BD
-12:09:00,Thursday,0,YU/BD/SHP
 12:38:00,Thursday,0,BD
 13:03:00,Thursday,16,YU
 13:57:00,Thursday,7,BD
@@ -17310,7 +17055,6 @@ time,day,min_delay,line
 21:44:00,Thursday,0,BD
 21:48:00,Thursday,0,BD
 21:59:00,Thursday,0,YU
-22:00:00,Thursday,0,YUS/BD
 23:25:00,Thursday,0,YU
 23:31:00,Thursday,0,YU
 23:43:00,Thursday,0,YU
@@ -17382,7 +17126,6 @@ time,day,min_delay,line
 21:47:00,Friday,5,YU
 21:51:00,Friday,0,BD
 21:56:00,Friday,5,BD
-22:00:00,Friday,0,YU/BD
 22:02:00,Friday,10,YU
 22:12:00,Friday,0,YU
 22:50:00,Friday,0,YU
@@ -17474,7 +17217,6 @@ time,day,min_delay,line
 21:27:00,Saturday,4,BD
 21:31:00,Saturday,0,BD
 21:41:00,Saturday,7,YU
-22:00:00,Saturday,0,YU/BD
 22:15:00,Saturday,0,YU
 22:47:00,Saturday,0,YU
 22:52:00,Saturday,0,YU
@@ -17535,7 +17277,6 @@ time,day,min_delay,line
 21:37:00,Sunday,5,BD
 21:44:00,Sunday,3,BD
 21:57:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:42:00,Sunday,6,YU
 22:54:00,Sunday,3,BD
 23:20:00,Sunday,3,YU
@@ -17594,7 +17335,6 @@ time,day,min_delay,line
 21:11:00,Monday,0,YU
 21:30:00,Monday,0,YU
 21:53:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 00:12:00,Monday,0,BD
 00:16:00,Monday,0,BD
 00:59:00,Monday,0,BD
@@ -17669,7 +17409,6 @@ time,day,min_delay,line
 21:02:00,Tuesday,0,BD
 21:44:00,Tuesday,0,BD
 21:52:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:20:00,Tuesday,0,YU
 23:00:00,Tuesday,0,YU
 23:17:00,Tuesday,0,YU
@@ -17690,7 +17429,6 @@ time,day,min_delay,line
 02:28:00,Wednesday,0,BD
 02:57:00,Wednesday,0,YU
 03:21:00,Wednesday,0,BD
-05:00:00,Wednesday,0,YU/BD
 06:01:00,Wednesday,8,YU
 06:02:00,Wednesday,3,YU
 06:12:00,Wednesday,5,BD
@@ -17815,7 +17553,6 @@ time,day,min_delay,line
 19:52:00,Thursday,0,BD
 19:59:00,Thursday,5,YU
 21:46:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:02:00,Thursday,0,YU
 22:19:00,Thursday,0,BD
 22:23:00,Thursday,0,YU
@@ -17875,7 +17612,6 @@ time,day,min_delay,line
 20:54:00,Friday,5,BD
 21:04:00,Friday,0,YU
 21:43:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:02:00,Friday,0,YU
 22:16:00,Friday,0,BD
 22:51:00,Friday,0,BD
@@ -17948,7 +17684,6 @@ time,day,min_delay,line
 21:29:00,Saturday,0,YU
 21:30:00,Saturday,4,YU
 21:58:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:11:00,Saturday,0,YU
 22:21:00,Saturday,0,YU
 22:37:00,Saturday,7,YU
@@ -18110,7 +17845,6 @@ time,day,min_delay,line
 21:24:00,Monday,0,YU
 21:35:00,Monday,0,YU
 21:45:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:00:00,Monday,6,YU
 22:05:00,Monday,0,YU
 22:16:00,Monday,0,YU
@@ -18192,7 +17926,6 @@ time,day,min_delay,line
 21:40:00,Tuesday,0,BD
 21:45:00,Tuesday,5,YU
 21:53:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:32:00,Tuesday,0,YU
 22:35:00,Tuesday,30,YU
 23:11:00,Tuesday,14,YU
@@ -18360,7 +18093,6 @@ time,day,min_delay,line
 21:16:00,Thursday,5,YU
 21:21:00,Thursday,0,BD
 21:26:00,Thursday,5,YU
-22:00:00,Thursday,0,YU/BD
 23:59:00,Thursday,0,BD
 01:12:00,Thursday,57,BD
 01:33:00,Thursday,0,BD
@@ -18438,7 +18170,6 @@ time,day,min_delay,line
 20:41:00,Friday,14,YU
 21:49:00,Friday,0,BD
 21:50:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:12:00,Friday,0,YU
 22:15:00,Friday,0,YU
 22:16:00,Friday,0,YU
@@ -18501,7 +18232,6 @@ time,day,min_delay,line
 21:43:00,Saturday,3,BD
 21:45:00,Saturday,0,BD
 21:58:00,Saturday,12,BD
-22:00:00,Saturday,0,YUS/BD
 22:02:00,Saturday,0,BD
 22:10:00,Saturday,0,BD
 22:45:00,Saturday,0,BD
@@ -18560,7 +18290,6 @@ time,day,min_delay,line
 20:58:00,Sunday,4,YU
 21:11:00,Sunday,0,BD
 21:34:00,Sunday,6,YU
-22:00:00,Sunday,0,YU/BD
 22:08:00,Sunday,0,BD
 22:09:00,Sunday,0,YU
 22:15:00,Sunday,0,BD
@@ -18576,7 +18305,6 @@ time,day,min_delay,line
 03:40:00,Monday,0,BD
 05:49:00,Monday,0,YU
 05:49:00,Monday,5,YU
-06:00:00,Monday,0,YU/BD
 06:02:00,Monday,8,YU
 06:06:00,Monday,7,YU
 06:15:00,Monday,0,BD
@@ -18644,7 +18372,6 @@ time,day,min_delay,line
 21:51:00,Monday,0,YU
 21:51:00,Monday,3,BD
 21:59:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:22:00,Monday,0,YU
 22:40:00,Monday,0,BD
 23:37:00,Monday,14,YU
@@ -18717,7 +18444,6 @@ time,day,min_delay,line
 19:59:00,Tuesday,5,YU
 21:24:00,Tuesday,0,YU
 21:48:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:04:00,Tuesday,13,YU
 22:52:00,Tuesday,3,BD
 23:00:00,Tuesday,0,YU
@@ -18799,7 +18525,6 @@ time,day,min_delay,line
 21:19:00,Wednesday,0,YU
 21:50:00,Wednesday,0,BD
 21:58:00,Wednesday,4,YU
-22:00:00,Wednesday,0,YU/BD
 22:30:00,Wednesday,0,YU
 22:47:00,Wednesday,0,YU
 23:00:00,Wednesday,0,YU
@@ -18878,7 +18603,6 @@ time,day,min_delay,line
 19:44:00,Thursday,4,BD
 20:20:00,Thursday,0,BD
 21:12:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:14:00,Thursday,0,YU
 22:40:00,Thursday,0,BD
 22:51:00,Thursday,11,YU
@@ -18947,7 +18671,6 @@ time,day,min_delay,line
 20:40:00,Friday,4,BD
 21:30:00,Friday,0,BD
 21:55:00,Friday,0,YU
-22:00:00,Friday,0,YUS/BD
 22:01:00,Friday,0,BD
 23:00:00,Friday,0,YU
 23:47:00,Friday,0,YU
@@ -19005,7 +18728,6 @@ time,day,min_delay,line
 21:28:00,Saturday,0,YU
 21:38:00,Saturday,0,YU
 21:46:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:26:00,Saturday,4,BD
 22:44:00,Saturday,0,BD
 22:52:00,Saturday,0,YU
@@ -19066,7 +18788,6 @@ time,day,min_delay,line
 20:24:00,Sunday,4,BD
 21:05:00,Sunday,0,YU
 21:13:00,Sunday,3,YU
-22:00:00,Sunday,0,YU/BD
 22:26:00,Sunday,0,YU
 22:42:00,Sunday,0,YU
 23:01:00,Sunday,0,YU
@@ -19141,7 +18862,6 @@ time,day,min_delay,line
 21:35:00,Monday,0,BD
 21:46:00,Monday,0,YU
 21:48:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:00:00,Monday,0,BD
 22:08:00,Monday,0,YU
 22:15:00,Monday,3,BD
@@ -19220,7 +18940,6 @@ time,day,min_delay,line
 21:15:00,Tuesday,0,YU
 21:41:00,Tuesday,0,YU
 21:48:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:08:00,Tuesday,0,YU
 22:15:00,Tuesday,0,BD
 22:21:00,Tuesday,0,YU
@@ -19300,7 +19019,6 @@ time,day,min_delay,line
 21:05:00,Wednesday,0,BD
 21:30:00,Wednesday,0,YU
 21:48:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:15:00,Wednesday,0,YU
 22:15:00,Wednesday,5,BD
 22:15:00,Wednesday,3,YU
@@ -19376,7 +19094,6 @@ time,day,min_delay,line
 21:10:00,Thursday,6,BD
 21:44:00,Thursday,0,BD
 21:48:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:07:00,Thursday,0,BD
 22:58:00,Thursday,3,YU
 23:00:00,Thursday,0,YU
@@ -19392,7 +19109,6 @@ time,day,min_delay,line
 01:58:00,Thursday,0,YU
 19:47:00,Thursday,3,SHP
 23:32:00,Thursday,0,SHP
-06:00:00,Friday,0,YU/BD
 06:05:00,Friday,0,YU
 06:12:00,Friday,3,YU
 06:41:00,Friday,6,BD
@@ -19453,7 +19169,6 @@ time,day,min_delay,line
 21:31:00,Friday,0,YU
 21:54:00,Friday,0,BD
 21:59:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:32:00,Friday,0,BD
 22:54:00,Friday,4,BD
 22:59:00,Friday,0,YU
@@ -19491,7 +19206,7 @@ time,day,min_delay,line
 10:36:00,Saturday,0,BD
 10:57:00,Saturday,0,YU
 11:29:00,Saturday,7,YU
-11:45:00,Saturday,0,YUS
+11:45:00,Saturday,0,YU
 12:09:00,Saturday,0,BD
 12:19:00,Saturday,0,BD
 13:12:00,Saturday,0,BD
@@ -19532,7 +19247,6 @@ time,day,min_delay,line
 21:08:00,Saturday,0,YU
 21:19:00,Saturday,6,BD
 21:36:00,Saturday,3,BD
-22:00:00,Saturday,0,YU/BD
 00:12:00,Saturday,0,BD
 00:12:00,Saturday,0,YU
 00:17:00,Saturday,0,BD
@@ -19588,7 +19302,6 @@ time,day,min_delay,line
 20:23:00,Sunday,0,YU
 20:58:00,Sunday,6,YU
 21:31:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 00:00:00,Sunday,0,BD
 00:05:00,Sunday,0,YU
 01:05:00,Sunday,4,YU
@@ -19602,7 +19315,6 @@ time,day,min_delay,line
 05:33:00,Monday,0,YU
 05:40:00,Monday,48,BD
 05:44:00,Monday,5,YU
-06:00:00,Monday,0,YU/BD
 06:21:00,Monday,4,BD
 06:23:00,Monday,0,BD
 06:28:00,Monday,10,YU
@@ -19653,7 +19365,6 @@ time,day,min_delay,line
 19:53:00,Monday,4,YU
 20:12:00,Monday,0,YU
 21:54:00,Monday,8,BD
-22:00:00,Monday,0,YU/BD
 22:01:00,Monday,5,BD
 22:01:00,Monday,0,YU
 22:14:00,Monday,0,BD
@@ -19731,7 +19442,6 @@ time,day,min_delay,line
 21:47:00,Tuesday,0,BD
 21:54:00,Tuesday,0,BD
 21:55:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:00:00,Tuesday,0,YU
 23:00:00,Tuesday,0,BD
 23:04:00,Tuesday,11,BD
@@ -19794,7 +19504,6 @@ time,day,min_delay,line
 20:40:00,Wednesday,0,YU
 21:15:00,Wednesday,15,BD
 21:21:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:22:00,Wednesday,29,YU
 22:51:00,Wednesday,5,YU
 23:00:00,Wednesday,0,BD
@@ -19851,7 +19560,6 @@ time,day,min_delay,line
 20:42:00,Thursday,0,YU
 21:26:00,Thursday,0,YU
 21:59:00,Thursday,5,BD
-22:00:00,Thursday,0,YU/BD
 22:02:00,Thursday,0,YU
 22:46:00,Thursday,0,YU
 23:00:00,Thursday,0,BD
@@ -19913,7 +19621,6 @@ time,day,min_delay,line
 21:04:00,Friday,0,YU
 21:27:00,Friday,0,BD
 21:41:00,Friday,0,BD
-22:00:00,Friday,0,YU/BD
 22:18:00,Friday,10,YU
 22:24:00,Friday,0,YU
 22:28:00,Friday,3,YU
@@ -20008,7 +19715,6 @@ time,day,min_delay,line
 21:30:00,Saturday,6,YU
 21:37:00,Saturday,0,YU
 21:43:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:06:00,Saturday,0,YU
 22:19:00,Saturday,0,BD
 22:21:00,Saturday,8,BD
@@ -20190,7 +19896,6 @@ time,day,min_delay,line
 21:18:00,Monday,0,YU
 21:54:00,Monday,3,YU
 21:58:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:18:00,Monday,0,YU
 22:34:00,Monday,0,YU
 23:00:00,Monday,0,YU
@@ -20284,7 +19989,6 @@ time,day,min_delay,line
 21:24:00,Tuesday,10,YU
 21:24:00,Tuesday,0,BD
 21:47:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/ BD
 22:10:00,Tuesday,3,BD
 22:44:00,Tuesday,0,YU
 22:49:00,Tuesday,6,YU
@@ -20369,7 +20073,6 @@ time,day,min_delay,line
 21:14:00,Wednesday,9,YU
 21:31:00,Wednesday,0,BD
 21:43:00,Wednesday,6,YU
-22:00:00,Wednesday,0,YU/ BD
 22:31:00,Wednesday,5,YU
 22:54:00,Wednesday,0,BD
 23:00:00,Wednesday,0,YU
@@ -20457,7 +20160,6 @@ time,day,min_delay,line
 20:54:00,Thursday,0,BD
 21:02:00,Thursday,0,BD
 21:43:00,Thursday,18,BD
-22:00:00,Thursday,0,YU/BD
 22:36:00,Thursday,0,YU
 22:37:00,Thursday,5,YU
 22:39:00,Thursday,0,YU
@@ -20539,7 +20241,6 @@ time,day,min_delay,line
 21:29:00,Friday,0,YU
 21:35:00,Friday,7,BD
 21:58:00,Friday,0,BD
-22:00:00,Friday,0,YU/BD
 22:05:00,Friday,0,BD
 22:06:00,Friday,8,YU
 22:11:00,Friday,0,YU
@@ -20613,7 +20314,6 @@ time,day,min_delay,line
 20:58:00,Saturday,5,BD
 21:07:00,Saturday,0,BD
 21:57:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:31:00,Saturday,5,YU
 22:40:00,Saturday,0,BD
 23:02:00,Saturday,0,YU
@@ -20660,7 +20360,6 @@ time,day,min_delay,line
 19:56:00,Sunday,0,BD
 19:59:00,Sunday,0,YU
 20:53:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:52:00,Sunday,0,BD
 23:21:00,Sunday,0,YU
 23:40:00,Sunday,0,YU
@@ -20719,7 +20418,6 @@ time,day,min_delay,line
 20:39:00,Monday,0,BD
 21:09:00,Monday,0,BD
 21:57:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:17:00,Monday,6,BD
 22:44:00,Monday,0,BD
 23:24:00,Monday,0,YU
@@ -20791,7 +20489,6 @@ time,day,min_delay,line
 21:09:00,Tuesday,4,BD
 21:46:00,Tuesday,0,YU
 21:52:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:02:00,Tuesday,0,YU
 22:16:00,Tuesday,0,BD
 22:47:00,Tuesday,15,BD
@@ -20842,7 +20539,6 @@ time,day,min_delay,line
 14:54:00,Wednesday,4,BD
 14:57:00,Wednesday,0,BD
 15:06:00,Wednesday,0,BD
-15:27:00,Wednesday,0,YU & BD
 15:29:00,Wednesday,0,YU
 16:08:00,Wednesday,4,YU
 16:19:00,Wednesday,0,BD
@@ -20950,7 +20646,6 @@ time,day,min_delay,line
 21:19:00,Thursday,0,BD
 21:55:00,Thursday,0,YU
 21:55:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 23:00:00,Thursday,0,BD
 00:08:00,Thursday,20,YU
 00:27:00,Thursday,0,YU
@@ -21022,7 +20717,6 @@ time,day,min_delay,line
 21:24:00,Friday,11,YU
 21:30:00,Friday,0,YU
 21:50:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:35:00,Friday,3,YU
 23:00:00,Friday,0,BD
 23:18:00,Friday,0,YU
@@ -21100,7 +20794,6 @@ time,day,min_delay,line
 20:46:00,Saturday,0,BD
 21:12:00,Saturday,0,BD
 21:41:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:14:00,Saturday,0,BD
 22:57:00,Saturday,0,BD
 22:58:00,Saturday,0,BD
@@ -21153,7 +20846,6 @@ time,day,min_delay,line
 20:29:00,Sunday,0,YU
 21:00:00,Sunday,4,YU
 21:04:00,Sunday,100,YU
-22:00:00,Sunday,0,YU & BD
 22:50:00,Sunday,0,YU
 23:14:00,Sunday,0,BD
 23:17:00,Sunday,3,YU
@@ -21235,7 +20927,6 @@ time,day,min_delay,line
 21:41:00,Monday,0,YU
 21:42:00,Monday,0,YU
 21:46:00,Monday,16,YU
-22:00:00,Monday,0,YU/ BD
 22:06:00,Monday,0,BD
 22:26:00,Monday,0,YU
 22:28:00,Monday,6,YU
@@ -21307,7 +20998,6 @@ time,day,min_delay,line
 20:33:00,Tuesday,8,BD
 20:36:00,Tuesday,9,YU
 21:32:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 23:00:00,Tuesday,0,BD
 23:21:00,Tuesday,0,YU
 23:23:00,Tuesday,6,YU
@@ -21377,7 +21067,6 @@ time,day,min_delay,line
 20:49:00,Wednesday,5,BD
 21:31:00,Wednesday,21,BD
 22:00:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:01:00,Wednesday,0,BD
 22:10:00,Wednesday,16,BD
 22:26:00,Wednesday,0,BD
@@ -21399,7 +21088,6 @@ time,day,min_delay,line
 03:36:00,Thursday,0,BD
 05:36:00,Thursday,5,BD
 05:51:00,Thursday,3,YU
-06:00:00,Thursday,0,YU/BD
 06:45:00,Thursday,0,BD
 06:56:00,Thursday,0,YU
 07:51:00,Thursday,0,YU
@@ -21449,7 +21137,6 @@ time,day,min_delay,line
 21:42:00,Thursday,0,YU
 21:54:00,Thursday,13,BD
 21:55:00,Thursday,4,YU
-22:00:00,Thursday,0,YU/ BD
 22:05:00,Thursday,0,BD
 22:33:00,Thursday,0,BD
 22:46:00,Thursday,23,YU
@@ -21515,7 +21202,6 @@ time,day,min_delay,line
 21:29:00,Friday,0,BD
 21:46:00,Friday,0,YU
 21:53:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:14:00,Friday,0,BD
 23:00:00,Friday,0,BD
 23:04:00,Friday,3,YU
@@ -21570,7 +21256,6 @@ time,day,min_delay,line
 20:22:00,Saturday,0,YU
 20:57:00,Saturday,3,BD
 21:31:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:04:00,Saturday,0,BD
 22:28:00,Saturday,0,YU
 22:45:00,Saturday,0,YU
@@ -21635,7 +21320,6 @@ time,day,min_delay,line
 18:43:00,Sunday,0,BD
 19:51:00,Sunday,0,YU
 21:25:00,Sunday,5,YU
-22:00:00,Sunday,0,YU/BD
 22:25:00,Sunday,11,BD
 00:11:00,Sunday,8,BD
 01:16:00,Sunday,0,YU
@@ -21708,7 +21392,6 @@ time,day,min_delay,line
 21:52:00,Monday,0,BD
 21:53:00,Monday,0,YU
 21:58:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:02:00,Monday,3,BD
 22:28:00,Monday,3,YU
 22:31:00,Monday,0,YU
@@ -21789,7 +21472,6 @@ time,day,min_delay,line
 21:37:00,Tuesday,0,BD
 21:52:00,Tuesday,0,YU
 21:57:00,Tuesday,0,BD
-22:00:00,Tuesday,0,BD/ YUS
 23:00:00,Tuesday,0,BD
 23:36:00,Tuesday,3,YU
 23:37:00,Tuesday,0,BD
@@ -21806,7 +21488,6 @@ time,day,min_delay,line
 05:39:00,Wednesday,11,YU
 05:44:00,Wednesday,15,YU
 05:50:00,Wednesday,4,YU
-06:00:00,Wednesday,0,YU/BD
 06:17:00,Wednesday,3,YU
 06:37:00,Wednesday,6,YU
 06:48:00,Wednesday,6,YU
@@ -21851,7 +21532,6 @@ time,day,min_delay,line
 19:34:00,Wednesday,4,BD
 20:53:00,Wednesday,3,BD
 21:34:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:10:00,Wednesday,0,YU
 23:00:00,Wednesday,0,BD
 23:09:00,Wednesday,0,BD
@@ -21925,7 +21605,6 @@ time,day,min_delay,line
 21:36:00,Thursday,0,YU
 21:41:00,Thursday,0,BD
 21:49:00,Thursday,0,YU
-22:00:00,Thursday,0,BD/ YU
 22:14:00,Thursday,19,BD
 22:22:00,Thursday,0,YU
 22:34:00,Thursday,0,BD
@@ -22020,8 +21699,6 @@ time,day,min_delay,line
 21:02:00,Friday,0,BD
 21:03:00,Friday,3,YU
 21:06:00,Friday,0,BD
-21:49:00,Friday,0,SRT
-22:00:00,Friday,0,YU/BD
 22:07:00,Friday,15,YU
 23:20:00,Friday,0,BD
 23:44:00,Friday,0,BD
@@ -22087,7 +21764,6 @@ time,day,min_delay,line
 21:48:00,Saturday,3,YU
 21:50:00,Saturday,16,YU
 21:56:00,Saturday,0,YU
-22:00:00,Saturday,0,YU/BD
 22:01:00,Saturday,0,YU
 22:05:00,Saturday,0,YU
 22:41:00,Saturday,50,YU
@@ -22146,7 +21822,6 @@ time,day,min_delay,line
 21:11:00,Sunday,3,YU
 21:31:00,Sunday,0,BD
 21:31:00,Sunday,0,YU
-22:00:00,Sunday,0,YU / BD
 22:38:00,Sunday,3,BD
 23:03:00,Sunday,0,YU
 23:44:00,Sunday,0,YU
@@ -22162,7 +21837,6 @@ time,day,min_delay,line
 05:50:00,Monday,4,YU
 05:50:00,Monday,3,BD
 05:53:00,Monday,5,YU
-06:00:00,Monday,0,YUS/BD
 06:03:00,Monday,4,YU
 06:06:00,Monday,4,YU
 06:16:00,Monday,4,YU
@@ -22215,7 +21889,6 @@ time,day,min_delay,line
 20:44:00,Monday,0,YU
 21:45:00,Monday,0,BD
 21:55:00,Monday,7,YU
-22:00:00,Monday,0,YU/BD
 22:01:00,Monday,0,BD
 22:08:00,Monday,0,YU
 22:18:00,Monday,3,YU
@@ -22276,7 +21949,6 @@ time,day,min_delay,line
 20:22:00,Tuesday,0,BD
 21:27:00,Tuesday,0,YU
 21:30:00,Tuesday,0,YU
-22:00:00,Tuesday,0,YU/BD
 22:57:00,Tuesday,0,YU
 23:00:00,Tuesday,0,BD
 23:00:00,Tuesday,0,YU
@@ -22351,7 +22023,6 @@ time,day,min_delay,line
 20:55:00,Wednesday,8,YU
 21:08:00,Wednesday,5,YU
 21:29:00,Wednesday,0,YU
-22:00:00,Wednesday,0,YU/BD
 22:10:00,Wednesday,0,YU
 22:14:00,Wednesday,0,BD
 22:36:00,Wednesday,0,YU
@@ -22422,7 +22093,6 @@ time,day,min_delay,line
 21:32:00,Thursday,0,BD
 21:39:00,Thursday,0,YU
 21:56:00,Thursday,18,BD
-22:00:00,Thursday,0,YU/BD
 22:18:00,Thursday,0,BD
 22:26:00,Thursday,0,BD
 23:00:00,Thursday,0,BD
@@ -22490,7 +22160,6 @@ time,day,min_delay,line
 19:49:00,Friday,4,BD
 19:54:00,Friday,7,YU
 20:42:00,Friday,3,YU
-22:00:00,Friday,0,YU/BD
 22:25:00,Friday,5,YU
 22:48:00,Friday,0,YU
 23:00:00,Friday,0,BD
@@ -22549,7 +22218,6 @@ time,day,min_delay,line
 20:14:00,Saturday,6,BD
 20:18:00,Saturday,0,BD
 20:20:00,Saturday,5,YU
-22:00:00,Saturday,0,YU/BD
 22:31:00,Saturday,0,YU
 22:32:00,Saturday,0,YU
 23:07:00,Saturday,8,BD
@@ -22616,11 +22284,9 @@ time,day,min_delay,line
 20:34:00,Sunday,6,YU
 20:35:00,Sunday,4,YU
 21:00:00,Sunday,0,YU
-22:00:00,Sunday,0,BD/YU
 22:04:00,Sunday,4,BD
 22:25:00,Sunday,0,BD
 22:47:00,Sunday,0,BD
-23:33:00,Sunday,0,YU/BD
 23:41:00,Sunday,0,BD
 00:38:00,Sunday,0,BD
 00:48:00,Sunday,0,BD
@@ -22646,7 +22312,6 @@ time,day,min_delay,line
 08:25:00,Monday,7,BD
 08:26:00,Monday,0,BD
 10:32:00,Monday,0,BD
-11:00:00,Monday,0,BD / YU
 12:04:00,Monday,31,YU
 12:07:00,Monday,31,BD
 12:39:00,Monday,45,YU
@@ -22697,7 +22362,6 @@ time,day,min_delay,line
 21:06:00,Monday,0,YU
 21:32:00,Monday,0,BD
 21:46:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:02:00,Monday,0,BD
 22:26:00,Monday,0,BD
 22:46:00,Monday,0,BD
@@ -22768,7 +22432,6 @@ time,day,min_delay,line
 21:38:00,Tuesday,0,YU
 21:43:00,Tuesday,0,YU
 21:56:00,Tuesday,11,BD
-22:00:00,Tuesday,0,YU/BD
 22:13:00,Tuesday,3,BD
 22:17:00,Tuesday,3,YU
 22:34:00,Tuesday,0,YU
@@ -22853,7 +22516,6 @@ time,day,min_delay,line
 21:38:00,Wednesday,0,YU
 21:42:00,Wednesday,11,YU
 21:54:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:01:00,Wednesday,0,YU
 22:59:00,Wednesday,0,BD
 23:20:00,Wednesday,0,BD
@@ -22930,7 +22592,6 @@ time,day,min_delay,line
 21:07:00,Thursday,3,BD
 21:21:00,Thursday,0,YU
 21:35:00,Thursday,4,BD
-22:00:00,Thursday,0,YU/BD
 22:03:00,Thursday,0,BD
 22:17:00,Thursday,21,YU
 22:42:00,Thursday,5,YU
@@ -22988,7 +22649,6 @@ time,day,min_delay,line
 20:09:00,Friday,0,YU
 20:27:00,Friday,0,YU
 21:15:00,Friday,3,YU
-22:00:00,Friday,0,YU/BD
 22:33:00,Friday,24,BD
 23:13:00,Friday,5,YU
 23:22:00,Friday,0,YU
@@ -23014,7 +22674,6 @@ time,day,min_delay,line
 05:39:00,Saturday,0,BD
 05:40:00,Saturday,0,YU
 05:59:00,Saturday,5,BD
-06:00:00,Saturday,0,YU/BD
 06:09:00,Saturday,0,YU
 06:29:00,Saturday,15,YU
 07:34:00,Saturday,0,YU
@@ -23068,7 +22727,6 @@ time,day,min_delay,line
 21:01:00,Saturday,0,BD
 21:32:00,Saturday,0,BD
 21:42:00,Saturday,26,BD
-22:00:00,Saturday,0,YU/BD
 22:28:00,Saturday,0,BD
 22:43:00,Saturday,5,YU
 00:14:00,Saturday,0,YU
@@ -23125,7 +22783,6 @@ time,day,min_delay,line
 20:33:00,Sunday,10,BD
 21:24:00,Sunday,6,BD
 21:38:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:40:00,Sunday,0,YU
 22:51:00,Sunday,15,YU
 22:55:00,Sunday,0,YU
@@ -23203,7 +22860,6 @@ time,day,min_delay,line
 20:59:00,Monday,0,BD
 21:16:00,Monday,4,YU
 21:17:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 23:01:00,Monday,0,YU
 23:04:00,Monday,6,YU
 23:05:00,Monday,4,BD
@@ -23283,7 +22939,6 @@ time,day,min_delay,line
 20:49:00,Tuesday,5,YU
 20:57:00,Tuesday,0,BD
 21:17:00,Tuesday,6,YU
-22:00:00,Tuesday,0,BD/YU
 23:20:00,Tuesday,0,BD
 23:24:00,Tuesday,0,BD
 23:50:00,Tuesday,0,BD
@@ -23361,7 +23016,6 @@ time,day,min_delay,line
 20:35:00,Wednesday,5,YU
 20:36:00,Wednesday,4,YU
 20:51:00,Wednesday,4,YU
-22:00:00,Wednesday,0,YU/BD
 22:00:00,Wednesday,3,YU
 22:04:00,Wednesday,11,YU
 22:31:00,Wednesday,7,YU
@@ -23446,7 +23100,6 @@ time,day,min_delay,line
 20:13:00,Thursday,0,YU
 20:33:00,Thursday,0,BD
 21:53:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:02:00,Thursday,0,BD
 22:07:00,Thursday,0,YU
 22:18:00,Thursday,0,YU
@@ -23527,7 +23180,6 @@ time,day,min_delay,line
 20:56:00,Friday,0,YU
 21:35:00,Friday,0,YU
 21:49:00,Friday,21,BD
-22:00:00,Friday,0,YU/BD
 22:01:00,Friday,3,BD
 22:12:00,Friday,0,BD
 22:25:00,Friday,3,BD
@@ -23589,7 +23241,6 @@ time,day,min_delay,line
 21:24:00,Saturday,0,YU
 21:29:00,Saturday,13,BD
 21:50:00,Saturday,3,YU
-22:00:00,Saturday,0,YU/BD
 22:04:00,Saturday,7,YU
 22:09:00,Saturday,3,YU
 22:43:00,Saturday,0,YU
@@ -23648,7 +23299,6 @@ time,day,min_delay,line
 21:00:00,Sunday,0,BD
 21:19:00,Sunday,0,BD
 21:33:00,Sunday,5,BD
-22:00:00,Sunday,0,YUS/BD
 22:17:00,Sunday,0,BD
 22:27:00,Sunday,3,YU
 22:35:00,Sunday,0,YU
@@ -23719,7 +23369,6 @@ time,day,min_delay,line
 21:23:00,Monday,0,BD
 21:30:00,Monday,0,BD
 21:46:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:11:00,Monday,11,YU
 22:15:00,Monday,5,BD
 23:00:00,Monday,0,YU
@@ -23730,7 +23379,6 @@ time,day,min_delay,line
 05:30:00,Tuesday,4,YU
 05:43:00,Tuesday,0,BD
 05:57:00,Tuesday,3,YU
-06:00:00,Tuesday,0,YU/BD
 06:02:00,Tuesday,5,YU
 06:03:00,Tuesday,0,BD
 06:07:00,Tuesday,0,YU
@@ -23777,7 +23425,6 @@ time,day,min_delay,line
 19:54:00,Tuesday,0,YU
 20:30:00,Tuesday,0,YU
 21:11:00,Tuesday,3,BD
-22:00:00,Tuesday,0,YU/BD
 22:15:00,Tuesday,0,YU
 23:07:00,Tuesday,6,YU
 23:15:00,Tuesday,0,BD
@@ -23794,7 +23441,6 @@ time,day,min_delay,line
 02:31:00,Wednesday,0,YU
 02:33:00,Wednesday,0,YU
 03:32:00,Wednesday,0,YU
-06:00:00,Wednesday,0,YU/BD
 06:49:00,Wednesday,8,YU
 07:45:00,Wednesday,0,YU
 08:46:00,Wednesday,5,BD
@@ -23848,7 +23494,6 @@ time,day,min_delay,line
 19:29:00,Wednesday,6,BD
 20:21:00,Wednesday,0,YU
 21:45:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:31:00,Wednesday,34,YU
 23:00:00,Wednesday,0,YU
 23:02:00,Wednesday,7,YU
@@ -23919,7 +23564,6 @@ time,day,min_delay,line
 20:27:00,Thursday,10,BD
 21:04:00,Thursday,6,BD
 21:21:00,Thursday,4,YU
-22:00:00,Thursday,0,YU/BD
 22:11:00,Thursday,4,BD
 22:16:00,Thursday,0,BD
 22:44:00,Thursday,10,BD
@@ -23997,7 +23641,6 @@ time,day,min_delay,line
 20:28:00,Friday,0,BD
 21:04:00,Friday,0,BD
 21:04:00,Friday,5,BD
-22:00:00,Friday,0,YU/BD
 22:16:00,Friday,7,YU
 23:00:00,Friday,0,YU
 23:21:00,Friday,8,YU
@@ -24066,7 +23709,6 @@ time,day,min_delay,line
 20:31:00,Saturday,0,BD
 21:38:00,Saturday,0,YU
 21:51:00,Saturday,6,YU
-22:00:00,Saturday,0,YU/BD
 22:01:00,Saturday,34,YU
 22:02:00,Saturday,6,BD
 22:03:00,Saturday,3,YU
@@ -24135,7 +23777,6 @@ time,day,min_delay,line
 20:57:00,Sunday,0,YU
 21:50:00,Sunday,4,BD
 21:52:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:52:00,Sunday,4,YU
 22:55:00,Sunday,6,BD
 23:59:00,Sunday,19,YU
@@ -24214,8 +23855,6 @@ time,day,min_delay,line
 21:41:00,Monday,0,YU
 21:41:00,Monday,0,YU
 21:52:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
-22:00:00,Monday,0,YU/BD
 22:10:00,Monday,3,BD
 22:21:00,Monday,0,YU
 22:26:00,Monday,0,YU
@@ -24279,7 +23918,6 @@ time,day,min_delay,line
 15:53:00,Tuesday,0,YU
 15:55:00,Tuesday,0,YU
 16:10:00,Tuesday,9,YU
-16:19:00,Tuesday,32,20 CLIFFSIDE
 16:42:00,Tuesday,0,YU
 17:11:00,Tuesday,12,BD
 17:18:00,Tuesday,3,BD
@@ -24300,7 +23938,6 @@ time,day,min_delay,line
 21:31:00,Tuesday,0,YU
 21:38:00,Tuesday,0,BD
 21:45:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:22:00,Tuesday,0,YU
 22:39:00,Tuesday,24,YU
 23:23:00,Tuesday,0,BD
@@ -24389,7 +24026,6 @@ time,day,min_delay,line
 20:42:00,Wednesday,0,BD
 21:01:00,Wednesday,10,BD
 21:59:00,Wednesday,5,BD
-22:00:00,Wednesday,0,YU/BD
 22:06:00,Wednesday,0,BD
 22:17:00,Wednesday,0,YU
 22:47:00,Wednesday,8,YU
@@ -24469,7 +24105,7 @@ time,day,min_delay,line
 16:58:00,Thursday,3,BD
 17:03:00,Thursday,0,YU
 17:03:00,Thursday,0,BD
-17:08:00,Thursday,3,YUS
+17:08:00,Thursday,3,YU
 17:17:00,Thursday,9,YU
 17:17:00,Thursday,3,BD
 17:33:00,Thursday,3,YU
@@ -24491,7 +24127,6 @@ time,day,min_delay,line
 21:09:00,Thursday,0,BD
 21:11:00,Thursday,0,YU
 21:40:00,Thursday,0,BD
-22:00:00,Thursday,0,YU/BD
 22:26:00,Thursday,5,YU
 22:35:00,Thursday,0,YU
 23:00:00,Thursday,0,YU
@@ -24558,7 +24193,6 @@ time,day,min_delay,line
 20:27:00,Friday,3,YU
 21:00:00,Friday,0,BD
 21:56:00,Friday,0,YU
-22:00:00,Friday,0,YU / BD
 22:18:00,Friday,0,BD
 22:23:00,Friday,9,YU
 22:41:00,Friday,0,YU
@@ -24639,7 +24273,6 @@ time,day,min_delay,line
 21:38:00,Saturday,13,BD
 21:58:00,Saturday,0,YU
 21:58:00,Saturday,9,YU
-22:00:00,Saturday,0,YU/BD
 22:09:00,Saturday,12,YU
 22:12:00,Saturday,5,BD
 22:25:00,Saturday,0,BD
@@ -24689,7 +24322,6 @@ time,day,min_delay,line
 21:35:00,Sunday,3,YU
 21:36:00,Sunday,0,BD
 21:53:00,Sunday,0,YU
-22:00:00,Sunday,0,YU/BD
 22:38:00,Sunday,0,BD
 01:15:00,Sunday,0,YU
 01:30:00,Sunday,0,BD
@@ -24768,7 +24400,6 @@ time,day,min_delay,line
 21:23:00,Monday,0,BD
 21:28:00,Monday,0,BD
 21:50:00,Monday,0,YU
-22:00:00,Monday,0,YU/BD
 22:33:00,Monday,0,YU
 00:06:00,Monday,0,BD
 00:28:00,Monday,0,BD
@@ -24787,10 +24418,7 @@ time,day,min_delay,line
 05:41:00,Tuesday,0,BD
 05:47:00,Tuesday,5,BD
 05:59:00,Tuesday,8,YU
-06:00:00,Tuesday,0,YU/BD
-06:00:00,Tuesday,0,YU/BD
 06:00:00,Tuesday,0,YU
-06:00:00,Tuesday,0,YU/BD
 06:05:00,Tuesday,7,YU
 06:13:00,Tuesday,4,YU
 06:21:00,Tuesday,3,BD
@@ -24851,7 +24479,6 @@ time,day,min_delay,line
 20:19:00,Tuesday,5,BD
 20:45:00,Tuesday,0,BD
 21:34:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:10:00,Tuesday,6,YU
 22:14:00,Tuesday,3,YU
 22:17:00,Tuesday,0,YU
@@ -24936,7 +24563,6 @@ time,day,min_delay,line
 20:51:00,Wednesday,0,BD
 20:54:00,Wednesday,45,YU
 21:09:00,Wednesday,0,BD
-22:00:00,Wednesday,0,YU/BD
 22:09:00,Wednesday,0,YU
 22:33:00,Wednesday,0,BD
 23:06:00,Wednesday,0,YU
@@ -25006,7 +24632,6 @@ time,day,min_delay,line
 21:11:00,Thursday,0,BD
 21:13:00,Thursday,0,BD
 21:31:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:12:00,Thursday,4,YU
 22:19:00,Thursday,0,YU
 22:20:00,Thursday,0,YU
@@ -25078,7 +24703,6 @@ time,day,min_delay,line
 21:05:00,Friday,4,YU
 21:06:00,Friday,3,BD
 21:20:00,Friday,36,YU
-22:00:00,Friday,0,YU/BD
 22:10:00,Friday,0,YU
 22:28:00,Friday,0,YU
 22:32:00,Friday,0,YU
@@ -25144,7 +24768,6 @@ time,day,min_delay,line
 21:02:00,Saturday,0,YU
 21:09:00,Saturday,0,YU
 21:26:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:07:00,Saturday,0,BD
 22:35:00,Saturday,0,YU
 22:46:00,Saturday,0,YU
@@ -25204,7 +24827,6 @@ time,day,min_delay,line
 20:43:00,Sunday,0,BD
 21:07:00,Sunday,0,YU
 21:23:00,Sunday,4,BD
-22:00:00,Sunday,0,YU/BD
 22:09:00,Sunday,0,BD
 22:11:00,Sunday,0,YU
 22:17:00,Sunday,0,YU
@@ -25281,7 +24903,6 @@ time,day,min_delay,line
 20:16:00,Monday,6,YU
 21:47:00,Monday,13,YU
 21:52:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:09:00,Monday,0,YU
 22:17:00,Monday,0,YU
 23:03:00,Monday,0,YU
@@ -25345,7 +24966,6 @@ time,day,min_delay,line
 20:01:00,Tuesday,0,YU
 20:40:00,Tuesday,0,YU
 21:56:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:45:00,Tuesday,10,YU
 23:02:00,Tuesday,0,BD
 23:05:00,Tuesday,0,YU
@@ -25362,7 +24982,6 @@ time,day,min_delay,line
 02:24:00,Wednesday,0,BD
 05:00:00,Wednesday,0,YU
 05:35:00,Wednesday,0,BD
-05:38:00,Wednesday,0,YU/BD
 05:42:00,Wednesday,8,YU
 05:59:00,Wednesday,8,YU
 06:55:00,Wednesday,0,BD
@@ -25502,7 +25121,6 @@ time,day,min_delay,line
 21:18:00,Thursday,0,YU
 21:38:00,Thursday,3,YU
 21:55:00,Thursday,0,YU
-22:00:00,Thursday,0,BD/YU
 22:11:00,Thursday,0,BD
 22:28:00,Thursday,3,BD
 22:38:00,Thursday,0,BD
@@ -25596,7 +25214,6 @@ time,day,min_delay,line
 21:30:00,Friday,0,BD
 21:42:00,Friday,5,YU
 21:45:00,Friday,4,YU
-22:00:00,Friday,0,YU/BD
 22:48:00,Friday,0,BD
 23:26:00,Friday,14,YU
 23:44:00,Friday,0,YU
@@ -25661,7 +25278,6 @@ time,day,min_delay,line
 20:44:00,Saturday,0,BD
 21:31:00,Saturday,3,YU
 21:43:00,Saturday,0,BD
-22:00:00,Saturday,0,YU/BD
 22:10:00,Saturday,7,YU
 22:18:00,Saturday,3,YU
 22:55:00,Saturday,0,YU
@@ -25724,7 +25340,6 @@ time,day,min_delay,line
 21:25:00,Sunday,0,BD
 21:46:00,Sunday,0,BD
 21:48:00,Sunday,0,BD
-22:00:00,Sunday,0,YU/BD
 22:22:00,Sunday,0,BD
 23:05:00,Sunday,5,YU
 23:11:00,Sunday,19,BD
@@ -25794,7 +25409,6 @@ time,day,min_delay,line
 21:16:00,Monday,3,BD
 21:16:00,Monday,0,YU
 21:39:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:04:00,Monday,0,BD
 22:23:00,Monday,0,YU
 22:49:00,Monday,0,BD
@@ -25876,7 +25490,6 @@ time,day,min_delay,line
 20:43:00,Tuesday,39,BD
 21:47:00,Tuesday,0,YU
 21:48:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:18:00,Tuesday,0,BD
 23:06:00,Tuesday,0,BD
 23:15:00,Tuesday,0,BD
@@ -25928,7 +25541,6 @@ time,day,min_delay,line
 20:01:00,Wednesday,8,YU
 20:54:00,Wednesday,66,YU
 21:45:00,Wednesday,0,BD
-22:00:00,Wednesday,0,BD/YU
 22:30:00,Wednesday,0,YU
 22:35:00,Wednesday,11,YU
 22:42:00,Wednesday,6,YU
@@ -25990,7 +25602,6 @@ time,day,min_delay,line
 21:08:00,Thursday,0,YU
 21:39:00,Thursday,0,BD
 21:53:00,Thursday,0,YU
-22:00:00,Thursday,0,YU/BD
 22:12:00,Thursday,0,YU
 22:32:00,Thursday,0,YU
 22:37:00,Thursday,0,YU
@@ -26072,7 +25683,6 @@ time,day,min_delay,line
 21:03:00,Friday,0,BD
 21:07:00,Friday,0,YU
 21:57:00,Friday,0,YU
-22:00:00,Friday,0,YU/BD
 22:06:00,Friday,0,BD
 22:08:00,Friday,0,BD
 22:21:00,Friday,0,YU
@@ -26149,7 +25759,6 @@ time,day,min_delay,line
 20:31:00,Saturday,0,YU
 21:40:00,Saturday,0,YU
 21:52:00,Saturday,0,YU
-22:00:00,Saturday,0,YU / BD
 22:11:00,Saturday,0,BD
 22:20:00,Saturday,0,BD
 22:24:00,Saturday,6,BD
@@ -26225,7 +25834,6 @@ time,day,min_delay,line
 20:19:00,Sunday,3,YU
 20:45:00,Sunday,0,YU
 21:55:00,Sunday,0,BD
-22:00:00,Sunday,0,YU / BD
 22:20:00,Sunday,0,YU
 23:00:00,Sunday,0,BD
 23:02:00,Sunday,0,YU
@@ -26310,7 +25918,6 @@ time,day,min_delay,line
 20:49:00,Monday,4,YU
 21:19:00,Monday,3,YU
 21:38:00,Monday,0,BD
-22:00:00,Monday,0,YU/BD
 22:09:00,Monday,0,BD
 22:17:00,Monday,0,BD
 22:52:00,Monday,0,BD
@@ -26397,7 +26004,6 @@ time,day,min_delay,line
 21:30:00,Tuesday,0,BD
 21:34:00,Tuesday,0,BD
 21:34:00,Tuesday,0,BD
-22:00:00,Tuesday,0,YU/BD
 22:28:00,Tuesday,0,BD
 22:38:00,Tuesday,0,YU
 23:14:00,Tuesday,0,BD
