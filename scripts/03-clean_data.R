@@ -16,6 +16,8 @@ raw_data <- read_csv("data/01-raw_data/ttc_subway_delays_2024_raw_data.csv")
 cleaned_data <-
   raw_data |>
   janitor::clean_names() |>
+  mutate(line = if_else(line == "YUS", "YU", line)) |>
+  filter(line %in% c("YU", "BD", "SHP"))  |>
   select(time, day, min_delay, line) |>
   mutate(
     min_delay = as.numeric(min_delay),
