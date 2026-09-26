@@ -1,4 +1,4 @@
-# Starter folder
+# Jingxuan Feng - Donaldson Paper
 
 ## Overview
 
