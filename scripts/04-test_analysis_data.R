@@ -1,16 +1,17 @@
 #### Preamble ####
-# Purpose: Tests.structure and validity of the cleaned TTC data
+# Purpose: Tests structure and validity of the cleaned TTC data
 # Author: Jingxuan Feng
 # Date: 25 September 2026
 # Contact: jingxuan.feng@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: The 'tidyverse' and 'testthat' package must be installed
-# - 00-simulate_data.R must have been run
+# Pre-requisites: The 'tidyverse', 'testthat' and 'here package must be installed
+# - 02-download_data.R and 03-clean_data.R must have been run
 
 
 #### Workspace setup ####
 library(tidyverse)
 library(testthat)
+library(here)
 
 analysis_data <- read_csv(
   here::here(
@@ -66,4 +67,11 @@ test_that("no empty strings in 'time', 'day', or 'min_delay' and 'line' columns"
 # Test that the 'line' column contains at least 3 unique values
 test_that("'line' column contains at least 3 unique values", {
   expect_true(length(unique(analysis_data$line)) >= 3)
+})
+
+
+# Test that delay durations are valid.
+test_that("'min_delay' contains valid delay durations", {
+  expect_true(is.numeric(analysis_data$min_delay))
+  expect_true(all(analysis_data$min_delay >= 0))
 })
