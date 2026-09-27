@@ -1,4 +1,1567 @@
-LLM: ChatGPT-6.
-Date: 26 September 2026
+https://tellingstorieswithdata.com/25-papers.html#sec-paper-one   summarize what I should do for this assignment and the grading scheme
 
-Statement on LLM usage: I used RStudio’s autocomplete tool while writing code. I also used ChatGPT to help me understand the assignment and example code, debug code that I wrote, and refine text that I had drafted. The entire chat history is available in https://chatgpt.com/share/6ab8769b-6888-83ea-bbce-aecaa0c93ca9
+
+Worked for 11s
+
+
+This is the Donaldson Paper. You work individually, choose a dataset from Open Data Toronto, and write a short, reproducible paper that tells one clear story about it. Most submissions are 2–6 pages, though there is no fixed length. Online Appendix F — Papers
+What to do
+1. Set up the provided starter folder as an organized GitHub repository. Give the project a descriptive name and include a useful README and sketches.
+2. Choose an Open Data Toronto dataset. Write scripts/00-simulate_data.R to simulate plausible data and develop tests. Set a random seed. Then write scripts/01-download_data.R to download the real data reproducibly with opendatatoronto and save a local raw copy. Make several commits with meaningful messages.
+3. Write paper/paper.qmd and render it directly to PDF. Include a specific title, author, unambiguous date, abstract, introduction, data section, and BibTeX references. The abstract should state the main finding in no more than four sentences. In the data section, explain where the records come from, how they were measured, their limitations, and what the relevant observations show. Use ggplot2 for graphs and tinytable for tables; number and discuss them in the text.
+4. Check the complete workflow. The Quarto file should read your saved data, not fetch data from the server while rendering. Keep code and raw R output out of the PDF. Cite the dataset, R, opendatatoronto, and other packages you use. Submit the GitHub repository link and do not update it after the deadline. Online Appendix F — Papers
+Grading scheme
+Component	Maximum
+Data section	10
+Prose	6
+Abstract, introduction, measurement, graphs and tables, simulation, tests, reproducible workflow	4 each
+Referencing	4
+Miscellaneous exceptional work	3
+Title, author/date/repo, captions, commits, sketches	2 each
+Cross-references	1
+
+
+These scored components total 62 points. The rubric also lists two 1-point binary checks: cite R in both the paper and references, and document LLM use in the README. Missing either check gives the paper zero overall, so treat them as requirements rather than small optional points. The LLM rule says to state whether and how you used tools, mention autocomplete if used, and include the entire relevant chat in a usage text file if you used a chat tool such as ChatGPT. Online Appendix F — Papers
+For your first pass, I would prioritize a dataset you can download with opendatatoronto, a specific finding you can show with the actual observations, and a paper that renders from saved files. Those choices underpin the largest rubric items and the reproducibility checks.
+
+
+
+
+I have already fork the starter_folder and downloaded it to my computer. I have also connected the terminal to GitHub. So I can simply make changes to the local starter_folder and them push it to GitHub right? I can change the file name directly in the local folder?
+
+
+
+Yes. If the folder on your computer is a clone of your fork, you can edit its files locally, then commit and push the changes to your GitHub fork.
+You can rename files directly in Finder or RStudio. Git will detect the changes. You can also rename the local project folder, but that does not rename the repository on GitHub; you would change the GitHub repository name separately.
+After editing, run these commands from inside the project folder:
+git status
+git add .
+git commit -m "Describe what you changed"
+git push
+
+Before your first push, run git remote -v and check that origin points to your fork. If you rename a file referenced by an R script, Quarto file, or the .Rproj setup, update those references too. Keep required paths such as paper/paper.qmd and the specified script names unless the assignment tells you otherwise.
+
+
+what make my grade 0?
+
+
+For the Donaldson Paper, the instructions explicitly say your overall grade is 0 if you:
+Fail to cite R in both the paper’s main text and reference list.
+Fail to document LLM use in a separate README paragraph or bullet. Say whether and how you used it, including autocomplete tools. If you used ChatGPT, the rubric requires the entire chat in a usage text file.
+Download the data from the server inside paper.qmd instead of having the paper read the saved local dataset. 
+The page also requires an entirely reproducible workflow and says there should be no sign it is a class assignment. Follow those requirements too, although the Donaldson rubric does not explicitly attach the same “0 overall” wording to them. 
+how to make the workflow reproducible
+A reproducible workflow means someone can clone your GitHub repository, run the documented steps, and get the same data, figures, tables, and PDF without guessing what you did manually.
+For your Donaldson Paper, aim for this sequence:
+
+Download: scripts/01-download_data.R uses opendatatoronto to fetch the dataset and saves a raw copy in data/raw_data/.
+Prepare and test: R scripts clean the saved data and test the simulated and actual datasets. Keep the two test suites in separate scripts, as the rubric requests. Set a seed in 00-simulate_data.R.
+Render: paper/paper.qmd reads the saved local data and creates the graphs and tables when you click Render to PDF. It must not download data while rendering.
+Document: The README lists the required packages and tells a reader which scripts to run, in which order, and how to render the paper. 
+In your code, use paths relative to the project, such as here::here("data", "raw_data", "unedited_data.csv"). Avoid paths containing your Mac username, setwd(), or manual spreadsheet edits that your scripts cannot reproduce.
+The best final check: clone your fork into a new folder and follow only your README. If you can render the PDF there, you’ve found and documented the steps another person needs.
+
+
+So I write all the code in starter_folder.Rproj? how about those scripts?
+
+
+No. starter_folder.Rproj is the RStudio project file, not the place to write your analysis code. Double-click it to open the whole project in RStudio, then edit the files inside the project folder.
+File	What goes in it
+scripts/00-simulate_data.R	R code to simulate plausible data and develop tests
+scripts/01-download_data.R	R code to download and save the real dataset
+Other .R files in scripts/	Data preparation and tests for the actual data
+paper/paper.qmd	Your paper’s writing, plus R code chunks that read the saved data and produce its figures and tables
+starter_folder.Rproj	Project settings; you generally just open it
+In RStudio, open the project with the .Rproj file, then use the Files pane to open a script. If a required script doesn’t exist yet, choose File → New File → R Script and save it under scripts/ with the required name. Think of the .Rproj as the door into your workspace, and the .R and .qmd files as the places where you do the work.
+
+
+can I directly edit the code in the script files?
+
+
+Yes. Open the .R files in the scripts/ folder and edit the code directly in RStudio. That’s what they’re for.
+Click a script in the Files pane, make your changes, and press ⌘S to save. You can run a line with ⌘Enter or use Source to run the whole script. Once a change works, commit and push it to GitHub. You do not need to edit the .Rproj file.
+
+
+I should delete everything that I don't use and all the previous examples
+
+
+Yes—remove example content that does not belong to your paper, but keep the project structure you need.
+In paper/paper.qmd, replace the sample writing, figures, and code with your own. You can remove template sections you don’t need, such as a model section or datasheet appendix; the assignment FAQ explicitly says they are optional for this paper.
+In scripts/, replace example code with code for your dataset. Keep or create the required 00-simulate_data.R and 01-download_data.R.
+Keep the .Rproj file, .gitignore, and useful folders such as scripts/, paper/, and data/. Update the README and references for your project.
+A good rule: before deleting a file, check whether another script or paper.qmd refers to it. Then render the paper after your edits to catch any broken references. 
+
+
+But in that other folder, I can directly save pictures and stuff right? no need to write a reproducible workflow for that
+
+
+If you mean the starter project’s other/ folder, yes—you can save supporting materials there directly, such as your hand-drawn planning sketches or an LLM usage record. You do not need R code to generate a sketch you drew yourself.
+The distinction is how the item was made:
+
+Item	What to do
+Your hand-drawn sketch or planning image	Save it in an appropriate folder and include it in GitHub if it supports the project.
+A figure showing results from your dataset	Generate it with R code (ggplot2) so someone can recreate it from the data. Don’t rely solely on a picture you pasted in manually.
+An image obtained elsewhere	Keep its source and credit clear; include it only if you need it.
+So “reproducible” does not mean every file must be created by a script. It means a reader can trace your evidence and recreate the data analysis and paper figures from the repository.
+
+
+this is the TTC delay data since 2025. explain each column
+
+
+
+Your screenshot is from the TTC bus delay data: 102 MARK... refers to the 102 Markham Rd bus route, and 65 PARLIA... to 65 Parliament. The text is cut off because the spreadsheet columns are narrow. 
+Column	Meaning
+_id	A unique identifier for the record (row).
+Date	The date of the reported incident.
+Line	The bus route number and name.
+Time	The reported time of the incident.
+Day	Day of the week.
+Station	The reported location. Despite the column name, it may be a station or another bus location.
+Code	A short code for the type or cause of the incident. Use the dataset’s separate Code Descriptions file to decode it; don’t guess from the letters.
+Min Delay	Minutes of delay recorded for the affected bus.
+Min Gap	Minutes of service gap recorded as a result of the incident. This is a different measure from how long one bus was delayed.
+Bound	Direction the bus was travelling; N means northbound.
+Vehicle	TTC vehicle number, when one is recorded. Treat 0 as a value to investigate, not as an actual bus number.
+For example, the first row records a 20-minute delay and a 40-minute gap. That does not mean you should add them to get a 60-minute delay. The Toronto Open Data page provides the bus dataset and its separate code descriptions. 
+
+
+if I want to investigate the delay time distribution of different TTC subway lines during different time period, can I simply omit those 0 min delay recording during data cleaning
+
+
+Yes, if your question is: “How long are incidents when a positive delay is recorded?” Then filtering to Min Delay > 0 is reasonable. It changes what your distribution describes, so state that choice in the paper rather than silently deleting rows. The course text’s TTC example also retains zero-minute records during initial exploration. 
+I’d handle it this way:
+
+Keep the original downloaded file unchanged.
+Count zero-minute records by line and time period. If one group has many more zeros, removing them could substantially change the comparison.
+Create a filtered dataset for the positive-delay distribution, and label the graph “Distribution of recorded delays greater than zero minutes.”
+Report how many records you excluded. Don’t assume every zero means a missing value or a data error without checking the dataset documentation.
+For example, after converting the column names to snake_case:
+positive_delays <- delays |>
+  dplyr::filter(!is.na(min_delay), min_delay > 0)
+
+One correction before you proceed: the screenshot you sent was bus data (102 Markham Rd and 65 Parliament are bus routes). If your research question is about subway lines, use the separate TTC Subway Delay Data dataset. 
+
+
+
+User attachment
+what is this code for
+
+This code looks up information about the TTC subway delay dataset. It does not download the delay records yet. City of Toronto Open Data Portal
+library(opendatatoronto)  # Loads functions for Toronto Open Data
+library(dplyr)            # Loads data-filtering functions; not used yet here
+
+# get package
+package <- show_package("996cfe8d-fb35-40ce-b569-698d51fc683b")
+package
+
+- The long string is the dataset’s ID on Toronto Open Data.
+- show_package(...) retrieves information about that dataset, such as its description and available resources.
+- <- stores the result in an R object named package.
+- The final package prints that object so you can inspect it.
+Here, “package” means a dataset listing on the Open Data portal, not an R package to install. To find a particular data file within it, the next step is list_package_resources(...); to load a selected resource into R, use get_resource().
+
+
+what package do I use in r studio to download data?
+
+
+Use the opendatatoronto R package. It’s the package your assignment specifies for downloading Toronto Open Data; dplyr is for working with the data afterward.
+Install it once in the RStudio Console:
+
+install.packages("opendatatoronto")
+
+Then, in scripts/01-download_data.R, start with:
+library(opendatatoronto)
+
+resources <- list_package_resources(
+  "996cfe8d-fb35-40ce-b569-698d51fc683b"
+)
+resources
+
+That ID is for the TTC subway delay dataset. Printing resources lets you find the exact name of the file you want, such as the data since 2025. You then select that resource with dplyr::filter() and download it with get_resource(). Finally, save a raw copy under data/raw_data/ so your paper reads the saved file. 
+
+
+raw_data <- get_resource(resource_2024)
+Save data
+write_csv(raw_data, "inputs/data/raw_data.csv") why can't I use write_csv   the library I import here is opendatatoronto and tidyverse
+
+
+You can use write_csv() with library(tidyverse): tidyverse loads readr, which provides that function. The problem is likely the data format or the save path, rather than a missing package.
+Run these checks:
+
+class(raw_data)
+str(raw_data, max.level = 1)
+dir.exists("inputs/data")
+
+The 2024 TTC resource is an Excel file. If it has multiple sheets, get_resource() returns a list of tables, while write_csv() needs one table. In that case, combine the sheets first:
+raw_data_combined <- dplyr::bind_rows(raw_data)
+
+dir.create("inputs/data", recursive = TRUE, showWarnings = FALSE)
+readr::write_csv(raw_data_combined, "inputs/data/raw_data.csv")
+
+If class(raw_data) already says tbl_df or data.frame, you only need the dir.create() line before your original write_csv() call. The opendatatoronto documentation confirms that multi-sheet Excel resources can return a list of tables.
+If those checks don’t resolve it, paste the exact R error message—that will identify which issue you’re seeing.
+
+
+
+Error in write_csv(raw_data, "inputs/data/raw_data.csv") : 
+  could not find function "write_csv"   this is the error message
+
+
+
+You’re right—the exact error tells us the immediate problem: write_csv() isn’t loaded in your current R session. My previous answer jumped ahead to other possible issues.
+write_csv() comes from readr, which is included in tidyverse. Run this at the top of your script, and make sure you actually execute that line before the save command:
+
+library(readr)
+
+raw_data <- get_resource(resource_2024)
+write_csv(raw_data, "inputs/data/raw_data.csv")
+
+Or change just the last line to readr::write_csv(raw_data, "inputs/data/raw_data.csv"). The readr:: prefix calls the function directly even if you haven’t run library(readr).
+If you already wrote library(tidyverse) at the top, you may have run only the lower lines of the script. Try Source to run it from the beginning. Once R recognizes write_csv(), it may show a different error about the folder or the 2024 file’s multiple sheets; we can address that if it appears.
+
+
+User attachment
+
+
+This screenshot shows that library(tidyverse) ran successfully and loaded readr. The “Conflicts” lines are informational, not errors.
+Now run your save line again:
+
+write_csv(raw_data, "inputs/data/raw_data.csv")
+
+The earlier “could not find function” error happened because library(tidyverse) had not yet run in that R session. If a new error appears, send me its exact text—the next issue may be the save folder or the structure of raw_data.
+
+
+User attachment
+
+
+The new error means R recognizes write_csv() now, but it cannot write to inputs/data/raw_data.csv. Most likely, the inputs/data folder does not exist in the project R is currently using.
+Run this before your save line:
+
+dir.create("inputs/data", recursive = TRUE, showWarnings = FALSE)
+write_csv(raw_data, "inputs/data/raw_data.csv")
+
+write_csv() creates the file, but it does not create missing folders. To check where R is trying to save it, run getwd(). Also check your assignment’s requested raw-data location: if you intend to use data/raw_data/ instead, create and write to that path consistently.
+
+
+
+cleaned_data <-
+  raw_data |>
+  janitor::clean_names() |>
+  select(wing_width_mm, wing_length_mm, flying_time_sec_first_timer) |>
+  filter(wing_width_mm != "caw") |>
+  mutate(
+    flying_time_sec_first_timer = if_else(flying_time_sec_first_timer == "1,35",
+                                   "1.35",
+                                   flying_time_sec_first_timer)
+  ) |>
+  mutate(wing_width_mm = if_else(wing_width_mm == "490",
+                                 "49",
+                                 wing_width_mm)) |>
+  mutate(wing_width_mm = if_else(wing_width_mm == "6",
+                                 "60",
+                                 wing_width_mm)) |>
+  mutate(
+    wing_width_mm = as.numeric(wing_width_mm),
+    wing_length_mm = as.numeric(wing_length_mm),
+    flying_time_sec_first_timer = as.numeric(flying_time_sec_first_timer)
+  ) |>
+  rename(flying_time = flying_time_sec_first_timer,
+         width = wing_width_mm,
+         length = wing_length_mm
+         ) |> 
+  tidyr::drop_na()     only explain the code to me
+
+
+
+
+…
+This code takes raw_data, keeps three measurements, fixes a few entries, converts them to numbers, and removes rows with missing values. The result is stored as cleaned_data.
+The |> symbol passes the result of one step into the next:
+
+janitor::clean_names() changes column names to a consistent style, such as Wing Width (mm) → wing_width_mm.
+select(...) keeps only wing width, wing length, and first-timer flying time.
+filter(wing_width_mm != "caw") removes rows where wing width contains the text "caw" instead of a measurement.
+The three mutate(... if_else(...)) steps make specific corrections: "1,35" → "1.35" for flying time, and "490" → "49" and "6" → "60" for wing width. Other values stay as they are.
+as.numeric(...) converts all three columns from text to numbers so they can be analysed mathematically.
+rename(...) gives them shorter names: flying_time, width, and length.
+tidyr::drop_na() removes any row missing any of those three values.
+The order matters: the unusual text values are corrected before as.numeric() tries to convert the columns.
+
+
+User attachment
+why? I have Time column in raw data file
+
+
+The error refers to the column names at the moment select() runs, not necessarily the names in the original file. If you used janitor::clean_names() before select(), it changed Time to lowercase time.
+Use:
+
+raw_data |>
+  janitor::clean_names() |>
+  select(time)
+
+R is case-sensitive, so Time and time are different names. To see exactly what names your pipeline has after cleaning, run:
+names(janitor::clean_names(raw_data))
+
+
+
+User attachment
+I got YU/BD for one line how do I deal with this
+
+
+
+YU/BD appears to mark an incident associated with both the Yonge–University (YU) and Bloor–Danforth (BD) lines. The screenshot places it at Yonge–University and Bloor–Danforth’s interchange, but the record does not tell you how to divide its delay between the two lines.
+For your comparison of delay durations by line, I would leave that row out of the line-specific analysis and record how many combined-line rows you excluded. Keep it in the original raw data. Don’t assign the full delay to both lines, because that would count one incident twice.
+
+In this particular row, Min Delay is 0, so it will already be excluded if your analysis uses only positive delays:
+
+line_delays <- cleaned_data |>
+  filter(line %in% c("YU", "BD", "SHP"), min_delay > 0)
+
+You can describe the rule briefly: “The line comparison includes positive-delay records assigned to a single subway line.”
+
+
+
+how do I define morning peak and evening peak
+
+
+
+For your subway comparison, I’d use weekday periods of 6:30–10:00 a.m. for the morning peak and 3:30–7:00 p.m. for the afternoon peak. The TTC uses those weekday peak periods in its service information. Call the second one afternoon peak in the paper, since it starts at 3:30 p.m. 
+Define the boundaries precisely: 6:30 ≤ time < 10:00 and 15:30 ≤ time < 19:00. Put all other times in an “other hours” group, and analyse weekends separately rather than calling their same clock hours commuter peaks.
+
+A sentence for your paper would be: “We classify weekday incidents from 6:30 to before 10:00 as morning peak and from 15:30 to before 19:00 as afternoon peak, following the TTC’s stated weekday peak periods.” 
+
+
+how do I simulate continuous times
+
+
+For your TTC simulation, represent the time of day as a number of hours since midnight. runif() generates continuous numbers:
+set.seed(2453)
+n <- 1000
+
+time_hours <- runif(n, min = 0, max = 24)
+
+For example, 8.5 means 8:30 a.m., and 16.25 means 4:15 p.m. You can then use the same peak definitions as in your analysis:
+period <- dplyr::case_when(
+  time_hours >= 6.5 & time_hours < 10   ~ "morning peak",
+  time_hours >= 15.5 & time_hours < 19  ~ "afternoon peak",
+  TRUE                                  ~ "other hours"
+)
+
+This is a simple starting simulation: runif() makes every time of day equally likely. If your goal is to mimic recorded TTC incidents more closely, you can later make some hours more likely than others. Keep the random seed so rerunning the script produces the same simulated times.
+
+
+
+I want to keep the format:00:00:00, how do I simulate the time
+
+
+Generate a random number of seconds after midnight, then format it as HH:MM:SS:
+set.seed(2453)
+n <- 1000
+
+seconds <- floor(runif(n, min = 0, max = 24 * 60 * 60))
+
+time <- sprintf(
+  "%02d:%02d:%02d",
+  seconds %/% 3600,
+  (seconds %% 3600) %/% 60,
+  seconds %% 60
+)
+
+head(time)
+
+For example, a result might be "08:34:12". Each part is padded to two digits, so midnight appears as "00:00:00". The simulated times have one-second precision; runif() makes times across the day equally likely.
+
+
+
+the time in clean_data has seconds = 00, keep them to 00 in the simulated data
+Then simulate whole minutes and add :00 for the seconds:
+set.seed(2453)
+n <- 1000
+
+minutes <- sample(0:1439, size = n, replace = TRUE)
+
+time <- sprintf(
+  "%02d:%02d:00",
+  minutes %/% 60,
+  minutes %% 60
+)
+
+head(time)
+
+There are 1,440 minutes in a day, numbered 0 through 1439. For each one, %/% 60 gets the hour and %% 60 gets the minute. The final :00 is fixed, so a simulated value looks like "08:34:00", matching your cleaned data’s time format.
+
+
+
+
+minutes %/% 60,
+  minutes %% 60  explain this
+
+
+
+minutes is the number of minutes since midnight. Dividing it by 60 separates that number into hours and leftover minutes.
+For example, suppose minutes is 514:
+
+514 %/% 60   # 8
+514 %% 60    # 34
+
+%/% gives the whole-number quotient: 8 complete hours.
+%% gives the remainder: 34 minutes left over.
+So 514 minutes after midnight is 08:34:00. In your code, R does this calculation for every value in the minutes vector.
+
+
+
+# Create a dataset by randomly assigning states and parties to divisions
+analysis_data <- tibble(
+  division = paste("Division", 1:151),  # Add "Division" to make it a character
+  state = sample(
+    states,
+    size = 151,
+    replace = TRUE,
+    prob = c(0.25, 0.25, 0.15, 0.1, 0.1, 0.1, 0.025, 0.025) # Rough state population distribution
+  ),
+  party = sample(
+    parties,
+    size = 151,
+    replace = TRUE,
+    prob = c(0.40, 0.40, 0.05, 0.1, 0.05) # Rough party distribution
+  )
+)
+
+  what does division do here
+…
+
+
+
+Here, division is a column name, not a division calculation.
+division = paste("Division", 1:151)
+
+1:151 creates the numbers 1 through 151. paste() joins "Division" to each number, producing "Division 1", "Division 2", …, "Division 151".
+That gives each simulated row a unique label. The state and party columns then assign sampled values to those labelled divisions.
+
+
+
+
+what is YUS line
+
+
+
+YUS stands for Yonge–University–Spadina, an older name for today’s Line 1 Yonge–University. If your TTC delay data has both YUS and YU, they refer to Line 1. You can standardize them to one label for your analysis, and note that change in your cleaning script. 
+
+
+
+can I just filter out YUS datat
+
+
+
+You can, but I’d relabel YUS as YU instead. Both refer to Line 1, so filtering out YUS would discard valid Line 1 records. 
+cleaned_data <- raw_data |>
+  janitor::clean_names() |>
+  mutate(line = if_else(line == "YUS", "YU", line))
+
+Before deciding, check how many records are affected:
+raw_data |>
+  janitor::clean_names() |>
+  count(line)
+
+If you do exclude them, record the number and explain the choice in your paper. Relabelling is the simpler choice for your line comparison.
+
+
+
+
+User attachment
+what are the data type of these columns
+
+
+
+The screenshot shows four columns, but it doesn’t show their exact R classes:
+Column	Kind of variable	Likely R class
+time	Time of day, recorded to the minute	character or a time class such as hms
+day	Categorical day of the week	character or factor
+min_delay	Numeric delay duration in minutes	numeric or integer
+line	Categorical subway line code	character or factor
+The display 02:08:00 alone doesn’t prove that time is a time object—it could be text. To check your actual data, run:
+sapply(cleaned_data[c("time", "day", "min_delay", "line")], class)
+
+That will print the class R assigned to each column.
+
+
+
+$time
+[1] "hms"      "difftime"
+
+
+
+That means time is a time object in R. hms gives it the familiar HH:MM:SS display, and its underlying difftime class stores the value as seconds since midnight. R shows both because an object can have more than one class. 
+For example, 02:08:00 is stored as 7,680 seconds after midnight. You can compare it directly with another hms value:
+
+cleaned_data$time >= hms::as_hms("06:30:00")
+
+For your simulated data, the formatted strings we created earlier can be converted to the same class with hms::parse_hms(time). 
+
+
+
+test_that("'time' is time", {
+  expect_type(analysis_data$, "time")
+})
+
+
+
+Use $time to select the column, and expect_s3_class() to check its hms class:
+test_that("'time' is a time-of-day value", {
+  expect_s3_class(analysis_data$time, "hms")
+})
+
+analysis_data$ is incomplete because $ needs a column name after it. Also, "time" is not an R storage type: expect_type() checks types such as "character" or "double", while expect_s3_class() checks classes such as "hms". 
+If this is your simulated data, the sprintf() code from earlier produced text. Convert it first with hms::parse_hms(time) when building analysis_data; otherwise this test will correctly fail.
+
+
+ 
+User attachment
+I got this when I ran test_analysis data
+
+
+
+The test didn’t reach your time check. It stopped while trying to load the CSV: R’s working directory is currently .../Donaldson_paper_Jingxuan/scripts, so "data/02-analysis_data/..." is being looked for inside scripts/.
+Use a path from the project root in the test script:
+
+analysis_data <- readr::read_csv(
+  here::here(
+    "data", "02-analysis_data",
+    "ttc_subway_delays_2024_analysis_data.csv"
+  )
+)
+
+Then check that R can see that exact file:
+file.exists(here::here(
+  "data", "02-analysis_data",
+  "ttc_subway_delays_2024_analysis_data.csv"
+))
+
+If it returns FALSE, compare the filename and folder spelling with your Files pane. Also make sure you’ve run the cleaning script that creates the CSV before running its test. The FAIL 1, PASS 0 in the screenshot is a file-path failure, so it does not yet say anything about whether your time column passes.
+
+
+
+can I delete 06 model_data file and the model folder in the starter_folder? do I have to use these in this assignment
+
+
+
+Yes. For the Donaldson Paper, you do not have to fit a model. The assignment FAQ explicitly says you can delete parts of the starter folder you do not need. So you can delete scripts/06-model_data.R and the models/ folder if your TTC delay paper only describes and compares the data. 
+Before deleting them, check whether paper/paper.qmd or another script refers to either one. Remove those references too, then render the paper to make sure it still works. Keep your simulation, download, cleaning, and separate test scripts: those support requirements that do apply to this assignment. 
+what does 05 exploratory data do
+05-exploratory_data.R is a place to explore the cleaned data before writing your paper. For your TTC project, you could use it to check how many delays each line has, plot delay lengths, and compare morning and evening periods. Those checks help you decide which findings are worth explaining.
+The Donaldson Paper requires you to describe the data with graphs and tables, but it does not require a script with that exact filename. You can keep 05-exploratory_data.R for your investigation, or delete the starter example if you are not using it. Put the graphs and tables you want readers to see in paper/paper.qmd, where they can be reproduced when you render the PDF. 
+I haven’t seen the contents of your copy of 05-exploratory_data.R, so this describes its role rather than each line of its code.
+
+
+
+
+so I use 05 to plot the graphs and table and then put it in quarto?
+
+
+
+Yes, that’s a good workflow—with one small distinction:
+Use 05-exploratory_data.R to try plots and tables and decide what tells the TTC delay story.
+Put the code for the final plots and tables in paper/paper.qmd. When you render the paper, Quarto will run that code and place the results in the PDF.
+Have the Quarto file read your saved cleaned data, rather than download the data again. Use ggplot2 for the final graphs and tinytable for the final tables, as the assignment requires. You do not need to paste screenshots of your RStudio plots into Quarto.
+
+
+
+
+so if I plot the graphs and table in 05, i can copy the code to quarto?
+
+
+
+Yes. Develop the graphs and tables in 05-exploratory_data.R, then copy the code for the ones you want in the paper into R code chunks in paper/paper.qmd.
+Make sure the Quarto file also loads the packages and reads your saved cleaned data, so it can run on its own when you click Render to PDF. You can leave experiments that did not make it into the paper in 05, or remove them when you tidy the project.
+
+
+
+
+User attachment
+is this a good plot
+
+
+
+It’s a good first exploratory plot: it shows individual delay records for each line and makes the unusually long delays visible. For the final paper, though, most points are compressed against the bottom because a few delays reach several hundred minutes. That makes the typical delays hard to compare.
+I’d keep this as an overview, then make a second plot focused on your question:
+
+Separate the observations by morning peak, evening peak, and other times.
+Show the distribution of delay minutes for each line, perhaps with faceted histograms.
+If you exclude zero-minute records, state clearly that the graph describes delays greater than zero, not all recorded incidents.
+Also, the width of each cluster currently makes it hard to judge how many records each line has; don’t interpret the apparent width as a delay difference.
+
+
+
+So i can still include this plot in my paper but just as an overview of the data
+
+
+
+Yes. You can include it as an overview of individual delay records by subway line. It shows that most recorded delays are short, while a few are much longer.
+In the caption, say whether you included zero-minute records and that each dot represents one record. Then use a separate plot with a more focused scale to compare typical delays and your morning/evening periods—the extreme values in this overview make those differences hard to see.
+what does BD, SHP and YU represent
+They are abbreviations in the TTC subway delay data:
+Code	Subway line
+BD	Line 2: Bloor–Danforth
+SHP	Line 4: Sheppard
+YU	Line 1: Yonge–University
+For your plots, using the full line names will be easier for readers to understand.
+
+
+
+you sure about the subway line name?
+
+
+
+Yes—I double-checked. The names in your plot are correct: YU is Line 1 Yonge–University, BD is Line 2 Bloor–Danforth, and SHP is Line 4 Sheppard. The TTC lists those names for Lines 1, 2, and 4. The abbreviations are also used for those lines in analyses of the TTC delay data. 
+
+
+
+
+
+plot_data <- analysis_data |>
+  mutate(
+    hour = as.numeric(time) / 3600,
+    weekday = day %in% c("Monday", "Tuesday", "Wednesday",
+                         "Thursday", "Friday"),
+    period = case_when(
+      weekday & hour >= 6 & hour < 9 ~ "Morning peak",
+      weekday & hour >= 15 & hour < 19 ~ "Evening peak",
+      TRUE ~ "Other times"
+    ),
+    period = factor(period, levels = c(
+      "Morning peak delay (min)", "Evening peak delay (min)", "Other times delay (min)"
+    ))
+  )
+
+median_table <- plot_data |>
+  filter(min_delay > 0) |>
+  group_by(line, period) |>
+  summarise(median_delay = median(min_delay), .groups = "drop") |>
+  pivot_wider(names_from = period, values_from = median_delay) |>
+  arrange(factor(line, levels = c("YU", "BD", "SHP"))) |>
+  select(Line = line, Morning peak delay (min), Evening peak delay (min), Other times delay (min))
+
+tt(median_table)
+   what is wrong
+…
+
+
+
+
+
+The problem is here:
+period = factor(period, levels = c(
+  "Morning peak delay (min)", "Evening peak delay (min)", "Other times delay (min)"
+))
+
+Your case_when() creates "Morning peak", "Evening peak", and "Other times". None matches the longer names in levels, so factor() turns every period value into NA. Then pivot_wider() cannot create the columns your select() expects. 
+Change the factor levels to match the actual values, and add the longer labels when selecting the final columns:
+
+period = factor(period, levels = c(
+  "Morning peak", "Evening peak", "Other times"
+))
+
+select(
+  Line = line,
+  `Morning peak delay (min)` = `Morning peak`,
+  `Evening peak delay (min)` = `Evening peak`,
+  `Other times delay (min)` = `Other times`
+)
+
+The rest of your pipeline can stay as written. One interpretation point: because you use filter(min_delay > 0), each median is the median among positive-delay records for that line and period.
+
+
+
+
+Use usethis::git_vaccinate() to get a better gitignore file, and specifically to ignore DS_Store.    what is this
+
+
+
+
+This instruction is about keeping temporary files out of your GitHub repo.
+On your Mac, Finder can create a hidden file called .DS_Store inside folders. It stores folder display settings; it is not part of your TTC analysis. A gitignore tells Git to leave files like that out of future commits.
+
+Run this once in the RStudio Console:
+
+usethis::git_vaccinate()
+
+It adds .DS_Store and several temporary R and Quarto files to your user-level Git ignore settings, so the rule applies across your repositories. It does not delete files or change your analysis scripts. 
+One detail: ignore rules do not remove a .DS_Store file that Git is already tracking. If you still see one in git status afterward, that is why. 
+
+
+
+
+turn simulated time values from character to time format in the simulated data file.
+add simulated min_delay column to the simulated data file.   refine this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Convert simulated time values from character strings to hms and add a simulated min_delay column.
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+newly simulated data after updating simulate_data file   refine this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Regenerate the simulated dataset using the updated simulation script.
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+---
+title: "My title"
+subtitle: "My subtitle if needed"
+author: 
+  - Jingxuan Feng
+  - Another author
+thanks: "Code and data are available at: [https://github.com/JingxuanFeng/Donaldson_paper_Jingxuan](https://github.com/JingxuanFeng/Donaldson_paper_Jingxuan)."
+date: today
+date-format: long
+abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+
+# Introduction
+
+Overview paragraph
+
+Estimand paragraph
+
+Results paragraph
+
+Why it matters paragraph
+
+Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
+
+
+
+
+
+
+# Data {#sec-data}
+
+## Overview
+
+We use the statistical programming language R [@citeR].... Our data [@shelter].... Following @tellingstories, we consider...
+
+Overview text
+
+## Measurement
+	
+Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
+
+## Outcome variables
+
+Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
+
+
+
+Some of our data is of penguins (@fig-bills), from @palmerpenguins.
+
+```{r}
+#| label: fig-bills
+#| fig-cap: Bills of penguins
+#| echo: false
+
+ggplot(penguins, aes(x = island, fill = species)) +
+  geom_bar(alpha = 0.8) +
+  scale_fill_manual(values = c("darkorange","purple","cyan4"),
+                    guide = "none") +
+  theme_minimal() +
+  facet_wrap(~species, ncol = 1) +
+  coord_flip()
+```     explain the code line by line
+
+
+
+
+
+Show more
+
+
+
+
+
+
+
+
+
+Worked for 11s
+
+
+
+
+This is the starter paper.qmd file. It has three parts: document settings, paper text, and R code that produces figures. The penguin example is placeholder content for you to replace with your TTC analysis.
+The \ characters and &#x20; in your message appear to be formatting added when you pasted it here. They should not appear throughout the actual .qmd file.
+Document settings
+The lines between the two --- markers are the YAML header. They tell Quarto how to build the PDF. Quarto
+Line	What it does
+title: "My title"	Sets the paper’s title. Replace the placeholder with a title about your finding.
+subtitle: "My subtitle if needed"	Adds an optional subtitle. Delete the line if you do not need one.
+author:	Starts the author list.
+- Jingxuan Feng	Lists you as an author.
+- Another author	Lists a second author. Delete this line if you are working alone.
+thanks: "Code and data are available at: ..."	Adds a note associated with the title. Here it links readers to your GitHub repository.
+date: today	Uses the date on which you render the paper.
+date-format: long	Displays that date in a long, unambiguous form.
+abstract: "First sentence..."	Sets the abstract. Replace these example sentences with your findings.
+format: pdf	Tells Quarto to produce a PDF.
+number-sections: true	Numbers sections such as “1 Introduction” and “2 Data.”
+bibliography: references.bib	Points Quarto to the bibliography file, normally in the same paper folder as the .qmd file.
+
+
+First R code chunk
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+- ```{r} starts an R code chunk. Quarto runs the code when you render the paper.
+- #| include: false runs this setup chunk but puts neither its code nor its output in the PDF.
+- #| warning: false hides warnings from the PDF.
+- #| message: false hides messages, such as package startup messages, from the PDF.
+- library(tidyverse) loads packages used for data handling and plotting, including dplyr and ggplot2.
+- library(palmerpenguins) loads the example penguin dataset. For your paper, remove this line and load the packages you actually use. You will also need code in the .qmd to read your saved TTC analysis dataset.
+- The closing three backticks end the chunk. Quarto
+Paper headings and placeholder text
+# Introduction creates a main section. The lines below it—“Overview paragraph,” “Results paragraph,” and so on—are writing prompts, not R code. Replace them with prose about your TTC question and findings. An estimand means the specific quantity you want to describe or compare; for example, the median positive recorded delay for each line and time period.
+# Data {#sec-data} creates the Data section. {#sec-data} gives that section an ID, so @sec-data elsewhere in the paper becomes a cross-reference to it. ## Overview, ## Measurement, and ## Outcome variables are subsections. Quarto
+In the example sentence:
+We use the statistical programming language R [@citeR]....
+
+[@citeR] tells Quarto to cite the entry named citeR in references.bib. Likewise, [@shelter], @tellingstories, and @palmerpenguins are citation references; they work only if matching entries exist in the bibliography. Replace example citations that do not apply to your TTC paper. The penguin sentence and @fig-bills reference must also be replaced. Quarto
+Example figure chunk
+```{r}
+#| label: fig-bills
+#| fig-cap: Bills of penguins
+#| echo: false
+
+ggplot(penguins, aes(x = island, fill = species)) +
+  geom_bar(alpha = 0.8) +
+  scale_fill_manual(
+    values = c("darkorange", "purple", "cyan4"),
+    guide = "none"
+  ) +
+  theme_minimal() +
+  facet_wrap(~species, ncol = 1) +
+  coord_flip()
+```
+
+Line	What it does
+`#	label: fig-bills`
+`#	fig-cap: Bills of penguins`
+`#	echo: false`
+ggplot(penguins, aes(x = island, fill = species))	Starts a plot using penguins; sets island on one axis and colours bars by species.
+geom_bar(alpha = 0.8)	Draws bars counting the observations in each category; alpha = 0.8 makes them slightly transparent.
+scale_fill_manual(values = ...)	Chooses the three fill colours. guide = "none" hides the colour legend.
+theme_minimal()	Applies a simple plot style.
+facet_wrap(~species, ncol = 1)	Makes one panel per species and stacks the panels in one column.
+coord_flip()	Swaps the displayed horizontal and vertical axes.
+
+
+The + signs join the ggplot components together. The fig- label and caption make the plot numberable and cross-referenceable in Quarto. Quarto
+For your paper, replace this entire penguin chunk with the code for one of your TTC plots. Give it a relevant label, such as fig-delay-by-line, and refer to it in your prose with @fig-delay-by-line.
+
+
+
+
+
+You will also need code in the .qmd to read your saved TTC analysis dataset.   should I copy the code in the script or there's other way
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You only need to copy the line that reads the saved file into the .qmd. Keep the download and cleaning code in their scripts; the paper should read the dataset those scripts produced.
+For your project, put this in the first R chunk, after loading tidyverse:
+analysis_data <- readr::read_csv(
+  here::here("data", "02-analysis_data",
+             "ttc_subway_delays_2024_analysis_data.csv")
+)
+
+here::here() builds the path from your R project folder, so the code can find the file even though paper.qmd is inside the paper folder. Check that the filename matches yours exactly.
+Then later chunks can use analysis_data to make your graphs and tables. Do not copy the data download code into Quarto: the assignment specifically requires the paper to read a saved dataset. tellingstorieswithdata.com
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+Worked for 8s
+
+
+
+
+The screenshot shows that you sent the Quarto YAML header to the R Console. R sees --- and title: as R code, which causes Error in -title. Your title line itself is not the problem.
+Press Esc to leave the Console’s + prompt. Then put the header at the very top of paper.qmd in the editor and click Render:
+---
+title: "My title"
+author: "Jingxuan Feng"
+format: pdf
+---
+
+Quarto reads those lines when rendering the whole document. In the R Console, run only the code inside {r} chunks, such as library(tidyverse).
+
+
+
+
+User attachment
+I change the folder name, what's next
+
+
+
+The screenshot shows that VS Code cannot find Git in the folder currently open. Renaming the original folder should preserve its Git connection, so first check that VS Code opened the right folder. Do not click “Initialize Repository” or “Publish to GitHub”—you already have a repository.
+In VS Code, choose File → Open Folder… and select the renamed folder that contains scripts, data, paper, and your .Rproj file.
+Open the VS Code Terminal and run:
+git status
+
+If it shows your main branch, you’re all set. You can keep editing and pushing as before; renaming the local folder alone creates nothing to commit.
+If it still says “not a git repository,” the folder you opened may be a copy that does not contain the hidden .git directory. Look for your original project folder before initializing anything new.
+
+
+
+User attachment
+I don't have commit change
+
+
+
+The screenshot clarifies the issue: VS Code is in Restricted Mode, so its Source Control view is disabled. My earlier suggestion that the Git repository might be missing was premature.
+Since this is your own project folder, click Manage Workspace Trust, choose Trust for this folder, then reopen Source Control. You can also run git status in the terminal to check the repository.
+
+If you only renamed the outer folder on your Mac, there is no change to commit. That name is outside the files Git tracks.
+
+
+
+
+User attachment
+then how do i modify the name on github
+
+
+
+
+The name in your screenshot, Donaldson_paper_Jingxuan, is the GitHub repository name. To change it:
+Open that repository on GitHub and click Settings.
+Under General, find Repository name.
+Enter your new name and click Rename. 
+Then, in the terminal inside your renamed local project folder, update its GitHub address:
+git remote set-url origin https://github.com/JingxuanFeng/NEW_REPOSITORY_NAME.git
+git remote -v
+
+Replace NEW_REPOSITORY_NAME with the exact name you chose on GitHub. Finally, update the repository link in your paper and README. Renaming the GitHub repository itself does not create a local change to commit.
+
+
+
+User attachment
+
+
+
+
+The screenshot shows two separate folders: TTC_Subway_Delay_Patterns and Donaldson_paper_Jingxuan. It looks like a copy was made instead of the original folder being renamed.
+Open TTC_Subway_Delay_Patterns and check that it contains your latest scripts, data, and paper files. Then open a terminal in that folder and run git status. If it shows On branch main, you can use that folder for your work. Changing the GitHub repository name is a separate step done in GitHub Settings → General → Repository name.
+
+Keep the old folder for now. Once you’ve confirmed which copy has your latest work and Git history, you can decide what to do with the duplicate.
+
+
+
+
+
+Subways are an important transportation for commuters in Toronto. Understanding recorded subway delay patterns during peak commuting hours can help characterize service performance and identify issues that require further improvements. These patterns have two distinct aspects, the proportion of records with positive delays and the duration of those delays.    refine this
+
+
+
+
+
+Toronto’s subway is an important part of many commuters’ daily journeys. Examining recorded delays during peak commuting hours can help describe service patterns and identify where further investigation may be useful. This paper considers two aspects of those records: the proportion reporting a delay greater than zero minutes and the duration of those positive delays.
+
+
+
+
+The paper uses TTC subway delay times data source from Toronto Open Data and includes three lines: YU (Yonge-Unversity), BD(Bloor-Danforth) and SHP(Sheppard).  According to the definition of TTC, the morning peak range from 6 am to 9 am during week days and the evening peak ranges from 3 pm to 7 pm during week days. The other times are classified as other hours. This paper considers two aspects of those records: the proportion of records with a delay greater than zero minutes and the duration of those positive delays.    refine this
+
+
+
+
+This paper uses TTC subway delay records published by Toronto Open Data for three lines: YU (Yonge–University), BD (Bloor–Danforth), and SHP (Sheppard). For this analysis, weekday morning rush hours are defined as 6:00–9:00 a.m. and evening rush hours as 3:00–7:00 p.m.; all remaining records are classified as “other times.” The paper examines both the proportion of records reporting a delay greater than zero minutes and the duration of those positive delays.
+The TTC describes 6:00–9:00 a.m. and 3:00–7:00 p.m. as subway rush hours on its route pages. Its broader by-law uses a different definition of “peak hours,” so “for this analysis” is more precise than “according to the definition of the TTC.” 
+
+
+
+
+write a reference to cite Toronto open data
+
+
+
+Add this entry to paper/references.bib to cite the dataset:
+@misc{ttc_subway_delays_2024,
+  author    = {{Toronto Transit Commission}},
+  title     = {{TTC Subway Delay Data}: 2024},
+  publisher = {City of Toronto Open Data},
+  url       = {https://open.toronto.ca/dataset/ttc-subway-delay-data/},
+  note      = {2024 data; accessed 26 September 2026}
+}
+Then cite it in paper.qmd like this:
+This paper uses the TTC Subway Delay Data published through Toronto Open Data [@ttc_subway_delays_2024].
+I left out a publication year because 2024 identifies the data you used, while the portal page does not clearly state when the dataset itself was published. Cite opendatatoronto separately as the R package used to download it. 
+
+
+
+
+also cite open data toronto
+
+
+
+
+To cite the Toronto Open Data portal separately from the TTC dataset, add this to paper/references.bib:
+@misc{toronto_open_data,
+  author = {{City of Toronto}},
+  title  = {{Toronto Open Data}},
+  url    = {https://open.toronto.ca/},
+  note   = {Accessed 26 September 2026}
+}
+You can then write in paper.qmd:
+The dataset is available through the Toronto Open Data portal [@toronto_open_data]; this paper uses its 2024 TTC subway delay records [@ttc_subway_delays_2024].
+These are two citations: one for the portal and one for the specific dataset. The opendatatoronto R package needs its own citation if you used it to download the data.
+
+
+
+
+User attachment
+is this a proper citation?
+
+
+
+Yes. The citations are rendering correctly: “n.d.” means no publication date was supplied in the bibliography entries. The “2024” in your sentence identifies the year of the records; it does not have to be the dataset’s publication year.
+I would change “published by Toronto Open Data” to “available through Toronto Open Data”, since Toronto Open Data is the portal:
+
+This paper uses 2024 TTC subway delay records (Toronto Transit Commission, n.d.), available through Toronto Open Data (City of Toronto, n.d.), for three subway lines: …
+Also check that both entries appear in your reference list with their URLs.
+
+
+
+
+@misc{ttc_subway_delays_2024,
+  author    = {{Toronto Transit Commission}},
+  title     = {{TTC Subway Delay Data}: 2024},
+  year      = {2024}
+  publisher = {City of Toronto Open Data},
+  url       = {https://open.toronto.ca/dataset/ttc-subway-delay-data/},
+  note      = {2024 data; accessed 25 September 2026}
+}   what is wrong with this
+You’re missing a comma after year = {2024}. BibTeX fields must be separated by commas:
+year      = {2024},
+publisher = {City of Toronto Open Data},
+One other point: year = {2024} tells the citation system the dataset was published in 2024. If you only know that the records are from 2024, remove the year field and keep “2024” in the title and note. That avoids treating the data year as an unverified publication date.
+
+
+
+
+I also need to reference all the R package I used right
+
+
+
+
+Yes. The assignment asks you to cite R and the R packages you actually use, both in the paper and in references.bib. That includes packages used in your scripts as well as in paper.qmd—for example, opendatatoronto, ggplot2, tinytable, readr, or janitor if you use them. You do not need to cite packages left over from unused starter examples. 
+In the R Console, you can get a package’s recommended citation with:
+
+citation("ggplot2")
+toBibtex(citation("ggplot2"))
+
+Copy the BibTeX entry into references.bib, give it a distinct citation key, and cite that key in your .qmd. Do the same for R using citation().
+
+
+
+
+
+Please don’t read the data from their server into the Quarto Document, read the saved version. Submissions that do this receive 0 overall.   what does this mean
+
+
+
+
+It means your Quarto paper must use a data file already saved in your project, rather than fetch the TTC data from Toronto Open Data every time you render the PDF.
+Your workflow should be:
+
+scripts/01-download_data.R downloads the TTC data and saves it to a file.
+Your cleaning script creates the saved analysis dataset.
+paper/paper.qmd reads that saved dataset, for example:
+analysis_data <- readr::read_csv(
+  here::here("data", "02-analysis_data",
+             "ttc_subway_delays_2024_analysis_data.csv")
+)
+
+Do not put get_resource() in paper.qmd or run the download script from a Quarto chunk. The marker should be able to render your PDF using the data files in your repository, even if the Toronto Open Data server is unavailable.
+
+
+
+User attachment
+User attachment
+I'd like to include these two graph in my data section and other graph and plot in result section. what do you suggest for my data structure for data section, according to the requirements of the assignment
+
+
+
+
+Yes—these two visuals fit the Data section. The table tells readers how many records you have for each line; the dot plot shows the range of recorded delay minutes. Then your Results section can address your main question: how positive-delay proportions and delay durations differ by line and time period.
+I suggest this structure:
+
+# Data {#sec-data}
+
+## Source and scope
+## How delays are recorded
+## Variables and time periods
+## What the records look like
+
+# Results {#sec-results}
+
+## Records with positive delays
+## Duration of positive delays
+In Source and scope, cite the TTC dataset and Toronto Open Data. State that you use 2024 records for YU, BD, and SHP, and explain any records excluded from the analysis.
+In How delays are recorded, explain what one row represents and what min_delay = 0 means in your analysis. Note that these are delay records, not a count of all subway trips. That distinction matters: the table’s 14,149 YU records versus 890 SHP records does not, by itself, establish which line is more likely to delay a passenger.
+
+In Variables and time periods, define line, day, time, and min_delay. Give your exact weekday morning and evening boundaries and explain that weekends and remaining weekday hours fall under “other times.” State that the positive-delay proportion uses all retained records, while the duration comparison uses only records with min_delay > 0.
+
+In What the records look like, introduce and discuss your two visuals by cross-reference—for example, “@tbl-records shows…” and “@fig-delays shows…”. Format the table counts as 14,149, 10,990, and 890. The dot plot shows a few very long recorded delays, but its scale compresses most observations near zero; mention that limitation and use more focused plots in Results.
+
+The assignment asks the Data section to explain the dataset, its measurement, and the variables through text, graphs, and tables. It also asks you to keep detailed cleaning steps in an appendix. Your proposed split between Data and Results works well with those requirements. 
+
+
+
+
+
+cite the TTC dataset and Toronto Open Data. State that you use 2024 records for YU, BD, and SHP, and explain any records excluded from the analysis.
+but i have already cite these in the introduction.
+
+
+
+You’re right—you’ve already introduced and cited the TTC dataset and Toronto Open Data. You do not need to repeat the same introductory sentence in the Data section.
+Start the Data section with new detail: what one record represents, which variables you use, how you define the time periods, and which records you excluded. You can refer back to the source briefly, such as “The 2024 TTC records described above…”. Cite it again only where a new source-based claim needs support, such as an explanation of how the TTC records delays.
+
+
+
+
+The analysis used four recorded variables: subway line, time of delay, day of the week and delay duration in minutes. We constructed three time period catagories: morning peak, evening peak and other times. For this analysis, weekday morning rush hours are defined as 6:00–9:00 a.m. and evening rush hours as 3:00–7:00 p.m.; all remaining records are classified as other times. The peak-hour boundaries follow TTC service reporting [@ttc_asset_plan_2024]. Other times include weekends, and public holidays are not separately excluded.    is this good
+
+
+
+
+Yes, the content is clear, but the citation needs changing. I checked the 2024 Asset Management Plan: it discusses morning and afternoon peaks but does not give the exact 6:00–9:00 a.m. and 3:00–7:00 p.m. boundaries. A TTC subway route page does describe those as rush hours. 
+The analysis uses four recorded variables: subway line, time of the record, day of the week, and delay duration in minutes. From the day and time variables, we constructed three categories: morning rush hour, evening rush hour, and other times. We define weekday morning rush hour as 6:00 a.m. to before 9:00 a.m. and evening rush hour as 3:00 p.m. to before 7:00 p.m., consistent with the rush-hour periods described on the TTC’s subway route pages. All remaining records, including weekends, are classified as “other times.” Public holidays that fall on weekdays are not classified separately.
+Replace [@ttc_asset_plan_2024] with a citation to the TTC route page if you keep the phrase about TTC rush hours. Also, “not classified separately” describes your code more precisely than “not separately excluded”: weekday public holidays will still fall into a rush-hour category when their recorded time is within those boundaries.
+
+
+
+
+User attachment
+how do i make these code invisible
+
+
+
+
+Your PDF is showing both the R code and the read_csv() column message. Give the data-loading chunk include: false, and the graph chunk echo: false:
+```{r}
+#| include: false
+
+analysis_data <- readr::read_csv(
+  here::here("data", "02-analysis_data",
+             "ttc_subway_delays_2024_analysis_data.csv"),
+  show_col_types = FALSE
+)
+```
+
+```{r}
+#| label: fig-delays-by-line
+#| fig-cap: "Recorded TTC subway delays by line in 2024."
+#| echo: false
+
+ggplot(analysis_data, aes(line, min_delay, colour = line)) +
+  # the rest of your plot code
+```
+include: false runs the loading code without displaying anything from that chunk. echo: false hides the plotting code but keeps the graph in the PDF. show_col_types = FALSE suppresses the column-specification message you see in the screenshot. Apply echo: false to your table chunk too, so readers see the table without its R code.
+
+
+
+
+#| echo: false
+#| eval: true
+#| warning: false
+#| message: false  can I use this
+
+
+
+
+Yes. Put those lines at the top of each R chunk where you want the result—such as a graph or table—to appear without showing its code:
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| message: false
+
+# graph or table code here
+```
+eval: true runs the code; echo: false hides the code; and the last two lines hide warnings and messages from the PDF.
+For the chunk that only loads packages and reads analysis_data, use #| include: false instead. It runs that chunk while hiding both its code and its output.
+
+
+
+how to keep my plot and table at the place I want
+
+
+
+
+Put each graph or table chunk in paper.qmd immediately after the paragraph that introduces it. For PDF output, LaTeX may still move it to fit the page. You can ask Quarto to keep a figure at that location with fig-pos: "H": 
+Figure @fig-delays shows the recorded delay minutes for each line.
+
+```{r}
+#| label: fig-delays
+#| fig-cap: "Recorded subway delays by line in 2024."
+#| fig-pos: "H"
+#| echo: false
+
+# your ggplot code
+```
+For your tinytable tables, put this once in the hidden setup chunk near the top of the document:
+options(tinytable_latex_placement = "H")
+
+Then put each table chunk where you want it in the text, with a tbl- label and tbl-cap.
+If a graph or table cannot physically fit in the space left on the page, it will still need to move to the next page. Making the figure a little shorter with #| fig-height: 4 often helps.
+
+
+
+
+
+how to add table and graph title and caption
+In Quarto, use the chunk caption for the title readers see in the PDF. Give each chunk a label so you can refer to it in the text.
+Graph:
+
+```{r}
+#| label: fig-delays-by-line
+#| fig-cap: "Most recorded subway delays were short, with a few lasting several hours."
+#| echo: false
+
+ggplot(analysis_data, aes(x = line, y = min_delay)) +
+  geom_jitter(width = 0.15, height = 0) +
+  labs(x = "Subway line", y = "Recorded delay (minutes)")
+```
+Table made with tinytable:
+```{r}
+#| label: tbl-records-by-line
+#| tbl-cap: "Line 1 accounted for the largest number of delay records in 2024."
+#| echo: false
+
+tinytable::tt(count_table)
+```
+Then write @fig-delays-by-line and @tbl-records-by-line in your paragraphs. Quarto will turn those into numbered references such as “Figure 1” and “Table 1.”
+labs(title = "...") adds a title inside a ggplot. Since fig-cap already gives the graph a numbered title in the paper, I would usually leave out the labs(title = ...) line to avoid repeating it. Keep the axis labels in labs().
+Shows the whole dataset of 260,29 data points. The data was plotted with respect to the subway lines: Line 1: Yonge–University,  Line 2: Bloor–Danforth and Line 4: Sheppard   refine this graph caption
+Recorded delay durations for all 26,029 observations, grouped by TTC subway line: Line 1 (Yonge–University), Line 2 (Bloor–Danforth), and Line 4 (Sheppard).
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| message: false
+analysis_data <- readr::read_csv(
+  here::here(
+    "data",
+    "02-analysis_data",
+    "ttc_subway_delays_2024_analysis_data.csv"
+  )
+)
+
+#| label: fig_of_all_data
+#| fig-cap: "Recorded delay durations for all 26,029 observations, grouped by TTC subway line: Line 1 (Yonge–University), Line 2 (Bloor–Danforth), and Line 4 (Sheppard)"
+
+ggplot(analysis_data, aes(line, min_delay, colour = line)) +
+  geom_jitter(width = 0.15, height = 0, alpha = 0.7, size = 1.0) +
+  scale_x_discrete(limits = c("YU", "BD", "SHP"),
+                   labels = c(
+    YU = "Line 1: Yonge–University",
+    BD = "Line 2: Bloor–Danforth",
+    SHP = "Line 4: Sheppard"
+  )) +
+  labs(
+    title = "TTC subway delay records, 2024",
+    x = NULL, y = "Recorded delay (minutes)",
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```   why I don't see my caption in the pdf
+…
+Your #| label and #| fig-cap are after R code has started. Quarto chunk options need to be at the top of the chunk, before analysis_data <- .... Also use a label beginning with fig- if you want to refer to the figure in your text. 
+Split it into two chunks:
+
+```{r}
+#| include: false
+analysis_data <- readr::read_csv(
+  here::here(
+    "data",
+    "02-analysis_data",
+    "ttc_subway_delays_2024_analysis_data.csv"
+  ),
+  show_col_types = FALSE
+)
+```
+
+```{r}
+#| label: fig-all-data
+#| fig-cap: "Recorded delay durations for all 26,029 observations, grouped by TTC subway line: Line 1 (Yonge–University), Line 2 (Bloor–Danforth), and Line 4 (Sheppard)."
+#| echo: false
+#| warning: false
+#| message: false
+
+ggplot(analysis_data, aes(line, min_delay, colour = line)) +
+  geom_jitter(width = 0.15, height = 0, alpha = 0.7, size = 1.0) +
+  scale_x_discrete(
+    limits = c("YU", "BD", "SHP"),
+    labels = c(
+      YU = "Line 1: Yonge–University",
+      BD = "Line 2: Bloor–Danforth",
+      SHP = "Line 4: Sheppard"
+    )
+  ) +
+  labs(
+    title = "TTC subway delay records, 2024",
+    x = NULL,
+    y = "Recorded delay (minutes)"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+Render the .qmd again. The labs(title = ...) text appears inside the plot; fig-cap creates the figure caption in the PDF. You can cite it in your paper as @fig-all-data. 
+
+
+
+
+
+Shows the number of recorded TTC subway delay data points for three subway lines Yonge–University, Bloor–Danforth and Sheppard respectively   refine this caption for table. Do i also need to add a title for the table?
+Number of TTC subway delay records in 2024 by line: Yonge–University, Bloor–Danforth, and Sheppard.
+You don’t need a separate table title. Use this as the table caption with #| tbl-cap:, and give the table a label such as #| label: tbl-records-by-line. Quarto will number it as “Table 1” in the PDF.
+where I can add [H
+For your graph, put #| fig-pos: "H" with the other chunk options, before the R code:
+```{r}
+#| label: fig-all-data
+#| fig-cap: "Recorded delay durations by TTC subway line."
+#| fig-pos: "H"
+#| echo: false
+
+ggplot(analysis_data, aes(line, min_delay)) +
+  ...
+```
+For a tinytable table, put options(tinytable_latex_placement = "H") in your hidden setup chunk, before the chunk that creates the table. Use "H" in quotes; you do not type [H] directly into the .qmd. 
+H asks LaTeX to place the item at that point. If it cannot fit in the space left on the page, it can still move to the next page.
+@fig_of_all_data  this is wrong?
+Yes. For a Quarto figure reference, use a label that starts with fig-, with hyphens:
+#| label: fig-all-data
+#| fig-cap: "Recorded delay durations by TTC subway line."
+Then refer to it in your paragraph as @fig-all-data, for example: “Figure @fig-all-data shows the recorded delays by line.”
+Your fig_of_all_data uses an underscore after fig, so Quarto does not recognize it as a figure label. Make sure the label options are at the top of the plot chunk, then render the PDF again. 
+@fig-all-data shows 260,29 recorded delays. Most recorded subway delays were short, with a few lasting several hours. @tab-all-data shows the number of recorded delays for three lines. Both with zero-mintue delays included.   refine
+@fig-all-data shows the recorded delay duration for all 26,029 observations. Most records have short delays, although a few show delays lasting several hours. @tbl-all-data reports the number of records for each of the three subway lines. Both the figure and table include records with zero-minute delays.
+Use @tbl-all-data if your table chunk has #| label: tbl-all-data; Quarto uses tbl- for table references.
+
+
+
+
+The data section should thoroughly and precisely discuss the source of the data and the broader context that gave rise to it (ethical, statistical, and otherwise).  what does this mean
+It means your Data section should explain how the dataset came to exist and what conclusions it can support, beyond listing its columns.
+For your TTC paper, cover:
+
+Source and scope: Who produced the records, where you downloaded them, why you use 2024, and why you selected YU, BD, and SHP.
+Measurement: What one row represents, what min_delay measures, and how you created the morning, evening, and other-time categories. State which records you excluded and why.
+Statistical limits: These are recorded incidents, not a count of all subway trips or passengers. A larger number of records on one line alone does not establish that a passenger is more likely to be delayed on that line.
+Broader context and ethics: Reporting practices and missing or ambiguous records may affect what you observe. Avoid treating differences between lines as evidence of poor staff performance or claiming a measured effect on riders without passenger data.
+Your existing paragraph about the four variables and time periods covers part of measurement. The source, exclusions, and limits need their own discussion. “Thoroughly and precisely” means making these choices and limitations specific to your dataset, rather than adding a generic statement that data has limitations.
+
+
+
+On the Yonge-University line, positive-delay entries account for 53.1% of morning peak records, 43.6% during evening peaks and 37.2% at other times. All of the results are the highest among three subway lines. However, the median positive delay is five minutes in all three periods.    refine this
+
+
+
+On the Yonge–University line, 53.1% of morning peak records, 43.6% of evening peak records, and 37.2% of records at other times show a positive delay. These proportions are the highest among the three lines in each period. Among records with positive delays, the median duration is five minutes in all three periods.
+@tbl-proportion shows that the Yonge–University line had the highest percentage of positive-delay records across all three periods: 53.1% during the morning peak, 43.6% during the evening peak, and 37.2% at other times. The Sheppard line had the lowest percentages during both peak periods, while the Bloor–Danforth line had the lowest percentage at other times.   refine this
+@tbl-proportion shows that the Yonge–University line had the highest proportion of records with positive delays in each period: 53.1% during the morning peak, 43.6% during the evening peak, and 37.2% at other times. The Sheppard line had the lowest proportion during both peak periods, while the Bloor–Danforth line had the lowest proportion at other times.
+
+
+Median is used instead of Mean given that there are extreme delay time values for Yonge-Unversity and Bloor-Danforth lines, which will significantly affect the mean values.   refine this
+
+
+
+We report the median rather than the mean delay duration because a few exceptionally long delays on the Yonge–University and Bloor–Danforth lines could pull the mean upward. The median better represents a typical recorded delay.
+
+
+
+I only include two tables in result section, should i add more component
+
+
+
+Your two tables cover the main comparisons: the proportion of records with a positive delay and the median duration of positive delays. There is no required number of items in a Results section.
+I would add one graph of the positive delay durations, grouped by line and time period. A faceted histogram would show the spread and unusually long delays that the median table cannot show. Make sure its caption says that zero-minute records are excluded from this graph, while they remain included in the proportion table. The assignment asks for graphs that represent the observations and for text that explains what readers should notice.
+
+Keep a short paragraph with each table and the graph. You don’t need another table just to make the section longer.
+give the code for this
+Add this chunk to your Results section, after the saved analysis_data has been loaded:
+```{r}
+#| label: fig-positive-delay-distribution
+#| fig-cap: "Distribution of positive recorded delays by subway line and time period. Zero-minute records are excluded; the horizontal axis uses a logarithmic scale."
+#| fig-width: 10
+#| fig-height: 7
+#| fig-pos: "H"
+#| echo: false
+#| warning: false
+#| message: false
+
+positive_delays <- analysis_data |>
+  mutate(
+    hour = as.numeric(time) / 3600,
+    weekday = day %in% c(
+      "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+    ),
+    period = case_when(
+      weekday & hour >= 6 & hour < 9 ~ "Morning peak",
+      weekday & hour >= 15 & hour < 19 ~ "Evening peak",
+      TRUE ~ "Other times"
+    ),
+    period = factor(
+      period,
+      levels = c("Morning peak", "Evening peak", "Other times")
+    ),
+    line = factor(
+      line,
+      levels = c("YU", "BD", "SHP"),
+      labels = c(
+        "Line 1: Yonge–University",
+        "Line 2: Bloor–Danforth",
+        "Line 4: Sheppard"
+      )
+    )
+  ) |>
+  filter(min_delay > 0)
+
+ggplot(positive_delays, aes(x = min_delay)) +
+  geom_histogram(bins = 25, fill = "steelblue", colour = "white") +
+  facet_grid(rows = vars(line), cols = vars(period)) +
+  scale_x_log10() +
+  labs(
+    x = "Positive delay duration (minutes; logarithmic scale)",
+    y = "Number of records"
+  ) +
+  theme_minimal()
+```
+Each panel shows one line and one time period. The bars count records with positive delays; the logarithmic x-axis makes short delays easier to see while retaining the exceptionally long ones. You can refer to the graph in your text as @fig-positive-delay-distribution. 
+
+
+do i have to include an appendix?
+
+
+
+No. The Donaldson Paper instructions say to use an appendix for supporting material, if needed; they do not require one. They also say the data sheets appendix in the starter folder can be deleted. 
+For your paper, keep the main findings and essential explanations in the paper. If you want to show detailed cleaning decisions without interrupting the Data section, an appendix is a suitable place.
+
+
+
+
+However, this does not indicate that Sheppard line generally has more promising performance than the other two lines given that the number of Shepperd line delay records is much smaller than other two lines.   refine this
+
+
+
+However, Sheppard’s lower proportion of positive-delay records during peak periods does not establish that it performs better overall. It has far fewer records than the other two lines, and the dataset does not show how many trips or passengers each line served.
+
+
+
+The results highlight the distinction between the proportion of positive delays and the length of those delays. The Yonge-University line had the highest positive-delay proportions across all three time periods: morning peak, evening peak and other times, while Shepperd line had largest median delay durations during morning peak and other times. These patterns suggest that there is no single measurement that can fully provide meaningful information to the subway delays. Considering both measures provides a more complete understanding of the delay of three subway lines.   refine this
+
+
+
+The results distinguish between how often a recorded delay is greater than zero and how long positive delays last. Yonge–University had the highest proportion of positive-delay records in all three time periods, while Sheppard had the longest median positive delay during the morning peak and at other times. Considering both measures gives a fuller picture of the recorded delays across the three lines, although neither measure alone establishes overall service performance.
+However, these comparisons have limitations. Firstly, the dataset only records the delay time for when incidents occur. So the positive-delay proportion cannot be interpreted as the possibilty of subway delay. Secondly, the paper groups all the weekdays together without seperating the public holidays. Other effects such as weather or seasonality are not considered in this analysis.
+
+Further study could examine how different incidents' gonna affect the delay time and      refine this
+
+
+
+These comparisons have several limitations. The dataset contains incident records rather than all subway trips, so the proportion of records with positive delays cannot be interpreted as a passenger’s probability of experiencing a delay. The analysis also groups weekdays together without identifying public holidays and does not account for weather or seasonal patterns.
+Future work could examine how incident types are associated with delay duration. Combining incident records with data on subway trips or ridership would also allow a more direct assessment of how often passengers experience delays.
+
