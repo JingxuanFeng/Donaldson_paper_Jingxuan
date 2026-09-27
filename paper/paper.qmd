@@ -1,13 +1,12 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "Recorded TTC Subway Delay Patterns Across Peaks and Other Hours in Toronto, 2024"
+subtitle: "Comparison of the Positive-delay Proportions and Median Positive-delay Durations among Three Subway Lines: Yonge-University, Bloor-Danforth and Sheppard."
 author: 
-  - First author
-  - Another author
-thanks: "Code and data are available at: [https://github.com/RohanAlexander/starter_folder](https://github.com/RohanAlexander/starter_folder)."
+  - Jingxuan Feng
+thanks: "Code and data are available at: [https://github.com/JingxuanFeng/TTC_Subway_Delay_Patterns](https://github.com/JingxuanFeng/TTC_Subway_Delay_Patterns)."
 date: today
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "This paper examines 2024 TTC subway delay records from Toronto Open Data, comparing positive-delay proportions and median positive-delay durations across three subway lines and three time periods. The Yonge–University line had the highest proportion of positive-delay records during morning peaks, evening peaks, and other times. However, the Sheppard line had the highest median positive-delay duration during morning peaks and at other times, despite having the lowest positive-delay proportion during both peak periods. These findings show that a higher proportion of positive-delay records does not necessarily correspond to longer typical delays, highlighting the importance of considering both measures when comparing recorded subway delays."
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -19,236 +18,223 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
-library(palmerpenguins)
+library(opendatatoronto)
+
 ```
 
-
+\newpage
 # Introduction
 
-Overview paragraph
+Subways are an important mode of transportation for commuters in Toronto. Understanding recorded subway delay patterns during peak commuting hours can help characterize service performance and identify where further investigation may be useful.
 
-Estimand paragraph
+The paper uses 2024 TTC subway delay records [@ttc_subway_delays_2024] to compare recorded delay patterns across the Yonge–University (YU), Bloor–Danforth (BD), and Sheppard (SHP) lines during morning peaks, evening peaks, and other times. We examine two aspects of those records: the proportion of records with a delay greater than zero minutes and the duration of those positive delays. A higher proportion of positive-delay records does not necessarily imply longer delays when positive durations are recorded.
 
-Results paragraph
+Across all three time periods, Yonge–University had the highest proportion of records with positive delays. However, Sheppard had the highest median positive delay during the morning peak and at other times, despite having the lowest proportion of positive-delay records during both peak periods. These findings distinguish the prevalence of positive delays within the records from their typical duration.
 
-Why it matters paragraph
-
-Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
-
-
+The remainder of this paper is organized as follows. @sec-data describes the source and the visualizations of the data, @sec-results shows the TTC subway delay times analysis and @sec-discussion summarizes the results and discusses the limitations of the analysis.
 
 
 
 
 # Data {#sec-data}
 
-## Overview
+## Data Source and Study Sample
 
-We use the statistical programming language R [@citeR].... Our data [@shelter].... Following @tellingstories, we consider...
+We use the 2024 TTC Subway Delay Data [@ttc_subway_delays_2024] published through Toronto Open Data [@toronto_open_data]. This dataset was selected because it records subway lines, incident times, and delay durations, allowing comparisons across lines and time periods. Our analysis focuses on the Yonge–University (line 1), Bloor–Danforth (line 2), and Sheppard (line 4) lines. The original dataset contains 26,467 records. After standardizing the YUS code to YU and retaining records coded as YU, BD, or SHP, the analysis includes 26,029 records.
 
-Overview text
-
-## Measurement
-	
-Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
-
-## Outcome variables
-
-Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
+The statistical programming language R [@R] was used to simulate data and to download, clean, test, and analyze the data. Specifically, we use opendatatoronto [@opendatatoronto] to download the data; tidyverse [@tidyverse], including tibble [@tibble], readr [@readr], dplyr [@dplyr], tidyr [@tidyr], stringr [@stringr], and ggplot2 [@ggplot2], to prepare, summarize, and visualize the data; janitor [@janitor] to standardize column names; hms [@hms] to parse simulated times; here [@here] to construct file paths; testthat [@testthat] to validate the cleaned data; and tinytable [@tinytable] to present summary tables.
 
 
+## Measurements and Variables
 
-Some of our data is of penguins (@fig-bills), from @palmerpenguins.
+The analysis used four recorded variables: subway line, time of delay, day of the week and delay duration. Delay duration is measured in minutes using the min_delay field [@ttc_subway_delays_2024]. This measure describes recorded service delay rather than the additional travel time experienced by an individual passenger. 
 
-```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
-#| echo: false
+We constructed three time period categories: morning rush hour, evening rush hour, and other times. For this analysis, weekday morning rush hours are defined as 6:00–9:00 a.m. and evening rush hours as 3:00–7:00 p.m. The peak-hour boundaries follow TTC service reporting [@ttc_asset_plan_2024]. All remaining records, including weekends, are classified as other times. Public holidays are not separately excluded.
 
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = "none") +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
-```
+Zero minute records are retained when describing all records. These records are not treated as missing values or evidence that the subway operated on time.
 
-Talk more about it.
-
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
-
-```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
-#| echo: false
-#| warning: false
-#| message: false
-
-analysis_data <- read_csv(here::here("data/02-analysis_data/analysis_data.csv"))
-
-analysis_data |> 
-  ggplot(aes(x = width, y = length)) +
-  geom_point(alpha = 0.8) +
-  theme_minimal() +
-  labs(x = "Wing width (mm)",
-       y = "Wing length (mm)")
-```
-
-Talk way more about it. 
-
-## Predictor variables
-
-Add graphs, tables and text.
-
-Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
-
-
-
-
-
-
-
-
-# Model
-
-The goal of our modelling strategy is twofold. Firstly,...
-
-Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
-
-## Model set-up
-
-Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.  
-
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
-
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
-
-
-### Model justification
-
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
-
-
-# Results
-
-Our results are summarized in @tbl-modelresults.
+## Distribution of Recorded Delays
 
 ```{r}
 #| echo: false
 #| eval: true
 #| warning: false
 #| message: false
-
-library(rstanarm)
-
-first_model <-
-  readRDS(file = here::here("models/first_model.rds"))
-```
-
-```{r}
-#| echo: false
-#| eval: true
-#| label: tbl-modelresults
-#| tbl-cap: "Explanatory models of flight time based on wing width and wing length"
-#| warning: false
-
-modelsummary::modelsummary(
-  list(
-    "First model" = first_model
-  ),
-  statistic = "mad",
-  fmt = 2
+analysis_data <- readr::read_csv(
+  here::here(
+    "data",
+    "02-analysis_data",
+    "ttc_subway_delays_2024_analysis_data.csv"
+  )
 )
 ```
-
-
-
-
-# Discussion
-
-## First discussion point {#sec-first-point}
-
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
-
-## Second discussion point
-
-Please don't use these as sub-heading labels - change them to be what your point actually is.
-
-## Third discussion point
-
-## Weaknesses and next steps
-
-Weaknesses and next steps should also be included.
-
-\newpage
-
-\appendix
-
-# Appendix {-}
-
-
-# Additional data details
-
-# Model details {#sec-model-details}
-
-## Posterior predictive check
-
-In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. This shows...
-
-In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows... 
-
 ```{r}
-#| eval: true
 #| echo: false
-#| message: false
-#| warning: false
-#| label: fig-ppcheckandposteriorvsprior
-#| layout-ncol: 2
-#| fig-cap: "Examining how the model fits, and is affected by, the data"
-#| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
+#| label: fig-all-data
+#| fig-cap: "Recorded delay durations for all 26,029 observations, grouped by TTC subway line: Line 1 (Yonge–University), Line 2 (Bloor–Danforth), and Line 4 (Sheppard)"
+#| fig-pos: "H"
 
-pp_check(first_model) +
-  theme_classic() +
-  theme(legend.position = "bottom")
-
-posterior_vs_prior(first_model) +
+ggplot(analysis_data, aes(line, min_delay, colour = line)) +
+  geom_jitter(width = 0.15, height = 0, alpha = 0.7, size = 1.0) +
+  scale_x_discrete(limits = c("YU", "BD", "SHP"),
+                   labels = c(
+    YU = "Line 1: Yonge–University",
+    BD = "Line 2: Bloor–Danforth",
+    SHP = "Line 4: Sheppard"
+  )) +
+  labs(
+    title = "TTC subway delay records, 2024",
+    x = NULL, y = "Recorded delay (minutes)",
+  ) +
   theme_minimal() +
-  scale_color_brewer(palette = "Set1") +
-  theme(legend.position = "bottom") +
-  coord_flip()
+  theme(legend.position = "none")
 ```
 
-## Diagnostics
+@fig-all-data shows the recorded delay duration for all 26,029 observations. Most records have short delays, although a few show delays lasting several hours. 
 
-@fig-stanareyouokay-1 is a trace plot. It shows... This suggests...
 
-@fig-stanareyouokay-2 is a Rhat plot. It shows... This suggests...
+
+```{r}
+#| include: false
+
+#divide the data into three time period: morning peak (6am - 9am) in weekdays, 
+#evening peak (3pm - 7pm) in weekdays, and other times
+plot_data <- analysis_data |>
+  mutate(
+    hour = as.numeric(time) / 3600,
+    weekday = day %in% c("Monday", "Tuesday", "Wednesday",
+                         "Thursday", "Friday"),
+    period = case_when(
+      weekday & hour >= 6 & hour < 9 ~ "Morning peak",
+      weekday & hour >= 15 & hour < 19 ~ "Evening peak",
+      TRUE ~ "Other times"
+    ),
+    period = factor(period, levels = c(
+      "Morning peak", "Evening peak", "Other times"
+    ))
+  )
+```
+
+
+```{r}
+#| label: fig-delay-period
+#| fig-cap: "Recorded TTC subway delay durations (2024) by subway line: Line 1 (Yonge–University), Line 2 (Bloor–Danforth), and Line 4 (Sheppard) and time period: morning peak, evening peak and other times. Records with zero-delay included."
+#| echo: false
+#| fig-pos: "H"
+
+ggplot(plot_data, aes(line, min_delay, colour = line)) +
+  geom_jitter(width = 0.15, height = 0, alpha = 0.7, size = 1.0) +
+  facet_wrap(~ period, nrow = 1) +
+  scale_x_discrete(
+    limits = c("YU", "BD", "SHP"),
+    labels = c("YU", "BD", "SHP")
+  ) +
+  labs(x = "Subway line", y = "Recorded delay (minutes)") +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+@fig-delay-period shows recorded delay durations by subway line during morning peaks, evening peaks, and other times, including records with zero delay. Across all three periods, observations are concentrated near zero, with a small number of much longer delays. The largest recorded delays occur on Bloor–Danforth line during the morning and evening peaks, while Sheppard line shows a narrower range of delay durations. However, Sheppard’s narrower range of delay durations does not establish that it performs better overall. It has far fewer records than the other two lines, and the dataset does not show how many trips or passengers each line served.
+
+
 
 ```{r}
 #| echo: false
 #| eval: true
-#| message: false
 #| warning: false
-#| label: fig-stanareyouokay
-#| fig-cap: "Checking the convergence of the MCMC algorithm"
-#| fig-subcap: ["Trace plot", "Rhat plot"]
-#| layout-ncol: 2
+#| message: false
+#| label: tbl-all-data
+#| tbl-pos: H
+#| tbl-cap: "Number of TTC subway delay records in 2024 by line: Line 1 (Yonge–University), Line 2 (Bloor–Danforth), and Line 4 (Sheppard)."
 
-plot(first_model, "trace")
-
-plot(first_model, "rhat")
+analysis_data |>
+  count(line, name = "Number of records") |>
+  arrange(factor(line, levels = c("YU", "BD", "SHP"))) |>
+  mutate(line = recode(line,
+    YU = "Line 1: Yonge–University",
+    BD = "Line 2: Bloor–Danforth",
+    SHP = "Line 4: Sheppard"
+  )) |>
+  rename(Line = line) |>
+  tinytable::tt()
 ```
 
+@tbl-all-data reports the number of records for each of the three subway lines. Both the figure and table include records with zero-minute delays.
+
+
+# Results {#sec-results}
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| message: false
+#| label: tbl-proportion
+#| tbl-pos: H
+#| tbl-cap: "Percentage of positive delay records by subway line: Line 1 (Yonge–University), Line 2 (Bloor–Danforth), and Line 4 (Sheppard) and time period: morning peak, evening peak and other times."
+
+positive_table <- plot_data |>
+  group_by(line, period) |>
+  summarise(
+    positive_percent = sprintf("%.1f%%", mean(min_delay > 0) * 100),
+    .groups = "drop"
+  ) |>
+  pivot_wider(names_from = period, values_from = positive_percent) |>
+  arrange(factor(line, levels = c("YU", "BD", "SHP"))) |>
+  select(
+    Line = line,
+    `Morning peak (%)` = `Morning peak`,
+    `Evening peak (%)` = `Evening peak`,
+    `Other times (%)` = `Other times`
+  )
+
+tinytable::tt(positive_table) |>
+  tinytable::format_tt(escape = TRUE)
+```
+
+
+
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| message: false
+#| label: tbl-median
+#| tbl-pos: H
+#| tbl-cap: "Median positive-delay records by subway line: Line 1 (Yonge–University), Line 2 (Bloor–Danforth), and Line 4 (Sheppard) and time period: morning peak, evening peak and other times."
+
+median_table <- plot_data |>
+  filter(min_delay > 0) |>
+  group_by(line, period) |>
+  summarise(median_delay = median(min_delay), .groups = "drop") |>
+  pivot_wider(names_from = period, values_from = median_delay) |>
+  arrange(factor(line, levels = c("YU", "BD", "SHP"))) |>
+  select(
+    Line = line,
+    `Morning peak delay (min)` = `Morning peak`,
+    `Evening peak delay (min)` = `Evening peak`,
+    `Other times delay (min)` = `Other times`
+  )
+
+tinytable::tt(median_table)
+```
+
+
+@tbl-proportion reports the percentage of records with positive delays for each subway line during morning peaks, evening peaks, and other times. Each percentage is calculated by dividing the number of positive-delay records by the total number of retained records within the corresponding line–period group and multiplying by 100. @tbl-median reports the median delay duration in minutes for each group, using only records with positive delays. We report the median rather than the mean delay duration because a few exceptionally long delays on the Yonge–University and Bloor–Danforth lines, as shown in @fig-all-data, could pull the mean upward. The median better represents a typical positive recorded delay.
+
+@tbl-proportion shows that the Yonge–University line had the highest percentage of positive-delay records across all three periods: 53.1% during the morning peak, 43.6% during the evening peak, and 37.2% at other times. The Sheppard line had the lowest percentages during both peak periods, while the Bloor–Danforth line had the lowest percentage at other times.
+
+Among records with positive delays, @tbl-median shows that median delay durations ranged from four to seven minutes. The Yonge–University line had a median of five minutes in all three periods. The Sheppard line had the highest median during the morning peak and at other times, at six and seven minutes, respectively. During the evening peak, its median of five minutes matched that of the Yonge–University line.
+
+Together, the results show that a higher proportion of positive delay did not necessarily indicate longer median delays.
+
+
+
+# Discussion {#sec-discussion}
+The results highlight the distinction between the proportion of positive delays and the duration of those delays.  Yonge–University had the highest proportion of positive-delay records in all three time periods, while Sheppard had the longest median positive delay during the morning peak and at other times. Considering both measures gives a fuller picture of the recorded delays across the three lines, although neither measure alone establishes overall service performance.
+
+These comparisons have several limitations. The dataset contains incident records rather than all subway trips, so the proportion of records with positive delays cannot be interpreted as a passenger’s probability of experiencing a delay. The analysis also groups weekdays together without identifying public holidays and does not account for weather or seasonal patterns.
+
+Future research could examine whether these patterns persist across months and investigate how delay causes differ between lines and time periods. Combining incident records with data on scheduled and actual subway operations could provide a more direct assessment of service reliability.
 
 
 \newpage
