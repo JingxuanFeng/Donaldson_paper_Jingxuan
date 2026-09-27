@@ -73,9 +73,25 @@ zero_table <- plot_data |>
   arrange(factor(line, levels = c("YU", "BD", "SHP"))) |>
   select(
     Line = line,
-    `Morning peak delay (min)` = `Morning peak`,
-    `Evening peak delay (min)` = `Evening peak`,
-    `Other times delay (min)` = `Other times`
+    `Morning peak delay (%)` = `Morning peak`,
+    `Evening peak delay (%)` = `Evening peak`,
+    `Other times delay (%)` = `Other times`
   )
 
 tinytable::tt(zero_table)
+
+analysis_data |>
+  filter(min_delay > 0) |>
+  ggplot(aes(min_delay)) +
+  geom_histogram(
+    binwidth = 5, boundary = 0, closed = "left",
+    fill = "#377C9E", colour = "red"
+  ) +
+  facet_wrap(~line, labeller = as_labeller(c(
+    YU = "Line 1: Yonge–University",
+    BD = "Line 2: Bloor–Danforth",
+    SHP = "Line 4: Sheppard"
+  ))) +
+  labs(x = "Positive recorded delay (minutes)", y = "Number of records") +
+  theme_minimal()
+
